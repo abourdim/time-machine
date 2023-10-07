@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>آلة الزمن — Time Machine v1.0</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#071a0f;--bg2:#0f2a1a;--bg3:#1a3a28;--gold:#d4a843;--goldL:#f0d060;--goldD:#8a6a20;
+--grn:#4caf50;--em:#00c853;--teal:#009688;--txt:#e8f5e9;--txt2:#81c784;--txt3:#4a7a52}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:'Tajawal',sans-serif;line-height:1.7;overflow-x:hidden}
+
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.03;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cpath d='M50 0L62 38L100 50L62 62L50 100L38 62L0 50L38 38Z' fill='none' stroke='%23d4a843' stroke-width='.4'/%3E%3Ccircle cx='50' cy='50' r='12' fill='none' stroke='%2300c853' stroke-width='.25'/%3E%3C/svg%3E")}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+background:radial-gradient(ellipse 800px 500px at 50% 20%,rgba(76,175,80,.05),transparent),
+radial-gradient(ellipse 500px 500px at 20% 80%,rgba(212,168,67,.03),transparent)}
+
+.wrap{max-width:800px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+
+/* Hero */
+.hero{text-align:center;padding:80px 0 50px}
+.logo{width:120px;height:auto;display:block;margin:0 auto 16px;
+opacity:.8;
+animation:floatY 3s ease-in-out infinite}
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.star-sep{color:var(--goldD);font-size:.55rem;letter-spacing:10px;opacity:.4;margin:12px 0}
+.hero h1{font-family:'Amiri',serif;font-size:2.4rem;color:var(--gold);font-weight:700;line-height:1.2}
+.hero h1 span{font-family:'Playfair Display',serif;font-size:1rem;color:var(--txt3);display:block;margin-top:4px;letter-spacing:2px}
+.hero p.sub{font-size:1rem;color:var(--txt2);margin:12px auto 20px;max-width:500px}
+.basmala{font-family:'Amiri',serif;font-size:1.4rem;color:var(--gold);opacity:.4;margin-bottom:20px}
+.badge-row{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:16px 0}
+.badge{padding:5px 14px;border-radius:20px;font-size:.72rem;border:1px solid rgba(212,168,67,.15);color:var(--txt2)}
+.badge.gold{border-color:rgba(212,168,67,.25);color:var(--gold)}
+.cta{display:inline-block;padding:12px 28px;border-radius:12px;font-size:1rem;font-weight:700;
+font-family:'Tajawal',sans-serif;text-decoration:none;transition:all .2s;
+background:linear-gradient(135deg,var(--gold),var(--goldD));color:#1a1a2e;box-shadow:0 4px 20px rgba(212,168,67,.2)}
+.cta:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(212,168,67,.3)}
+
+/* Sections */
+section{padding:40px 0;border-top:1px solid rgba(212,168,67,.06)}
+section h2{font-family:'Amiri',serif;font-size:1.6rem;color:var(--gold);margin-bottom:6px}
+section h2 .emoji{margin-inline-end:8px}
+section .sec-sub{font-size:.85rem;color:var(--txt3);margin-bottom:20px}
+section h3{font-size:1rem;color:var(--goldL);margin:20px 0 8px;font-weight:600}
+p{margin-bottom:14px;color:var(--txt2);font-size:.92rem}
+strong{color:var(--txt)}
+
+/* Feature grid */
+.feat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin:16px 0}
+.feat{padding:16px;border-radius:14px;border:1px solid rgba(212,168,67,.08);background:rgba(212,168,67,.02);transition:all .2s}
+.feat:hover{border-color:rgba(212,168,67,.15);background:rgba(212,168,67,.04);transform:translateY(-2px)}
+.feat .f-icon{font-size:1.5rem;margin-bottom:6px}
+.feat .f-title{font-size:.88rem;font-weight:700;color:var(--txt);margin-bottom:4px}
+.feat .f-desc{font-size:.78rem;color:var(--txt3);line-height:1.5}
+
+/* Scientists */
+.sci-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin:16px 0}
+.sci{text-align:center;padding:14px 8px;border-radius:12px;border:1px solid rgba(212,168,67,.06);background:rgba(0,0,0,.1);transition:all .2s}
+.sci:hover{border-color:rgba(212,168,67,.12);transform:translateY(-2px)}
+.sci .s-em{font-size:1.6rem}
+.sci .s-name{font-family:'Amiri',serif;font-size:.85rem;color:var(--gold);margin:4px 0 2px}
+.sci .s-city{font-size:.65rem;color:var(--txt3)}
+.sci .s-yr{font-size:.6rem;color:var(--goldD)}
+
+/* Theme cards */
+.theme-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}
+.th-card{padding:18px 10px;border-radius:12px;text-align:center;border:1px solid rgba(255,255,255,.06);transition:all .2s}
+.th-card:hover{transform:translateY(-3px)}
+.th-card .tc-icon{font-size:1.8rem;margin-bottom:6px}
+.th-card .tc-name{font-size:.78rem;font-weight:700;margin-bottom:3px}
+.th-card .tc-desc{font-size:.6rem;opacity:.6;line-height:1.3}
+.tc-astro{background:linear-gradient(135deg,#0a0e1f,#1a254a);color:#d8e0f8}
+.tc-khw{background:linear-gradient(135deg,#071a0f,#1a3a28);color:#e8f5e9}
+.tc-ihn{background:linear-gradient(135deg,#12061a,#2e1845);color:#f0e8ff}
+.tc-and{background:linear-gradient(135deg,#faf6ed,#e0d5c0);color:#2c1810}
+
+/* Badge row */
+.bdg-row{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.bdg{display:flex;align-items:center;gap:6px;padding:6px 12px;border-radius:10px;border:1px solid rgba(212,168,67,.1);
+background:rgba(212,168,67,.03);font-size:.75rem;color:var(--txt2)}
+.bdg .b-em{font-size:1.1rem}
+
+/* Header diagram */
+.header-diagram{display:flex;align-items:center;justify-content:center;gap:6px;padding:14px 16px;
+border-radius:12px;border:1px solid rgba(212,168,67,.1);background:rgba(0,0,0,.2);
+font-size:.75rem;color:var(--txt3);flex-wrap:wrap;margin:16px 0}
+.hd-sep{width:1px;height:18px;background:rgba(212,168,67,.15)}
+.hd-item{padding:4px 8px;border-radius:6px;background:rgba(212,168,67,.06);color:var(--txt2)}
+
+/* localStorage table */
+.ls-table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.78rem}
+.ls-table th{text-align:left;padding:8px 10px;color:var(--gold);border-bottom:1px solid rgba(212,168,67,.1);font-weight:600}
+.ls-table td{padding:8px 10px;border-bottom:1px solid rgba(212,168,67,.04);color:var(--txt2)}
+.ls-table code{font-family:'Courier New',monospace;font-size:.72rem;padding:2px 6px;border-radius:4px;
+background:rgba(212,168,67,.06);color:var(--goldL)}
+
+/* Spec grid */
+.spec-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}
+.spec{display:flex;justify-content:space-between;padding:8px 12px;border-radius:8px;background:rgba(0,0,0,.1);font-size:.78rem}
+.spec .s-k{color:var(--txt3)}.spec .s-v{color:var(--txt);font-weight:600}
+
+/* Footer */
+footer{text-align:center;padding:40px 0 30px;border-top:1px solid rgba(212,168,67,.06)}
+footer .f-basmala{font-family:'Amiri',serif;font-size:1.1rem;color:var(--gold);opacity:.3}
+footer .f-copy{font-size:.7rem;color:var(--txt3);margin-top:8px}
+footer .f-stars{color:var(--goldD);font-size:.5rem;letter-spacing:8px;margin-top:10px}
+
+@media(max-width:600px){
+  .hero h1{font-size:1.8rem}
+  .theme-grid{grid-template-columns:repeat(2,1fr)}
+  .spec-grid{grid-template-columns:1fr}
+  .feat-grid{grid-template-columns:1fr}
+}
+
+.reveal{opacity:0;transform:translateY(20px);transition:all .5s ease}
+.reveal.vis{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<div class="hero">
+  <div class="basmala">﷽</div>
+  <img src="logo.svg" alt="Workshop DIY" class="logo">
+  <div class="star-sep">✦ ✦ ✦</div>
+  <h1>آلة الزمن<span>TIME MACHINE v1.0</span></h1>
+  <p class="sub">An interactive educational game about Muslim scientists who changed the world. Travel through time, discover 10 legendary scientists, collect stars and cards.</p>
+  <div class="badge-row">
+    <span class="badge gold">✦ 10 Levels</span>
+    <span class="badge">🌐 3 Languages</span>
+    <span class="badge">🎨 4 Themes</span>
+    <span class="badge">📱 PWA Ready</span>
+    <span class="badge gold">158 KB Single File</span>
+  </div>
+  <div style="margin-top:20px">
+    <a href="timemachine.html" class="cta">🚀 Play Now</a>
+  </div>
+</div>
+
+<section class="reveal">
+  <h2><span class="emoji">🧑‍🔬</span>Scientists Featured</h2>
+  <p class="sec-sub">10 legendary Muslim scientists from the Islamic Golden Age</p>
+  <div class="sci-grid">
+    <div class="sci"><div class="s-em">⚗️</div><div class="s-name">جابر بن حيان</div><div class="s-city">Baghdad</div><div class="s-yr">780 AH</div></div>
+    <div class="sci"><div class="s-em">📐</div><div class="s-name">الخوارزمي</div><div class="s-city">Baghdad</div><div class="s-yr">820 AH</div></div>
+    <div class="sci"><div class="s-em">🦅</div><div class="s-name">عباس بن فرناس</div><div class="s-city">Córdoba</div><div class="s-yr">852 AH</div></div>
+    <div class="sci"><div class="s-em">🎓</div><div class="s-name">فاطمة الفهري</div><div class="s-city">Fez</div><div class="s-yr">859 AH</div></div>
+    <div class="sci"><div class="s-em">💊</div><div class="s-name">ابن سينا</div><div class="s-city">Bukhara</div><div class="s-yr">1000 AH</div></div>
+    <div class="sci"><div class="s-em">💡</div><div class="s-name">ابن الهيثم</div><div class="s-city">Cairo</div><div class="s-yr">1000 AH</div></div>
+    <div class="sci"><div class="s-em">🌍</div><div class="s-name">البيروني</div><div class="s-city">Ghazni</div><div class="s-yr">1040 AH</div></div>
+    <div class="sci"><div class="s-em">🗺️</div><div class="s-name">الإدريسي</div><div class="s-city">Sicily</div><div class="s-yr">1154 AH</div></div>
+    <div class="sci"><div class="s-em">⚙️</div><div class="s-name">الجزري</div><div class="s-city">Diyarbakir</div><div class="s-yr">1206 AH</div></div>
+    <div class="sci"><div class="s-em">🏥</div><div class="s-name">الزهراوي</div><div class="s-city">Córdoba</div><div class="s-yr">1000 AH</div></div>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2><span class="emoji">✨</span>Features</h2>
+  <p class="sec-sub">A complete educational experience in a single HTML file</p>
+  <div class="feat-grid">
+    <div class="feat"><div class="f-icon">🎮</div><div class="f-title">10 Playable Levels</div><div class="f-desc">4-page stories, interactive challenges, 3-star ratings, level progression & replay</div></div>
+    <div class="feat"><div class="f-icon">🎯</div><div class="f-title">Daily Challenge</div><div class="f-desc">New question every day with streak tracking 🔥</div></div>
+    <div class="feat"><div class="f-icon">🏆</div><div class="f-title">8 Achievement Badges</div><div class="f-desc">From First Discovery to Golden Age Scholar</div></div>
+    <div class="feat"><div class="f-icon">🧩</div><div class="f-title">Mystery Scientist</div><div class="f-desc">Guess the scientist from 3 clues — era, field, city</div></div>
+    <div class="feat"><div class="f-icon">📜</div><div class="f-title">Scholar's Passport</div><div class="f-desc">Visual passport with stamps for each completed level</div></div>
+    <div class="feat"><div class="f-icon">🎤</div><div class="f-title">Pronunciation</div><div class="f-desc">Hear Arabic scientist names via speech synthesis</div></div>
+    <div class="feat"><div class="f-icon">🔓</div><div class="f-title">Free Play Mode</div><div class="f-desc">Toggle to unlock all levels instantly</div></div>
+    <div class="feat"><div class="f-icon">🌐</div><div class="f-title">Trilingual</div><div class="f-desc">Arabic (RTL) · Français · English — instant switch</div></div>
+    <div class="feat"><div class="f-icon">🔢</div><div class="f-title">Numeral Toggle</div><div class="f-desc">Switch between ١٢٣ and 123 independently</div></div>
+    <div class="feat"><div class="f-icon">🔊</div><div class="f-title">12 Sound Effects</div><div class="f-desc">Synthesized via Web Audio API — no files needed</div></div>
+    <div class="feat"><div class="f-icon">✨</div><div class="f-title">25+ Animations</div><div class="f-desc">Portal, confetti, starfield, bursts, staggered reveals</div></div>
+    <div class="feat"><div class="f-icon">📱</div><div class="f-title">PWA Ready</div><div class="f-desc">Haptic feedback, swipe nav, Add to Home Screen</div></div>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2><span class="emoji">🎨</span>4 Islamic Themes</h2>
+  <p class="sec-sub">Each with unique colors, SVG pattern, and radial glow</p>
+  <div class="theme-grid">
+    <div class="th-card tc-astro"><div class="tc-icon">🔭</div><div class="tc-name">Astrolabe</div><div class="tc-desc">Dark navy · Brass gold · Circular rings</div></div>
+    <div class="th-card tc-khw"><div class="tc-icon">📐</div><div class="tc-name">Al-Khwarizmi</div><div class="tc-desc">Emerald green · Gold · 8-pointed star</div></div>
+    <div class="th-card tc-ihn"><div class="tc-icon">💡</div><div class="tc-name">Ibn Al-Haytham</div><div class="tc-desc">Deep purple · Prismatic · Light prism</div></div>
+    <div class="th-card tc-and"><div class="tc-icon">☀️</div><div class="tc-name">Al-Andalus</div><div class="tc-desc">Warm ivory · Terracotta · Zellige tiles</div></div>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2><span class="emoji">🏆</span>Achievement Badges</h2>
+  <p class="sec-sub">Displayed in the Museum — earned through gameplay and dedication</p>
+  <div class="bdg-row">
+    <div class="bdg"><span class="b-em">🌟</span> First Discovery · 1 level</div>
+    <div class="bdg"><span class="b-em">🧭</span> Explorer · 3 levels</div>
+    <div class="bdg"><span class="b-em">📚</span> Scholar · 5 levels</div>
+    <div class="bdg"><span class="b-em">🎓</span> Master · 7 levels</div>
+    <div class="bdg"><span class="b-em">🧠</span> Polymath · 10 levels</div>
+    <div class="bdg"><span class="b-em">👑</span> Golden Age · 30 stars</div>
+    <div class="bdg"><span class="b-em">🔥</span> Dedicated · 3-day streak</div>
+    <div class="bdg"><span class="b-em">⚡</span> Streak Master · 7-day streak</div>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2><span class="emoji">📌</span>Persistent Header</h2>
+  <p class="sec-sub">Always accessible across all 12 screens</p>
+  <div class="header-diagram">
+    <span class="hd-item">🔊 Mute</span>
+    <div class="hd-sep"></div>
+    <span class="hd-item">🗺️ Map</span>
+    <div class="hd-sep"></div>
+    <span class="hd-item">🔭📐💡☀️ Themes</span>
+    <div class="hd-sep"></div>
+    <span class="hd-item">١٢٣ · 123</span>
+    <div class="hd-sep"></div>
+    <span class="hd-item">﷽ v1.0</span>
+    <div class="hd-sep"></div>
+    <span class="hd-item">عربي FR EN</span>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2><span class="emoji">🗺️</span>Game Flow</h2>
+  <p class="sec-sub">12 interconnected screens</p>
+  <p style="font-size:.82rem;color:var(--txt3);text-align:center;line-height:2.2">
+    <strong style="color:var(--gold)">Home</strong> → Daily Challenge
+    → <strong style="color:var(--gold)">Journey Map</strong> → Select Level
+    → <strong style="color:var(--gold)">City Arrival</strong>
+    → <strong style="color:var(--gold)">Meet Scientist</strong> + 🔊
+    → <strong style="color:var(--gold)">Story</strong> (4 pages)
+    → <strong style="color:var(--gold)">Challenge</strong>
+    → <strong style="color:var(--gold)">Victory</strong> + Stars
+    → <strong style="color:var(--gold)">Museum</strong> + Badges + 🧩 Mystery + 📜 Passport
+  </p>
+</section>
+
+<section class="reveal">
+  <h2><span class="emoji">💾</span>localStorage</h2>
+  <p class="sec-sub">9 persistent keys — no server required</p>
+  <table class="ls-table">
+    <tr><th>Key</th><th>Purpose</th></tr>
+    <tr><td><code>tm_lang</code></td><td>Language preference (ar / fr / en)</td></tr>
+    <tr><td><code>tm_stars</code></td><td>Star ratings per level (JSON)</td></tr>
+    <tr><td><code>tm_mute</code></td><td>Mute toggle</td></tr>
+    <tr><td><code>tm_onboard</code></td><td>Onboarding completed</td></tr>
+    <tr><td><code>tm_theme</code></td><td>Theme choice</td></tr>
+    <tr><td><code>tm_num</code></td><td>Numeral format (hindu / western)</td></tr>
+    <tr><td><code>tm_freeplay</code></td><td>Free play mode</td></tr>
+    <tr><td><code>tm_dc_date</code></td><td>Last daily challenge date</td></tr>
+    <tr><td><code>tm_dc_streak</code></td><td>Daily challenge streak count</td></tr>
+  </table>
+</section>
+
+<section class="reveal">
+  <h2><span class="emoji">⚙️</span>Technical Specs</h2>
+  <div class="spec-grid">
+    <div class="spec"><span class="s-k">Version</span><span class="s-v">1.0</span></div>
+    <div class="spec"><span class="s-k">File size</span><span class="s-v">~158 KB</span></div>
+    <div class="spec"><span class="s-k">Lines of code</span><span class="s-v">~1,546</span></div>
+    <div class="spec"><span class="s-k">Dependencies</span><span class="s-v">Google Fonts only</span></div>
+    <div class="spec"><span class="s-k">Screens</span><span class="s-v">12</span></div>
+    <div class="spec"><span class="s-k">Levels</span><span class="s-v">10</span></div>
+    <div class="spec"><span class="s-k">Languages</span><span class="s-v">3</span></div>
+    <div class="spec"><span class="s-k">Themes</span><span class="s-v">4</span></div>
+    <div class="spec"><span class="s-k">Animations</span><span class="s-v">25+</span></div>
+    <div class="spec"><span class="s-k">Sound effects</span><span class="s-v">12 (synthesized)</span></div>
+    <div class="spec"><span class="s-k">Badges</span><span class="s-v">8</span></div>
+    <div class="spec"><span class="s-k">Daily questions</span><span class="s-v">10</span></div>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2><span class="emoji">📖</span>How to Use</h2>
+  <p>Open <strong>timemachine.html</strong> in any modern browser. Select your language, pick a theme, choose your numeral format, and tap <strong>Start Journey</strong>. Complete levels in order or toggle Free Play to explore freely. Don't forget the Daily Challenge on the Home screen!</p>
+  <p>On mobile, tap your browser's share button → <strong>"Add to Home Screen"</strong> for a native app experience with haptic feedback and swipe navigation.</p>
+  <h3>Browser Support</h3>
+  <p>Chrome / Edge 80+ · Safari 14+ · Firefox 80+ · Mobile Chrome & Safari (primary target)</p>
+</section>
+
+<footer>
+  <img src="logo.svg" alt="Workshop DIY" style="width:60px;height:auto;display:block;margin:0 auto 10px;opacity:.3">
+  <div class="f-basmala">﷽</div>
+  <div class="f-copy">© 2026 Workshop-DIY · Educational Use · All Rights Reserved</div>
+  <div class="f-stars">✦ ✦ ✦</div>
+</footer>
+
+</div>
+
+<script>
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target)}});
+},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>

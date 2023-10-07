@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#071a0f">
+<title>آلة الزمن</title>
+<link rel="manifest" href="data:application/json,%7B%22name%22%3A%22%D8%A2%D9%84%D8%A9%20%D8%A7%D9%84%D8%B2%D9%85%D9%86%22%2C%22short_name%22%3A%22TimeMachine%22%2C%22start_url%22%3A%22.%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%23071a0f%22%2C%22theme_color%22%3A%22%23071a0f%22%2C%22description%22%3A%22Travel%20through%20time%20and%20discover%20Muslim%20scientists%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage%2Fsvg%2Bxml%2C%253Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20100%20100%27%253E%253Crect%20fill%3D%27%2523071a0f%27%20width%3D%27100%27%20height%3D%27100%27%20rx%3D%2720%27%2F%253E%253Ctext%20x%3D%2750%27%20y%3D%2765%27%20font-size%3D%2755%27%20text-anchor%3D%27middle%27%253E%25E2%259C%25A6%253C%2Ftext%253E%253C%2Fsvg%253E%22%2C%22sizes%22%3A%22any%22%2C%22type%22%3A%22image%2Fsvg%2Bxml%22%7D%5D%7D">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+:root,[data-theme="khawarizmi"]{--bg:#071a0f;--bg2:#0f2a1a;--bg3:#1a3a28;--bg4:#224a35;
+--gold:#d4a843;--goldL:#f0d060;--goldD:#8a6a20;
+--grn:#4caf50;--grnD:#2e7d32;--em:#00c853;--teal:#009688;
+--txt:#e8f5e9;--txt2:#81c784;--txt3:#4a7a52;--red:#c0392b;--R:16px;
+--pat1:%23d4a843;--pat2:%2300c853;--glow1:76,175,80;--glow2:212,168,67;--glow3:0,150,136}
+
+[data-theme="astrolabe"]{--bg:#0a0e1f;--bg2:#111936;--bg3:#1a254a;--bg4:#24305a;
+--gold:#c9a84c;--goldL:#e8c85a;--goldD:#7a6420;
+--grn:#5c8aff;--grnD:#3a5fc0;--em:#80b0ff;--teal:#4a9eff;
+--txt:#d8e0f8;--txt2:#8a9cc8;--txt3:#4a5a80;--red:#c0392b;
+--pat1:%23c9a84c;--pat2:%235c8aff;--glow1:92,138,255;--glow2:201,168,76;--glow3:74,158,255}
+
+[data-theme="haytham"]{--bg:#12061a;--bg2:#1e0e2e;--bg3:#2e1845;--bg4:#3a2258;
+--gold:#d4a843;--goldL:#f0d060;--goldD:#8a6a20;
+--grn:#b06cf7;--grnD:#7c3aed;--em:#c084fc;--teal:#a855f7;
+--txt:#f0e8ff;--txt2:#b89ce0;--txt3:#6a4a8a;--red:#c0392b;
+--pat1:%23d4a843;--pat2:%23b06cf7;--glow1:176,108,247;--glow2:212,168,67;--glow3:168,85,247}
+
+[data-theme="andalus"]{--bg:#faf6ed;--bg2:#f0e8d8;--bg3:#e0d5c0;--bg4:#d0c5a8;
+--gold:#b8860b;--goldL:#d4a843;--goldD:#8a6a20;
+--grn:#0e7c6b;--grnD:#0a5a4d;--em:#10a37f;--teal:#1a9988;
+--txt:#2c1810;--txt2:#5a4030;--txt3:#8a7a68;--red:#c0392b;
+--pat1:%23b8860b;--pat2:%230e7c6b;--glow1:14,124,107;--glow2:184,134,11;--glow3:26,153,136}
+html,body{height:100%;overflow:hidden;font-family:'Tajawal',sans-serif;background:var(--bg);color:var(--txt)}
+body{display:flex;justify-content:center}
+
+/* Islamic geometric SVG pattern — uses theme pattern colors */
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.04;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cdefs%3E%3Cpattern id='g' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Cpath d='M50 0L62 38L100 50L62 62L50 100L38 62L0 50L38 38Z' fill='none' stroke='%23d4a843' stroke-width='.4'/%3E%3Cpath d='M50 15L59 41L85 50L59 59L50 85L41 59L15 50L41 41Z' fill='none' stroke='%23d4a843' stroke-width='.3'/%3E%3Ccircle cx='50' cy='50' r='12' fill='none' stroke='%2300c853' stroke-width='.25'/%3E%3Ccircle cx='50' cy='50' r='5' fill='none' stroke='%23d4a843' stroke-width='.2'/%3E%3Cpath d='M0 0L50 50M100 0L50 50M0 100L50 50M100 100L50 50' stroke='%23d4a843' stroke-width='.15' opacity='.5'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23g)' width='100' height='100'/%3E%3C/svg%3E")}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+background:radial-gradient(ellipse 600px 400px at 50% 30%,rgba(var(--glow1),.06),transparent),
+radial-gradient(ellipse 400px 400px at 30% 70%,rgba(var(--glow2),.04),transparent),
+radial-gradient(ellipse 300px 300px at 80% 20%,rgba(var(--glow3),.03),transparent)}
+
+/* Astrolabe: circular brass pattern */
+[data-theme="astrolabe"] body::before{opacity:.05;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Ccircle cx='60' cy='60' r='55' fill='none' stroke='%23c9a84c' stroke-width='.3'/%3E%3Ccircle cx='60' cy='60' r='40' fill='none' stroke='%23c9a84c' stroke-width='.25'/%3E%3Ccircle cx='60' cy='60' r='25' fill='none' stroke='%235c8aff' stroke-width='.2'/%3E%3Ccircle cx='60' cy='60' r='10' fill='none' stroke='%23c9a84c' stroke-width='.3'/%3E%3Cpath d='M60 5V115M5 60H115M17 17L103 103M103 17L17 103' stroke='%23c9a84c' stroke-width='.15' opacity='.4'/%3E%3C/svg%3E")}
+
+/* Ibn Al-Haytham: light ray prism pattern */
+[data-theme="haytham"] body::before{opacity:.04;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cpath d='M50 10L90 90H10Z' fill='none' stroke='%23d4a843' stroke-width='.4'/%3E%3Cpath d='M10 90L50 10L50 90' fill='none' stroke='%23b06cf7' stroke-width='.2'/%3E%3Cpath d='M50 10L70 60L90 90' fill='none' stroke='%23d4a843' stroke-width='.15' opacity='.5'/%3E%3Ccircle cx='50' cy='50' r='15' fill='none' stroke='%23b06cf7' stroke-width='.2'/%3E%3Cpath d='M35 50Q50 20 65 50Q50 80 35 50' fill='none' stroke='%23d4a843' stroke-width='.2'/%3E%3C/svg%3E")}
+
+/* Al-Andalus: zellige tile pattern */
+[data-theme="andalus"] body::before{opacity:.06;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cpath d='M40 0L80 40L40 80L0 40Z' fill='none' stroke='%23b8860b' stroke-width='.5'/%3E%3Cpath d='M40 10L70 40L40 70L10 40Z' fill='none' stroke='%230e7c6b' stroke-width='.3'/%3E%3Cpath d='M40 20L60 40L40 60L20 40Z' fill='none' stroke='%23b8860b' stroke-width='.25'/%3E%3Ccircle cx='40' cy='40' r='8' fill='none' stroke='%230e7c6b' stroke-width='.2'/%3E%3C/svg%3E")}
+
+/* Al-Andalus light mode overrides */
+[data-theme="andalus"] .mute,[data-theme="andalus"] .map-nav{background:rgba(255,255,255,.7);border-color:rgba(184,134,11,.2)}
+[data-theme="andalus"] .top-bar{background:var(--bg);border-bottom-color:rgba(184,134,11,.15);box-shadow:0 2px 12px rgba(0,0,0,.08)}
+[data-theme="andalus"] .mosque-footer{opacity:.08}
+[data-theme="andalus"] .lb{border-color:rgba(184,134,11,.2);color:var(--txt2)}
+[data-theme="andalus"] .lb.on{background:var(--grn);color:#fff;border-color:var(--grn)}
+[data-theme="andalus"] .card{background:rgba(0,0,0,.03);border-color:rgba(184,134,11,.1)}
+[data-theme="andalus"] .arch{border-color:rgba(184,134,11,.15)}
+[data-theme="andalus"] .mc{background:rgba(0,0,0,.03);border-color:rgba(184,134,11,.12)}
+[data-theme="andalus"] .mc.cp{border-color:rgba(14,124,107,.2);background:rgba(14,124,107,.04)}
+[data-theme="andalus"] .btn.bg{background:linear-gradient(135deg,var(--grn),var(--grnD))}
+[data-theme="andalus"] .btn.bt{border-color:rgba(184,134,11,.2);color:var(--txt)}
+[data-theme="andalus"] .ing{background:rgba(0,0,0,.04);border-color:rgba(184,134,11,.15);color:var(--txt)}
+[data-theme="andalus"] .basmala{color:var(--gold)}
+[data-theme="andalus"] .starfield{opacity:.15}
+[data-theme="andalus"] .fp-tog{background:rgba(0,0,0,.08)}
+[data-theme="andalus"] .fp-tog.on{background:rgba(14,124,107,.2)}
+
+/* Mosque silhouette footer */
+.mosque-footer{position:fixed;bottom:0;left:0;right:0;height:40px;pointer-events:none;z-index:0;opacity:.06}
+.mosque-footer svg{width:100%;height:100%}
+
+/* Twinkling starfield */
+.starfield{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.star{position:absolute;border-radius:50%;background:var(--goldL)}
+.star.s1{width:2px;height:2px;animation:twinkle 3s ease-in-out infinite}
+.star.s2{width:1px;height:1px;animation:twinkle 4s ease-in-out infinite .5s}
+.star.s3{width:3px;height:3px;animation:twinkle 5s ease-in-out infinite 1s;opacity:.3}
+
+/* Timeline connector */
+.tl-conn{position:relative;width:100%;display:flex;align-items:center;justify-content:center;height:18px}
+.tl-conn::before{content:'';position:absolute;width:2px;height:100%;background:linear-gradient(180deg,var(--goldD),rgba(212,168,67,.05));opacity:.25}
+.tl-conn .tl-dot{width:6px;height:6px;border-radius:50%;background:var(--goldD);opacity:.35;position:relative;z-index:1}
+.tl-conn.done::before{background:linear-gradient(180deg,var(--grn),var(--goldD));opacity:.35}
+.tl-conn.done .tl-dot{background:var(--grn);opacity:.6}
+
+/* Total score */
+.score-bar{width:100%;display:flex;align-items:center;justify-content:center;gap:6px;padding:4px 0}
+.score-bar .sb-stars{font-size:.8rem;color:var(--goldL)}.score-bar .sb-txt{font-size:.72rem;color:var(--txt3)}
+.score-bar .sb-ring{width:32px;height:32px;border-radius:50%;border:2px solid var(--bg3);position:relative;display:flex;align-items:center;justify-content:center}
+.score-bar .sb-fill{position:absolute;inset:0;border-radius:50%;border:2px solid var(--grn);border-right-color:transparent;border-bottom-color:transparent}
+
+/* City ambient particles */
+.city-ambient{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.city-ambient .ca-em{position:absolute;font-size:1.3rem;animation:cityFloat 6s ease-in-out infinite;opacity:.12}
+@keyframes cityFloat{0%{transform:translateY(0) rotate(0);opacity:0}20%{opacity:.12}80%{opacity:.08}100%{transform:translateY(-120px) rotate(20deg);opacity:0}}
+
+/* Story slide transitions */
+.st-slide{animation:stSlideIn .4s ease-out}
+@keyframes stSlideIn{from{opacity:0;transform:translateX(30px)}to{opacity:1;transform:translateX(0)}}
+[dir="rtl"] .st-slide{animation-name:stSlideInRTL}
+@keyframes stSlideInRTL{from{opacity:0;transform:translateX(-30px)}to{opacity:1;transform:translateX(0)}}
+
+/* Story scene header */
+.st-scene{text-align:center;font-size:2.2rem;margin-bottom:6px;animation:pop .4s cubic-bezier(.17,.67,.29,1.4)}
+
+/* Challenge success burst */
+.burst{position:fixed;top:50%;left:50%;pointer-events:none;z-index:45}
+.burst-p{position:absolute;width:6px;height:6px;border-radius:50%;animation:burstOut .8s ease-out forwards}
+@keyframes burstOut{0%{transform:translate(0,0) scale(1);opacity:1}100%{transform:translate(var(--bx),var(--by)) scale(0);opacity:0}}
+
+/* Splash overlay */
+.splash{position:fixed;inset:0;z-index:200;background:var(--bg);display:flex;flex-direction:column;
+  align-items:center;justify-content:center;transition:opacity .6s,visibility .6s}
+.splash.gone{opacity:0;visibility:hidden;pointer-events:none}
+.splash-star{font-size:3rem;animation:starBurst 1s ease-out}
+.splash-txt{font-family:'Amiri',serif;font-size:1.3rem;color:var(--gold);margin-top:12px;animation:fu .8s .3s ease-out both}
+.splash-bar{width:120px;height:3px;background:var(--bg3);border-radius:3px;margin-top:18px;overflow:hidden}
+.splash-fill{height:100%;width:0;background:linear-gradient(90deg,var(--grn),var(--gold));border-radius:3px;animation:splashLoad 1.2s .2s ease-out forwards}
+@keyframes splashLoad{0%{width:0}100%{width:100%}}
+
+/* Onboarding overlay */
+.onboard{position:fixed;inset:0;z-index:150;background:rgba(0,0,0,.85);display:flex;flex-direction:column;
+  align-items:center;justify-content:center;padding:20px;gap:16px;transition:opacity .5s}
+.onboard.gone{opacity:0;pointer-events:none}
+.onboard-step{text-align:center;max-width:320px;animation:fu .5s ease-out}
+.onboard-em{font-size:3rem;margin-bottom:8px}
+.onboard-title{font-family:'Amiri',serif;font-size:1.3rem;color:var(--gold);margin-bottom:6px}
+.onboard-desc{font-size:.85rem;color:var(--txt2);line-height:1.7}
+.onboard-dots{display:flex;gap:6px;justify-content:center;margin:12px 0}
+.onboard-dot{width:8px;height:8px;border-radius:50%;background:var(--txt3);transition:all .3s}
+.onboard-dot.on{background:var(--gold);width:20px;border-radius:4px}
+.onboard-skip{font-size:.72rem;color:var(--txt3);cursor:pointer;margin-top:4px;text-decoration:underline;opacity:.5}
+
+/* Fun fact badge */
+.fun-fact{width:100%;padding:12px 14px;border-radius:12px;background:rgba(0,150,136,.06);
+  border:1px solid rgba(0,150,136,.12);text-align:center;animation:fu .5s .6s ease-out both}
+.fun-fact .ff-label{font-size:.65rem;color:var(--teal);text-transform:uppercase;letter-spacing:2px;margin-bottom:4px}
+.fun-fact .ff-text{font-size:.82rem;color:var(--txt2);line-height:1.6}
+
+/* Star improvement badge */
+.star-up{display:inline-block;padding:3px 10px;border-radius:8px;background:rgba(240,208,96,.1);
+  border:1px solid rgba(240,208,96,.2);font-size:.75rem;color:var(--goldL);animation:pop .4s .5s cubic-bezier(.17,.67,.29,1.4) both}
+
+/* Replay badge on map card */
+.mc .replay-badge{position:absolute;bottom:3px;right:4px;font-size:.55rem;color:var(--txt3);opacity:.5}
+
+.screen{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;
+overflow-y:auto;-webkit-overflow-scrolling:touch;padding:48px 16px 50px;
+opacity:0;pointer-events:none;transition:opacity .5s,transform .5s;transform:translateY(20px)}
+.screen.active{opacity:1;pointer-events:auto;transform:translateY(0)}
+.cnt{width:100%;max-width:420px;display:flex;flex-direction:column;align-items:center;gap:16px;position:relative;z-index:1}
+
+/* Islamic arch frame with arabesque ornaments */
+.arch{width:100%;border:2px solid rgba(212,168,67,.12);border-radius:50px 50px var(--R) var(--R);
+padding:28px 18px;position:relative;overflow:hidden;background:linear-gradient(180deg,var(--bg2),var(--bg))}
+.arch::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);
+width:50%;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent);border-radius:2px}
+.arch::after{content:'';position:absolute;top:3px;left:50%;transform:translateX(-50%);
+width:30%;height:2px;background:linear-gradient(90deg,transparent,rgba(212,168,67,.3),transparent);border-radius:2px}
+/* Arabesque corner ornaments on arch */
+.arch-corner{position:absolute;width:35px;height:35px;opacity:.1}
+.arch-corner svg{width:100%;height:100%}
+.arch-corner.tl{top:4px;left:4px}.arch-corner.tr{top:4px;right:4px;transform:scaleX(-1)}
+.arch-corner.bl{bottom:4px;left:4px;transform:scaleY(-1)}.arch-corner.br{bottom:4px;right:4px;transform:scale(-1)}
+
+/* Persistent top bar */
+.top-bar{position:fixed;top:0;left:0;right:0;z-index:90;display:flex;align-items:center;justify-content:center;
+padding:8px 56px 8px;background:var(--bg);border-bottom:1px solid rgba(212,168,67,.12);pointer-events:none;
+box-shadow:0 2px 12px rgba(0,0,0,.3)}
+.top-bar>*{pointer-events:auto}
+.top-bar .basmala{font-size:1.05rem;margin:0;opacity:.75}
+.top-bar .ver{font-family:'Tajawal',sans-serif;font-size:.45rem;color:var(--txt3);opacity:.5;vertical-align:middle;margin-inline-start:4px;letter-spacing:.5px}
+.top-bar .top-left{position:absolute;left:84px;top:50%;transform:translateY(-50%);display:flex;align-items:center;gap:6px}
+.top-bar .sep{width:1px;height:16px;background:rgba(212,168,67,.15);flex-shrink:0}
+.top-bar .lang-row{position:absolute;right:12px;top:50%;transform:translateY(-50%)}
+
+/* Mute button */
+.mute{position:fixed;top:10px;left:12px;z-index:100;width:32px;height:32px;border-radius:50%;
+border:1px solid rgba(212,168,67,.15);background:rgba(0,0,0,.6);backdrop-filter:blur(6px);
+color:var(--gold);font-size:.95rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:transform .15s}
+.mute:active{transform:scale(.85)}
+
+.basmala{font-family:'Amiri',serif;font-size:1.15rem;color:var(--gold);opacity:.55}
+.divider{width:55%;height:1px;background:linear-gradient(90deg,transparent,var(--goldD),transparent);position:relative}
+.divider::after{content:'✦';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:var(--bg);padding:0 8px;color:var(--goldD);font-size:.65rem}
+/* Islamic star separator */
+.star-sep{text-align:center;color:var(--goldD);font-size:.5rem;letter-spacing:8px;opacity:.3}
+/* Collection grid */
+.col-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:10px;width:100%;padding:4px 0}
+.col-card{padding:10px 6px;border-radius:12px;text-align:center;position:relative;overflow:hidden;
+  border:1px solid rgba(212,168,67,.08);transition:all .3s}
+.col-card.earned{background:linear-gradient(135deg,var(--bg3),var(--bg2));border-color:rgba(212,168,67,.2);
+  animation:cardFlip .5s ease-out both}
+.col-card.locked{background:var(--bg2);opacity:.3}
+.col-card .cc-em{font-size:1.6rem;margin-bottom:4px}
+.col-card .cc-name{font-size:.65rem;color:var(--txt);line-height:1.3;font-family:'Amiri',serif}
+.col-card .cc-fld{font-size:.55rem;color:var(--txt2);margin-top:2px}
+.col-card .cc-star{position:absolute;top:3px;right:4px;font-size:.5rem;color:var(--goldL)}
+.col-card.locked .cc-em{filter:grayscale(1);opacity:.4}
+.col-prog{text-align:center;font-size:.8rem;color:var(--txt2);margin:6px 0}
+.col-prog .pg-bar{width:80%;max-width:220px;height:6px;background:var(--bg3);border-radius:4px;margin:6px auto;overflow:hidden}
+.col-prog .pg-fill{height:100%;background:linear-gradient(90deg,var(--grn),var(--gold));border-radius:4px;transition:width .8s ease-out}
+.col-fin{text-align:center;padding:14px;margin:10px 0;border-radius:var(--R);
+  background:linear-gradient(135deg,rgba(212,168,67,.08),rgba(0,200,83,.05));border:1px solid rgba(212,168,67,.15)}
+.col-fin .cf-title{font-family:'Amiri',serif;font-size:1.1rem;color:var(--gold);margin-bottom:4px}
+.col-fin .cf-sub{font-size:.75rem;color:var(--txt2)}
+/* Museum button on map */
+.btn-museum{background:rgba(212,168,67,.1);border:1px solid rgba(212,168,67,.12);
+  color:var(--gold);border-radius:10px;padding:6px 12px;font-size:.75rem;cursor:pointer;transition:all .2s}
+.btn-museum:active{transform:scale(.95);background:rgba(212,168,67,.2)}
+/* Map nav button in top bar */
+.map-nav{position:fixed;top:10px;left:48px;z-index:100;width:32px;height:32px;border-radius:50%;
+border:1px solid rgba(212,168,67,.15);background:rgba(0,0,0,.6);backdrop-filter:blur(6px);
+color:var(--gold);font-size:.95rem;cursor:pointer;display:none;align-items:center;justify-content:center;transition:all .15s}
+.map-nav.vis{display:flex}
+.map-nav:active{transform:scale(.85)}
+/* Free play toggle */
+.fp-row{display:flex;align-items:center;gap:8px;font-size:.72rem;color:var(--txt3)}
+.fp-tog{width:40px;height:22px;border-radius:11px;border:1px solid rgba(212,168,67,.2);background:rgba(0,0,0,.3);
+cursor:pointer;position:relative;transition:background .3s}
+.fp-tog.on{background:rgba(0,200,83,.25);border-color:rgba(0,200,83,.3)}
+.fp-tog::after{content:'';position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;
+background:var(--gold);transition:transform .3s}
+.fp-tog.on::after{transform:translateX(18px)}
+/* Theme selector */
+.theme-row{display:flex;gap:3px}
+.theme-btn{width:26px;height:26px;border-radius:7px;border:1.5px solid transparent;cursor:pointer;
+display:flex;align-items:center;justify-content:center;font-size:.75rem;transition:all .15s;padding:0}
+.theme-btn.on{border-color:var(--gold);box-shadow:0 0 6px rgba(212,168,67,.3)}
+.theme-btn:active{transform:scale(.88)}
+.tb-kh{background:linear-gradient(135deg,#071a0f,#1a3a28)}
+.tb-as{background:linear-gradient(135deg,#0a0e1f,#1a254a)}
+.tb-ih{background:linear-gradient(135deg,#12061a,#2e1845)}
+.tb-an{background:linear-gradient(135deg,#faf6ed,#e0d5c0)}
+/* Numeral toggle */
+.num-toggle{display:flex;gap:0;border-radius:8px;overflow:hidden;border:1px solid rgba(212,168,67,.15)}
+.num-btn{padding:3px 8px;font-size:.68rem;cursor:pointer;border:none;background:transparent;color:var(--txt3);transition:all .2s;font-family:'Tajawal',sans-serif}
+.num-btn.on{background:rgba(212,168,67,.12);color:var(--gold)}
+.num-btn:active{transform:scale(.95)}
+/* Daily Challenge card */
+.dc-card{width:100%;background:rgba(212,168,67,.06);border:1px solid rgba(212,168,67,.12);border-radius:var(--R);
+padding:10px 14px;text-align:center;cursor:pointer;transition:all .2s}
+.dc-card:active{transform:scale(.97)}
+.dc-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+.dc-label{font-size:.7rem;color:var(--gold);font-weight:600}
+.dc-streak{font-size:.65rem;color:var(--em)}
+.dc-q{font-size:.82rem;color:var(--txt);margin:6px 0}
+.dc-opts{display:flex;flex-wrap:wrap;gap:5px;justify-content:center}
+.dc-opt{padding:5px 10px;border-radius:8px;border:1px solid rgba(212,168,67,.15);background:rgba(0,0,0,.1);
+font-size:.7rem;color:var(--txt2);cursor:pointer;transition:all .2s}
+.dc-opt:active{transform:scale(.95)}
+.dc-opt.ok{background:rgba(0,200,83,.15);border-color:var(--grn);color:var(--em)}
+.dc-opt.wrong{background:rgba(192,57,43,.15);border-color:var(--red);color:var(--red);opacity:.5}
+.dc-done{font-size:.75rem;color:var(--grn);padding:8px 0}
+[data-theme="andalus"] .dc-card{background:rgba(184,134,11,.06)}
+[data-theme="andalus"] .dc-opt{background:rgba(0,0,0,.03)}
+/* Achievement Badges */
+.badge-section{width:100%;margin:12px 0}
+.badge-title{font-size:.75rem;color:var(--gold);text-align:center;margin-bottom:8px}
+.badge-row{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.badge{width:56px;height:56px;border-radius:12px;display:flex;flex-direction:column;align-items:center;
+justify-content:center;gap:2px;border:1px solid rgba(212,168,67,.08);background:rgba(0,0,0,.15);transition:all .3s}
+.badge.earned{border-color:var(--gold);background:rgba(212,168,67,.08);animation:fu .4s ease-out}
+.badge.locked{opacity:.3;filter:grayscale(1)}
+.badge .b-icon{font-size:1.3rem}
+.badge .b-name{font-size:.38rem;color:var(--txt3);text-align:center;line-height:1.1}
+.badge.earned .b-name{color:var(--txt2)}
+[data-theme="andalus"] .badge{background:rgba(0,0,0,.04)}
+/* Pronunciation button */
+.pron-btn{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;
+border:1px solid rgba(212,168,67,.15);background:rgba(0,0,0,.2);color:var(--gold);font-size:.75rem;
+cursor:pointer;transition:all .15s;vertical-align:middle;margin-inline-start:6px}
+.pron-btn:active{transform:scale(.85)}
+.pron-btn.speaking{animation:pulse .6s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+[data-theme="andalus"] .pron-btn{background:rgba(0,0,0,.05)}
+/* Mystery Scientist */
+.mys-clue{width:100%;padding:14px;border-radius:var(--R);border:1px solid rgba(212,168,67,.1);
+background:rgba(212,168,67,.04);margin:6px 0;text-align:center;font-size:.9rem;color:var(--txt);
+opacity:0;transform:translateY(10px);transition:all .4s}
+.mys-clue.show{opacity:1;transform:translateY(0)}
+.mys-clue .clue-icon{font-size:1.4rem}
+.mys-clue .clue-text{margin-top:4px}
+.mys-guess{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;width:100%;margin:8px 0}
+.mys-opt{padding:8px 14px;border-radius:10px;border:1px solid rgba(212,168,67,.15);
+background:rgba(0,0,0,.1);font-size:.78rem;color:var(--txt2);cursor:pointer;transition:all .2s}
+.mys-opt:active{transform:scale(.95)}
+.mys-opt.ok{background:rgba(0,200,83,.15);border-color:var(--grn);color:var(--em);transform:scale(1.05)}
+.mys-opt.wrong{background:rgba(192,57,43,.15);border-color:var(--red);color:var(--red)}
+.mys-result{text-align:center;padding:12px;font-size:1rem}
+[data-theme="andalus"] .mys-clue{background:rgba(184,134,11,.04)}
+[data-theme="andalus"] .mys-opt{background:rgba(0,0,0,.03)}
+/* Scholar's Passport */
+.passport{width:100%;max-width:340px;margin:0 auto;background:linear-gradient(135deg,rgba(212,168,67,.06),rgba(0,0,0,.05));
+border:2px solid rgba(212,168,67,.15);border-radius:16px;padding:16px;position:relative;overflow:hidden}
+.passport::before{content:'☪';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+font-size:6rem;opacity:.03;pointer-events:none}
+.passport-head{text-align:center;border-bottom:1px solid rgba(212,168,67,.1);padding-bottom:10px;margin-bottom:12px}
+.passport-title{font-family:'Amiri',serif;font-size:1.1rem;color:var(--gold)}
+.passport-sub{font-size:.65rem;color:var(--txt3);margin-top:2px}
+.stamp-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.stamp{aspect-ratio:1;border-radius:10px;border:1px dashed rgba(212,168,67,.12);display:flex;
+flex-direction:column;align-items:center;justify-content:center;gap:1px;transition:all .3s;position:relative;overflow:hidden}
+.stamp.earned{border-style:solid;border-color:var(--gold);background:rgba(212,168,67,.06)}
+.stamp.earned::after{content:'';position:absolute;inset:0;background:radial-gradient(circle,rgba(212,168,67,.05),transparent)}
+.stamp .st-em{font-size:1.2rem}.stamp .st-city{font-size:.35rem;color:var(--txt3);text-align:center;line-height:1}
+.stamp .st-yr{font-size:.35rem;color:var(--goldD)}
+.stamp.locked .st-em{font-size:1rem;opacity:.2}
+.stamp.locked .st-city,.stamp.locked .st-yr{display:none}
+[data-theme="andalus"] .passport{background:linear-gradient(135deg,rgba(184,134,11,.06),rgba(255,255,255,.3));border-color:rgba(184,134,11,.2)}
+.title{font-family:'Amiri',serif;font-size:1.65rem;font-weight:700;text-align:center;line-height:1.4}
+.sub{font-size:.88rem;color:var(--txt2);text-align:center;line-height:1.7}
+
+/* Portal with Islamic rosette rings */
+.pw{position:relative;width:190px;height:190px;margin:6px 0}
+.pr{position:absolute;inset:0;border-radius:50%;border:2px solid var(--gold);opacity:.18}
+.pr:nth-child(1){animation:spin 10s linear infinite;
+  border-image:conic-gradient(var(--gold),transparent,var(--gold),transparent,var(--gold),transparent,var(--gold),transparent) 1}
+.pr:nth-child(2){inset:14px;border-color:var(--grn);animation:spin 14s linear infinite reverse;opacity:.13;
+  border-image:conic-gradient(var(--grn),transparent,var(--grn),transparent,var(--grn),transparent) 1}
+.pr:nth-child(3){inset:28px;border-color:var(--teal);animation:spin 7s linear infinite;opacity:.1;
+  border-style:dashed}
+.pc{position:absolute;inset:38px;border-radius:50%;background:radial-gradient(circle,rgba(212,168,67,.07),transparent 70%);
+display:flex;align-items:center;justify-content:center;flex-direction:column;animation:breathe 3s ease-in-out infinite}
+.py{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:700;color:var(--goldL)}
+.ps{font-size:.7rem;color:var(--txt3);margin-top:2px}
+.pp{position:absolute;inset:0;pointer-events:none;overflow:hidden;border-radius:50%}
+
+/* Buttons */
+.btn{width:100%;padding:14px;border:none;border-radius:var(--R);font-size:1.1rem;font-weight:700;
+font-family:'Tajawal',sans-serif;cursor:pointer;transition:transform .1s;position:relative;overflow:hidden}
+.btn:active{transform:scale(.96)}
+.btn::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.07),transparent 50%);pointer-events:none}
+.bg{background:linear-gradient(135deg,var(--gold),var(--goldD));color:#1a1a2e;box-shadow:0 4px 18px rgba(212,168,67,.18)}
+.bgrn{background:linear-gradient(135deg,var(--grn),var(--grnD));color:#fff;box-shadow:0 4px 18px rgba(76,175,80,.18)}
+.bt{background:linear-gradient(135deg,var(--teal),#00796b);color:#fff;box-shadow:0 4px 18px rgba(0,150,136,.18)}
+.bred{background:linear-gradient(135deg,var(--red),#8e2020);color:#fff}
+.bsm{padding:10px 18px;font-size:.95rem;width:auto;border-radius:12px}
+.bpulse{animation:btnP 2s ease-in-out infinite}
+
+.lang-row{display:flex;gap:5px}
+.lb{padding:5px 11px;border:1px solid rgba(212,168,67,.12);border-radius:7px;background:transparent;
+color:var(--txt3);font-size:.75rem;cursor:pointer;transition:all .2s;font-family:'Tajawal',sans-serif}
+.lb.on{background:rgba(212,168,67,.12);color:var(--gold);border-color:var(--goldD)}
+
+/* Map */
+.mg{display:grid;grid-template-columns:1fr 1fr;gap:9px;width:100%}
+/* Map cards with zellige-inspired Islamic tile pattern */
+.mc{padding:12px 8px;border-radius:13px;background:var(--bg2);border:1px solid rgba(212,168,67,.06);
+text-align:center;cursor:pointer;transition:all .25s;position:relative;overflow:hidden}
+.mc::before{content:'';position:absolute;inset:0;opacity:.03;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpath d='M20 0L40 20L20 40L0 20Z' fill='none' stroke='%23d4a843' stroke-width='.5'/%3E%3Ccircle cx='20' cy='20' r='8' fill='none' stroke='%2300c853' stroke-width='.3'/%3E%3C/svg%3E")}
+.mc::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;
+background:linear-gradient(90deg,transparent,rgba(212,168,67,.15),transparent);transform:scaleX(0);transition:transform .3s}
+.mc.ul:hover::after,.mc.cp::after{transform:scaleX(1)}
+.mc.lk{opacity:.32;cursor:default}.mc.lk:active{animation:shake .4s}
+.mc.ul{border-color:rgba(76,175,80,.18);animation:goldGlow 3s ease-in-out infinite!important}.mc.ul:active{transform:scale(.96)}
+.mc.cp{border-color:rgba(212,168,67,.25)}
+.mc .my{font-size:.68rem;color:var(--goldD)}.mc .me{font-size:1.7rem;margin:3px 0}
+.mc .mn{font-size:.88rem;font-weight:700}.mc .ms{font-size:.72rem;color:var(--txt3);margin-top:2px}
+.mc .mst{position:absolute;top:4px;left:4px;font-size:.8rem;animation:twinkle 2s ease-in-out infinite}
+.mc .ml{font-size:1.2rem;opacity:.2;margin-top:3px}
+
+/* Portrait with Islamic geometric rings */
+.port{width:115px;height:115px;border-radius:50%;background:var(--bg3);border:3px solid var(--goldD);
+display:flex;align-items:center;justify-content:center;font-size:2.8rem;
+box-shadow:0 0 25px rgba(212,168,67,.08),inset 0 0 15px rgba(212,168,67,.03);position:relative}
+.port::after{content:'';position:absolute;inset:-6px;border-radius:50%;
+border:1px solid rgba(212,168,67,.08);animation:spin 20s linear infinite}
+.port::before{content:'';position:absolute;inset:-12px;border-radius:50%;
+border:1px dashed rgba(0,200,83,.06);animation:spin 30s linear infinite reverse}
+
+.card{width:100%;background:var(--bg2);border-radius:var(--R);padding:18px;
+border:1px solid rgba(212,168,67,.06);position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;
+background:linear-gradient(90deg,transparent,rgba(212,168,67,.15),transparent)}
+.card::after{content:'';position:absolute;inset:0;opacity:.015;pointer-events:none;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cpath d='M30 0L60 30L30 60L0 30Z' fill='none' stroke='%23d4a843' stroke-width='.3'/%3E%3Cpath d='M30 12L48 30L30 48L12 30Z' fill='none' stroke='%23d4a843' stroke-width='.2'/%3E%3C/svg%3E")}
+
+/* Story */
+.sp{display:none;flex-direction:column;gap:10px}.sp.on{display:flex}
+.st{font-size:.95rem;line-height:2;text-align:justify}
+.dots{display:flex;gap:5px;justify-content:center}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--txt3);transition:all .3s}
+.dot.on{background:var(--gold);width:22px;border-radius:4px}
+
+/* Challenge */
+.ings{display:flex;gap:7px;flex-wrap:wrap;justify-content:center}
+.ing{padding:10px 14px;border-radius:11px;background:var(--bg3);border:2px solid rgba(212,168,67,.08);
+cursor:pointer;transition:all .25s;font-size:.92rem}
+.ing:active{transform:scale(.95)}
+.ing.sel{border-color:var(--gold);background:rgba(212,168,67,.06);box-shadow:0 0 12px rgba(212,168,67,.08);transform:translateY(-3px)}
+.ing.ok{border-color:var(--em);background:rgba(0,200,83,.06);box-shadow:0 0 12px rgba(0,200,83,.12)}
+.ing.no{border-color:var(--red);background:rgba(192,57,43,.06);animation:shake .4s}
+
+.bkr{width:85px;height:125px;border-radius:0 0 18px 18px;border:3px solid var(--goldD);border-top:none;
+position:relative;overflow:hidden;margin:6px auto}
+.bkr::before{content:'';position:absolute;top:-3px;left:-13px;right:-13px;height:3px;background:var(--goldD);border-radius:3px}
+.blq{position:absolute;bottom:0;width:100%;transition:height .6s ease,background .5s;border-radius:0 0 15px 15px}
+.blq::before{content:'';position:absolute;top:-3px;left:0;right:0;height:6px;
+background:rgba(255,255,255,.08);animation:wave 2s ease-in-out infinite;border-radius:50%}
+.bub{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.bb{position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.15);
+background:rgba(255,255,255,.04);animation:rise linear infinite}
+.rm{font-size:1rem;font-weight:700;text-align:center;min-height:1.4em;padding:6px}
+.rm.ok{color:var(--em)}.rm.no{color:var(--red)}
+
+/* Victory */
+.sr{display:flex;gap:10px;justify-content:center;font-size:2.4rem}
+.si{opacity:.12;transition:all .5s;transform:scale(.4)}
+.si.on{opacity:1;color:var(--goldL);transform:scale(1);filter:drop-shadow(0 0 8px rgba(240,208,96,.4));
+  animation:starBurst .6s cubic-bezier(.17,.67,.29,1.4)}
+
+.sc{width:100%;max-width:250px;border:2px solid var(--gold);border-radius:var(--R);
+padding:22px;text-align:center;position:relative;overflow:hidden;
+background:linear-gradient(135deg,var(--bg3),var(--bg2));box-shadow:0 0 35px rgba(212,168,67,.1)}
+.sc::before{content:'';position:absolute;inset:0;opacity:.035;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cpath d='M40 0L52 28L80 40L52 52L40 80L28 52L0 40L28 28Z' fill='none' stroke='%23d4a843' stroke-width='.5'/%3E%3Ccircle cx='40' cy='40' r='15' fill='none' stroke='%2300c853' stroke-width='.3'/%3E%3Ccircle cx='40' cy='40' r='6' fill='none' stroke='%23d4a843' stroke-width='.2'/%3E%3C/svg%3E")}
+.sc .sb{position:absolute;inset:4px;border:1px solid rgba(212,168,67,.12);border-radius:12px;pointer-events:none}
+/* Crescent ornament on card */
+.sc .crescent{position:absolute;top:6px;right:8px;font-size:.6rem;color:var(--goldD);opacity:.4}
+.sc .se,.sc .sn,.sc .sf,.sc .sy{position:relative;z-index:1}
+.sc .se{font-size:2.6rem;margin-bottom:4px}
+.sc .sn{font-family:'Amiri',serif;font-size:1.2rem;font-weight:700;color:var(--gold)}
+.sc .sf{font-size:.82rem;color:var(--txt2);margin-top:3px}
+.sc .sy{font-size:.72rem;color:var(--txt3);margin-top:2px}
+.shim{position:absolute;top:0;left:-100%;width:50%;height:100%;
+background:linear-gradient(90deg,transparent,rgba(212,168,67,.05),transparent);animation:shimmer 3s ease-in-out infinite}
+
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:50}
+.flash{position:fixed;inset:0;pointer-events:none;z-index:40;opacity:0}
+
+@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+@keyframes breathe{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.85;transform:scale(1.03)}}
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+@keyframes wave{0%,100%{transform:translateX(-4%) scaleY(1)}50%{transform:translateX(4%) scaleY(1.4)}}
+@keyframes rise{0%{bottom:-10%;opacity:0}20%{opacity:.5}100%{bottom:110%;opacity:0}}
+@keyframes shimmer{0%{left:-100%}50%,100%{left:200%}}
+@keyframes twinkle{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.8)}}
+@keyframes btnP{0%,100%{box-shadow:0 4px 18px rgba(212,168,67,.18)}50%{box-shadow:0 4px 28px rgba(212,168,67,.35)}}
+@keyframes fu{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pop{from{opacity:0;transform:scale(.3)}to{opacity:1;transform:scale(1)}}
+@keyframes gflash{0%{opacity:0}50%{opacity:.12}100%{opacity:0}}
+@keyframes pdrift{0%{transform:translate(0,0);opacity:0}10%{opacity:.7}90%{opacity:.2}100%{transform:translate(var(--dx),var(--dy));opacity:0}}
+@keyframes goldGlow{0%,100%{box-shadow:0 0 8px rgba(212,168,67,.1)}50%{box-shadow:0 0 20px rgba(212,168,67,.25)}}
+@keyframes cardFlip{0%{transform:perspective(600px) rotateY(90deg);opacity:0}100%{transform:perspective(600px) rotateY(0);opacity:1}}
+@keyframes slideUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+@keyframes starBurst{0%{transform:scale(0) rotate(0);opacity:0}60%{transform:scale(1.3) rotate(180deg);opacity:1}100%{transform:scale(1) rotate(360deg);opacity:1}}
+.af{animation:fu .6s ease-out both}.ap{animation:pop .5s cubic-bezier(.17,.67,.29,1.4) both}
+.d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}.d4{animation-delay:.4s}.d5{animation-delay:.5s}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<button class="mute" id="muteBtn">🔊</button>
+<canvas id="confetti"></canvas>
+<div class="flash" id="flash"></div>
+<div class="starfield" id="starfield"></div>
+
+<!-- Splash Screen -->
+<div class="splash" id="splash">
+  <div class="splash-star">✦</div>
+  <div class="splash-txt">آلة الزمن</div>
+  <div class="splash-bar"><div class="splash-fill"></div></div>
+</div>
+
+<!-- Onboarding Tutorial -->
+<div class="onboard gone" id="onboard">
+  <div class="onboard-step" id="obStep"></div>
+  <div class="onboard-dots" id="obDots"></div>
+  <button class="btn bg bsm" id="obBtn" style="min-width:140px">→</button>
+  <div class="onboard-skip" id="obSkip"></div>
+</div>
+
+<!-- Mosque Silhouette Footer -->
+<div class="mosque-footer">
+<svg viewBox="0 0 400 40" preserveAspectRatio="none"><path d="M0 40 L0 30 L20 30 L25 20 L30 30 L50 30 L50 25 L55 15 L57 10 L59 15 L60 8 L61 15 L63 10 L65 15 L70 25 L70 30 L100 30 L105 22 L110 30 L150 30 L155 20 L157 12 L158 8 L159 5 L160 3 L161 5 L162 8 L163 12 L165 20 L170 30 L200 30 L205 25 L210 30 L230 30 L235 22 L240 30 L280 30 L285 20 L287 12 L288 8 L289 5 L290 3 L291 5 L292 8 L293 12 L295 20 L300 30 L330 30 L335 25 L337 18 L340 25 L345 30 L370 30 L375 22 L380 30 L400 30 L400 40 Z" fill="currentColor" stroke="none"/><circle cx="160" cy="2" r="1.5"/><circle cx="290" cy="2" r="1.5"/></svg>
+</div>
+
+<!-- Persistent Top Bar: Basmala + Language -->
+<div class="top-bar" id="topBar">
+  <div class="top-left">
+    <div class="theme-row" id="themeRow">
+      <button class="theme-btn tb-as" data-theme="astrolabe">🔭</button>
+      <button class="theme-btn tb-kh on" data-theme="khawarizmi">📐</button>
+      <button class="theme-btn tb-ih" data-theme="haytham">💡</button>
+      <button class="theme-btn tb-an" data-theme="andalus">☀️</button>
+    </div>
+    <div class="sep"></div>
+    <div class="num-toggle" id="numToggle">
+      <button class="num-btn" data-num="hindu">١٢٣</button>
+      <button class="num-btn on" data-num="western">123</button>
+    </div>
+  </div>
+  <div class="basmala">﷽ <span class="ver">v1.0</span></div>
+  <div class="lang-row" id="langRow">
+    <button class="lb on" data-lang="ar">عربي</button>
+    <button class="lb" data-lang="fr">FR</button>
+    <button class="lb" data-lang="en">EN</button>
+  </div>
+</div>
+<button class="map-nav" id="mapNav" aria-label="Journey Map">🗺️</button>
+
+<!-- HOME -->
+<div class="screen active" id="sHome" role="main" aria-label="Home"><div class="cnt">
+  <div class="star-sep af d1">✦ ✦ ✦</div>
+  <div class="title af d2" id="hTitle">آلة الزمن</div>
+  <div class="divider af d2"></div>
+  <div class="sub af d3" id="hSub">سافر عبر الزمن واكتشف علماء المسلمين الذين غيّروا العالم</div>
+  <div class="pw ap d3">
+    <div class="pr"></div><div class="pr"></div><div class="pr"></div>
+    <div class="pc"><div class="py" id="pYear">٧٨٠</div><div class="ps" id="pSub">هجري</div></div>
+    <div class="pp" id="pp"></div>
+  </div>
+  <button class="btn bg bpulse af d4" id="btnStart">🚀 ابدأ الرحلة</button>
+  <div class="dc-card af d4" id="dcCard" style="display:none">
+    <div class="dc-head"><span class="dc-label" id="dcLabel">🎯 تحدي اليوم</span><span class="dc-streak" id="dcStreak"></span></div>
+    <div class="dc-q" id="dcQ"></div>
+    <div class="dc-opts" id="dcOpts"></div>
+    <div class="dc-done" id="dcDone" style="display:none"></div>
+  </div>
+  <div class="af d5" style="text-align:center;display:flex;align-items:center;justify-content:center;gap:6px"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgd2lkdGg9IjYuMDAwbW0iIGhlaWdodD0iMy4yMTRtbSIgdmlld0JveD0iLTkyLjgyMDA4NCAxNzkuOTc1NjMyIDYuMDAwMDAwIDMuMjE0MDk2Ij4KICAgIDxwYXRoIHN0eWxlPSJzdHJva2U6bm9uZTtmaWxsOiNkNGE4NDM7ZmlsbC1ydWxlOmV2ZW5vZGQiIGQ9Ik0tOTAuMjY5MTgsMTgwLjcwNjY1Qy05MC4yNzAwOTYsMTgwLjcwMzY3NCwtOTAuMjgwNjkzLDE4MC41NTQ4NCwtOTAuMjkyNzI1LDE4MC4zNzU5Qy05MC4zMDQ3NTYsMTgwLjE5Njk2LC05MC4zMTU2MDUsMTgwLjA0MjI4MiwtOTAuMzE2ODI2LDE4MC4wMzIxNjZMLTkwLjMxOTA0NiwxODAuMDEzNzYzTC05MC4yOTYyOCwxODAuMDEzNzYzQy05MC4yODM3NTIsMTgwLjAxMzc0OCwtOTAuMjU4NjksMTgwLjAxMjExNSwtOTAuMjQwNTg1LDE4MC4wMTAxMTdDLTkwLjIyMjQ4MSwxODAuMDA4MTE4LC05MC4xOTE4NDEsMTgwLjAwNTY0NiwtOTAuMTcyNTAxLDE4MC4wMDQ2MDhMLTkwLjEzNzM0NCwxODAuMDAyNzMxTC05MC4xMjg3MzgsMTgwLjEzMTIyNkMtOTAuMTI0MDA4LDE4MC4yMDE4ODksLTkwLjExOTEzMywxODAuMjY5Njk5LC05MC4xMTc4OTcsMTgwLjI4MTkyMUwtOTAuMTE1NjYyLDE4MC4zMDQxMjNMLTkwLjA1NDk3LDE4MC4yMDYzOUMtOTAuMDIxNTkxLDE4MC4xNTI2MzQsLTg5Ljk3NzM3OSwxODAuMDgxMzksLTg5Ljk1NjcyNiwxODAuMDQ4MDY1TC04OS45MTkxODIsMTc5Ljk4NzQ4OEwtODkuODgzMzI0LDE3OS45ODUwNjJDLTg5Ljg2MzYwMiwxNzkuOTgzNzM0LC04OS44MjQ4MDYsMTc5Ljk4MDc1OSwtODkuNzk3MTEyLDE3OS45Nzg0NTVDLTg5Ljc2OTQyNCwxNzkuOTc2MTY2LC04OS43MzkzNDIsMTc5Ljk3NDg4NCwtODkuNzMwMjcsMTc5Ljk3NTYzMkwtODkuNzEzNzgzLDE3OS45NzY5NzRMLTg5LjgyNTY1MywxODAuMTQ1OTk2TC04OS45Mzc1MzEsMTgwLjMxNTAzM0wtODkuNzk2NjM4LDE4MC40OTA2MDFDLTg5LjcxOTE0NywxODAuNTg3MTU4LC04OS42NTU3NDYsMTgwLjY2NzUyNiwtODkuNjU1NzQ2LDE4MC42NjkxNzRDLTg5LjY1NTc0NiwxODAuNjcwODM3LC04OS42NTczNTYsMTgwLjY3MjE5NSwtODkuNjU5MzE3LDE4MC42NzIxOTVDLTg5LjY3NjE1NSwxODAuNjcyMTk1LC04OS44NTY2MjgsMTgwLjY4NDQ2NCwtODkuODYxNDA0LDE4MC42ODU5MjhDLTg5Ljg2NTg4MywxODAuNjg3MzE3LC04OS44OTYxNjQsMTgwLjY1MTAxNiwtODkuOTcxMjc1LDE4MC41NTQxOTlDLTkwLjAyODMwNSwxODAuNDgwNjk4LC05MC4wNzYzOTMsMTgwLjQyMTQ0OCwtOTAuMDc4MTQsMTgwLjQyMjUxNkMtOTAuMDc5ODg3LDE4MC40MjM1OTksLTkwLjA4Njc0NiwxODAuNDMzOTc1LC05MC4wOTMzODQsMTgwLjQ0NTU4N0wtOTAuMTA1NDYxLDE4MC40NjY2NzVMLTkwLjA5NzM3NCwxODAuNTgxNzI2Qy05MC4wOTE0MDgsMTgwLjY2NjU4LC05MC4wOTA0MzksMTgwLjY5NzQ3OSwtOTAuMDkzNjc0LDE4MC42OTk0NzhDLTkwLjA5OTE2NywxODAuNzAyODY2LC05MC4xMzcwMzIsMTgwLjcwNjEsLTkwLjIxMDQ4LDE4MC43MDk0NDJDLTkwLjI1NzUxNSwxODAuNzExNTc4LC05MC4yNjc4MDcsMTgwLjcxMTA5LC05MC4yNjkxOCwxODAuNzA2NjV6Ii8+CiAgICA8cGF0aCBzdHlsZT0ic3Ryb2tlOm5vbmU7ZmlsbDojZDRhODQzO2ZpbGwtcnVsZTpldmVub2RkIiBkPSJNLTg5LjE5MDk3MSwxODAuNzY4NkMtODkuMjY3ODY4LDE4MC43NTMyODEsLTg5LjMxMTA1LDE4MC43Mzk5NzUsLTg5LjM2MDAzOSwxODAuNzE2NTIyQy04OS4zOTM5MDYsMTgwLjcwMDMwMiwtODkuNDcxNTI3LDE4MC42NTEyNDUsLTg5LjQ4MDU3NiwxODAuNjQwMzM1Qy04OS40ODQ3MTgsMTgwLjYzNTM0NSwtODkuNDgyOTcxLDE4MC42Mjc4MDgsLTg5LjQ0NjM3MywxODAuNDkzMDczQy04OS40NDAxNCwxODAuNDcwMTA4LC04OS40Mjg0MjksMTgwLjQ3MzAwNywtODkuNDA0MTYsMTgwLjUwMzUxQy04OS4zNTAwNiwxODAuNTcxNTAzLC04OS4yNjczMDMsMTgwLjYyMjQwNiwtODkuMTg5MzMxLDE4MC42MzU2NjZDLTg5LjE1Mjk0NiwxODAuNjQxODQ2LC04OS4xNDk3MzQsMTgwLjY0MTg0NiwtODkuMTI5Mjk1LDE4MC42MzU0MDZDLTg5LjA5MzQ2LDE4MC42MjQxMTUsLTg5LjA3NTQ0NywxODAuNTk3NzQ4LC04OS4wODE2MDQsMTgwLjU2NTU4MkMtODkuMDg1NzYyLDE4MC41NDM3OTMsLTg5LjEyMTkwMiwxODAuNTE0MjIxLC04OS4xODMxODksMTgwLjQ4MjQyMkMtODkuMjU0OTQ0LDE4MC40NDUxOSwtODkuMjc2ODEsMTgwLjQzMDkwOCwtODkuMzA5NTU1LDE4MC4zOTk5MzNDLTg5LjM2NTUyNCwxODAuMzQ3LC04OS4zODI5NTcsMTgwLjI5MTgwOSwtODkuMzY3MjAzLDE4MC4yMTc0NTNDLTg5LjM0OTgzOCwxODAuMTM1NDY4LC04OS4yOTg2OTEsMTgwLjA4NDk3NiwtODkuMjA3MzUyLDE4MC4wNTk2MTZDLTg5LjE2OTA2LDE4MC4wNDg5ODEsLTg5LjA5OTIxMywxODAuMDQ4Mjk0LC04OS4wNTM0NzQsMTgwLjA1ODEwNUMtODguOTgwMzcsMTgwLjA3Mzc3NiwtODguOTA2MjEyLDE4MC4xMDQ5MzUsLTg4Ljg0MzgwMywxODAuMTQ2MjFDLTg4LjgxMDc0NSwxODAuMTY4MDYsLTg4LjgwNzQ5NSwxODAuMTcxMjk1LC04OC44MDk0ODYsMTgwLjE4MDE3NkMtODguODEwNjk5LDE4MC4xODU1NzcsLTg4LjgyMDAwNywxODAuMjIwNTA1LC04OC44MzAxNzcsMTgwLjI1Nzc4MkMtODguODQ3OTc3LDE4MC4zMjMwNDQsLTg4Ljg0OTAxNCwxODAuMzI1NTE2LC04OC44NTgxMTYsMTgwLjMyNDUwOUMtODguODYzMzEyLDE4MC4zMjM5NDQsLTg4Ljg3MDg5NSwxODAuMzE4NzEsLTg4Ljg3NDk2MiwxODAuMzEyODk3Qy04OC44ODYwNjMsMTgwLjI5NzAxMiwtODguOTMyNjc4LDE4MC4yNTIyNDMsLTg4Ljk1MTg1MSwxODAuMjM5MDQ0Qy04OS4wMDMzMjYsMTgwLjIwMzYyOSwtODkuMDcwMzIsMTgwLjE4MTMwNSwtODkuMTEzMzg4LDE4MC4xODUyMTFDLTg5LjE2NjM1OSwxODAuMTkwMDE4LC04OS4xOTU4MzksMTgwLjIyNzU3LC04OS4xNzcwNzgsMTgwLjI2NjM1N0MtODkuMTY4MTA2LDE4MC4yODQ5MTIsLTg5LjE0NDE4LDE4MC4zMDIxMzksLTg5LjA3ODgzNSwxODAuMzM3MDgyQy04OC45NzUyMiwxODAuMzkyNTE3LC04OC45MjQ2NjcsMTgwLjQzNDkyMSwtODguOTAwOTkzLDE4MC40ODYyOThDLTg4Ljg4ODA5MiwxODAuNTE0MjgyLC04OC44ODUxMDksMTgwLjU2NjA4NiwtODguODk0Mjk1LDE4MC42MDI2NjFDLTg4LjkyMTU0NywxODAuNzExMjEyLC04OS4wMTA3MDQsMTgwLjc3Mzg2NSwtODkuMTM1OTcxLDE4MC43NzI0OTFDLTg5LjE1NjYzOSwxODAuNzcyMjYzLC04OS4xODEzODksMTgwLjc3MDUwOCwtODkuMTkwOTcxLDE4MC43Njg2eiIvPgogICAgPHBhdGggc3R5bGU9InN0cm9rZTpub25lO2ZpbGw6I2Q0YTg0MztmaWxsLXJ1bGU6ZXZlbm9kZCIgZD0iTS05MS4xMDQxMTEsMTgwLjkwMzYxQy05MS4xMzQ4NTcsMTgwLjgzNDkxNSwtOTEuMTk4OTQ0LDE4MC42OTE3NTcsLTkxLjI0NjUyOSwxODAuNTg1NDk1Qy05MS4yOTQxMjEsMTgwLjQ3OTIzMywtOTEuMzMyNTQyLDE4MC4zOTE3ODUsLTkxLjMzMTkxNywxODAuMzkxMTU5Qy05MS4zMzAyNjksMTgwLjM4OTUxMSwtOTEuMjQ4NTU4LDE4MC4zNTI2MTUsLTkxLjEzNTI3NywxODAuMzAyMzY4Qy05MS4wODA5NTYsMTgwLjI3ODI3NSwtOTEuMDIxNzgyLDE4MC4yNTM5NTIsLTkxLjAwMzc4NCwxODAuMjQ4MzA2Qy05MC45MjM1ODQsMTgwLjIyMzE2LC05MC44NDg3MTcsMTgwLjIzNDM0NCwtOTAuNzk5NTA3LDE4MC4yNzg4MjRDLTkwLjc3NTgzMywxODAuMzAwMjE3LC05MC43NTc5NjUsMTgwLjMyOTk3MSwtOTAuNzQyOTk2LDE4MC4zNzI5NTVDLTkwLjczMjk4NiwxODAuNDAxNzAzLC05MC43MzExOTQsMTgwLjQxMjUwNiwtOTAuNzMxMjYyLDE4MC40NDM2OEMtOTAuNzMxMzM5LDE4MC40NzQwNzUsLTkwLjczMzE0NywxODAuNDg1MTIzLC05MC43NDE2MzgsMTgwLjUwNzE4N0MtOTAuNzUzMTY2LDE4MC41MzcxNCwtOTAuNzcyMTYzLDE4MC41NzIwMDYsLTkwLjc4MDkxNCwxODAuNTc5MjY5Qy05MC43ODQwOTYsMTgwLjU4MTkwOSwtOTAuNzg2Njk3LDE4MC41ODU0NDksLTkwLjc4NjY5NywxODAuNTg3MTI4Qy05MC43ODY2OTcsMTgwLjU5MDQ1NCwtOTAuNzUwNzYzLDE4MC42MDk3NTYsLTkwLjU4MTQyMSwxODAuNjk3Mzg4Qy05MC41MjA3MDYsMTgwLjcyODc5LC05MC40NjY5NTcsMTgwLjc1NzAzNCwtOTAuNDYxOTc1LDE4MC43NjAxNDdDLTkwLjQ1MzMsMTgwLjc2NTU0OSwtOTAuNDU2OTI0LDE4MC43Njc1NzgsLTkwLjU0NzE4OCwxODAuODA3OTgzQy05MC41OTkwMzcsMTgwLjgzMTE5MiwtOTAuNjQ1MTg3LDE4MC44NTAyMiwtOTAuNjQ5NzUsMTgwLjg1MDI2NkMtOTAuNjU0MzEyLDE4MC44NTAzMjcsLTkwLjcyMDEzMSwxODAuODE2NDgzLC05MC43OTYwMTMsMTgwLjc3NTA1NUwtOTAuOTMzOTc1LDE4MC42OTk3NjhMLTkwLjk2MDA2OCwxODAuNzExNzkyQy05MC45NzQ0MTksMTgwLjcxODM5OSwtOTAuOTg2NTQ5LDE4MC43MjQwNiwtOTAuOTg3MDE1LDE4MC43MjQzNUMtOTAuOTg3NDg4LDE4MC43MjQ2NTUsLTkwLjk2NTMwMiwxODAuNzc1MDg1LC05MC45Mzc3MjEsMTgwLjgzNjQxMUMtOTAuOTEwMTMzLDE4MC44OTc3NTEsLTkwLjg4NzA5MywxODAuOTUwNDI0LC05MC44ODY1MTMsMTgwLjk1MzQ3NkMtOTAuODg1Nzg4LDE4MC45NTcyOTEsLTkwLjkwOTcwNiwxODAuOTY5OTEsLTkwLjk2Mjg2LDE4MC45OTM3NzRDLTkxLjAwNTQzMiwxODEuMDEyODc4LC05MS4wNDIwNTMsMTgxLjAyODUxOSwtOTEuMDQ0MjM1LDE4MS4wMjg1MTlDLTkxLjA0NjQyNSwxODEuMDI4NTE5LC05MS4wNzMzNjQsMTgwLjk3MjMyMSwtOTEuMTA0MTExLDE4MC45MDM2MXpNLTkwLjk5NDI3LDE4MC41ODU2MzJDLTkwLjkyODExNiwxODAuNTU0MTg0LC05MC45MDMxNjgsMTgwLjUyNjkwMSwtOTAuOTAyOTc3LDE4MC40ODU4MDlDLTkwLjkwMjgwMiwxODAuNDQ5MDY2LC05MC45MjY1OTgsMTgwLjQwNjM4NywtOTAuOTUzMTc4LDE4MC4zOTU3NTJDLTkwLjk4MjI1NCwxODAuMzg0MTA5LC05MS4wMDUxOCwxODAuMzg4NTA0LC05MS4wNzM3ODQsMTgwLjQxODg4NEMtOTEuMDk1ODg2LDE4MC40Mjg2NjUsLTkxLjExNDQ0MSwxODAuNDM3MTE5LC05MS4xMTUwMjEsMTgwLjQzNzY2OEMtOTEuMTE2NDE3LDE4MC40MzkwMTEsLTkxLjA0MTQyLDE4MC42MDYzNTQsLTkxLjAzOTQyMSwxODAuNjA2MzU0Qy05MS4wMzg1NjcsMTgwLjYwNjM1NCwtOTEuMDE4MjQyLDE4MC41OTcwMzEsLTkwLjk5NDI3LDE4MC41ODU2MzJ6Ii8+CiAgICA8cGF0aCBzdHlsZT0ic3Ryb2tlOm5vbmU7ZmlsbDojZDRhODQzO2ZpbGwtcnVsZTpldmVub2RkIiBkPSJNLTg4LjMyODg3MywxODEuMTgxMjlDLTg4LjM2NzAzNSwxODEuMTU0OCwtODguMzk5MDE3LDE4MS4xMzIzNTUsLTg4LjM5OTk0OCwxODEuMTMxNDI0Qy04OC40MDA4ODcsMTgxLjEzMDQ5MywtODguMzYyMTYsMTgxLjA3MjcyMywtODguMzEzODg5LDE4MS4wMDMwNTJDLTg4LjI2NTYyNSwxODAuOTMzMzY1LC04OC4yMjc1MzksMTgwLjg3NTEzNywtODguMjI5MjU2LDE4MC44NzM2NDJDLTg4LjIzMjI2MiwxODAuODcxMDE3LC04OC4zNjQ2NywxODAuNzc5MjUxLC04OC40MDEyMDcsMTgwLjc1NDQ1NkwtODguNDE4OTkxLDE4MC43NDI0MDFMLTg4LjUwNTc4MywxODAuODY3OTk2Qy04OC41NTM1MiwxODAuOTM3MDczLC04OC41OTQwOTMsMTgwLjk5MzYwNywtODguNTk1OTQsMTgwLjk5MzYyMkMtODguNTk5NjcsMTgwLjk5MzY2OCwtODguNzQxNjkyLDE4MC44OTY2NTIsLTg4Ljc0MTY5MiwxODAuODk0MDU4Qy04OC43NDE2OTIsMTgwLjg5MjczMSwtODguNTYyOTU4LDE4MC42MzQwMTgsLTg4LjM4MjM4NSwxODAuMzczOTc4Qy04OC4zNjI0MTEsMTgwLjM0NTIxNSwtODguMzQ0NTY2LDE4MC4zMjExMzYsLTg4LjM0MjcxMiwxODAuMzIwNDY1Qy04OC4zNDAzMzIsMTgwLjMxOTYxMSwtODguMjI5NjE0LDE4MC4zOTM5MjEsLTg4LjE5NjMwNCwxODAuNDE4NzQ3Qy04OC4xOTU2MzMsMTgwLjQxOTI1LC04OC4yMjY1NzgsMTgwLjQ2NTA0MiwtODguMjY1MDc2LDE4MC41MjA1MDhDLTg4LjMwMzU3NCwxODAuNTc1OTc0LC04OC4zMzU4OTksMTgwLjYyMzY0MiwtODguMzM2OTA2LDE4MC42MjY0NUMtODguMzM4MDU4LDE4MC42Mjk2NTQsLTg4LjMwNDY4LDE4MC42NTUwMTQsLTg4LjI0NjE3OCwxODAuNjk1MzI4Qy04OC4xOTUyNzQsMTgwLjczMDQyMywtODguMTUyLDE4MC43NTk2NzQsLTg4LjE1MDAwOSwxODAuNzYwMzNDLTg4LjE0ODAyNiwxODAuNzYxMDAyLC04OC4xMTQ0MSwxODAuNzE1MzAyLC04OC4wNzUzMTcsMTgwLjY1ODc2OEMtODguMDM2MjI0LDE4MC42MDIyNDksLTg4LjAwMjgwOCwxODAuNTU2LC04OC4wMDEwNiwxODAuNTU2Qy04Ny45OTY1MDYsMTgwLjU1NiwtODcuODU2Njg5LDE4MC42NTI5MjQsLTg3Ljg1NjY4OSwxODAuNjU2MDY3Qy04Ny44NTY2ODksMTgwLjY2MTUzLC04OC4yNTE5MjMsMTgxLjIyOTczNiwtODguMjU1NjE1LDE4MS4yMjk1OTlDLTg4LjI1Nzc1MSwxODEuMjI5NTIzLC04OC4yOTA3MSwxODEuMjA3Nzc5LC04OC4zMjg4NzMsMTgxLjE4MTI5eiIvPgogICAgPHBhdGggc3R5bGU9InN0cm9rZTpub25lO2ZpbGw6I2Q0YTg0MztmaWxsLXJ1bGU6ZXZlbm9kZCIgZD0iTS05MS43NTQxNTgsMTgxLjUzMTQ0OEMtOTEuODg4NzcxLDE4MS41MTIxNjEsLTkyLjA0MzA3NiwxODEuMzY2ODgyLC05Mi4wODI2NDksMTgxLjIyMjE4M0MtOTIuMDkzMjg1LDE4MS4xODMyNzMsLTkyLjA5MjQ5OSwxODEuMTA5MTc3LC05Mi4wODEwMzIsMTgxLjA2OTM2NkMtOTIuMDQ5MDQyLDE4MC45NTgzMTMsLTkxLjkzNTM4NywxODAuODQ2MzI5LC05MS44MjQ2OTIsMTgwLjgxNjc4OEMtOTEuNzg1Mzc4LDE4MC44MDYzMDUsLTkxLjcwNDE1NSwxODAuODA3NDE5LC05MS42NjM5NTYsMTgwLjgxODk4NUMtOTEuNjAzNTQ2LDE4MC44MzYzOTUsLTkxLjU0MTQyLDE4MC44NzU1NDksLTkxLjQ4NDIxNSwxODAuOTMyMjgxQy05MS40MzA2MTEsMTgwLjk4NTQ1OCwtOTEuMzk0NzA3LDE4MS4wNDAxNjEsLTkxLjM3NDk1NCwxODEuMDk4NzU1Qy05MS4zNjQ4OTksMTgxLjEyODYwMSwtOTEuMzYyMzg5LDE4MS4xNDMwNjYsLTkxLjM2MDc5NCwxODEuMTgwNDJDLTkxLjM1ODYwNCwxODEuMjMxODg4LC05MS4zNjI4NzcsMTgxLjI2MDMxNSwtOTEuMzc5MTM1LDE4MS4zMDIzMzhDLTkxLjQwMzIyMSwxODEuMzY0NjI0LC05MS40NjY0NjksMTgxLjQzOTk0MSwtOTEuNTMwNDM0LDE4MS40ODI0OThDLTkxLjU5ODg4NSwxODEuNTI4MDQ2LC05MS42Njk3MzksMTgxLjU0MzU0OSwtOTEuNzU0MTU4LDE4MS41MzE0NDh6TS05MS42MDUwMTksMTgxLjM2MzUyNUMtOTEuNTQ1OTE0LDE4MS4zMzY4NTMsLTkxLjUxMTk3MSwxODEuMjY4OTUxLC05MS41MjYzNiwxODEuMjA2MTc3Qy05MS41NDgyMzMsMTgxLjExMDczMywtOTEuNjYyNDk4LDE4MC45OTY1OTcsLTkxLjc2MDI4NCwxODAuOTcyNTA0Qy05MS44MDUxNzYsMTgwLjk2MTQ1NiwtOTEuODQ2NTQyLDE4MC45NzI0ODgsLTkxLjg4NDA5NCwxODEuMDA1NTM5Qy05MS45MDQyODIsMTgxLjAyMzMxNSwtOTEuOTIzNzA2LDE4MS4wNTk2OTIsLTkxLjkyNzQ2LDE4MS4wODY3NzdDLTkxLjkzNTMwMywxODEuMTQzMzI2LC05MS45MDAxMDEsMTgxLjIxNjE4NywtOTEuODMyMjQ1LDE4MS4yODM4NTlDLTkxLjc1MTY0OCwxODEuMzY0MjU4LC05MS42NzAwMjEsMTgxLjM5Mjg2OCwtOTEuNjA1MDE5LDE4MS4zNjM1MjV6Ii8+CiAgICA8cGF0aCBzdHlsZT0ic3Ryb2tlOm5vbmU7ZmlsbDojZDRhODQzO2ZpbGwtcnVsZTpldmVub2RkIiBkPSJNLTkwLjM3MDgyNywxODEuNjI1MDQ2Qy05MC4zODI1MzgsMTgxLjYyMDMxNiwtOTAuMzkwODYyLDE4MS42MDY1OTgsLTkwLjQxNjY5NSwxODEuNTQ5NDU0Qy05MC40NzQzODgsMTgxLjQyMTg0NCwtOTAuNDc0ODA4LDE4MS40MjEwODIsLTkwLjQ4ODQ5NSwxODEuNDE4MzVDLTkwLjQ5NTQwNywxODEuNDE2OTYyLC05MC41NDkzMTYsMTgxLjQxNTgzMywtOTAuNjA4MzA3LDE4MS40MTU4MzNMLTkwLjcxNTU1MywxODEuNDE1ODMzTC05MC43MjM4NjksMTgxLjQzMDYzNEMtOTAuNzM1Nzg2LDE4MS40NTE4MjgsLTkwLjc3MTU2MSwxODEuNDg0MjgzLC05MC43OTQ5OTEsMTgxLjQ5NTEzMkMtOTAuODYwMDM5LDE4MS41MjUyNjksLTkwLjkzMTE5LDE4MS41MTI2OTUsLTkwLjk3NzE2NSwxODEuNDYyOTUyQy05MC45ODg1MDMsMTgxLjQ1MDY4NCwtOTEuMDAzMDE0LDE4MS40MzAyNjcsLTkxLjAwOTM5OSwxODEuNDE3NTg3Qy05MS4wMTk3NDUsMTgxLjM5NzA2NCwtOTEuMDIxMDE5LDE4MS4zOTA3MDEsLTkxLjAyMTAxOSwxODEuMzU5NjhDLTkxLjAyMTAxOSwxODEuMzI4NDc2LC05MS4wMTk3MTQsMTgxLjMyMjA2NywtOTEuMDA4NTkxLDE4MS4yOTg1NjlDLTkwLjk5MjkyLDE4MS4yNjU0ODgsLTkwLjk2NTI3OSwxODEuMjM4MTEzLC05MC45MzA4NjIsMTgxLjIyMTU4OEMtOTAuOTA3NjY5LDE4MS4yMTA0NjQsLTkwLjkwMTAxNiwxODEuMjA5MDc2LC05MC44Njk5NjUsMTgxLjIwODg2MkMtOTAuODA3OTMsMTgxLjIwODQzNSwtOTAuNzY0NTM0LDE4MS4yMjk5NSwtOTAuNzMyNDc1LDE4MS4yNzcwMjNMLTkwLjcxNTA0MiwxODEuMzAyNjEyTC05MC41NzU2MTUsMTgxLjMwNDA3N0MtOTAuNDM2MTg4LDE4MS4zMDU1MjcsLTkwLjQzNjE4LDE4MS4zMDU1NDIsLTkwLjQxNjgxNywxODEuMzE1MTdDLTkwLjM5ODM2OSwxODEuMzI0MzU2LC05MC4zOTY0LDE4MS4zMjY5MiwtOTAuMzc1MzA1LDE4MS4zNjkzNTRDLTkwLjM2MzEyMSwxODEuMzkzODYsLTkwLjMzNDU0MSwxODEuNDU1NzM0LC05MC4zMTE3OSwxODEuNTA2ODUxQy05MC4yODkwNCwxODEuNTU3OTgzLC05MC4yNjc4NzYsMTgxLjYwMzcxNCwtOTAuMjY0NzYzLDE4MS42MDg0OUMtOTAuMjUzMTQzLDE4MS42MjYzMjgsLTkwLjI1OTI4NSwxODEuNjI4ODc2LC05MC4zMTMwODcsMTgxLjYyODYxNkMtOTAuMzQwMzE3LDE4MS42Mjg0NzksLTkwLjM2NjI5NSwxODEuNjI2ODYyLC05MC4zNzA4MjcsMTgxLjYyNTA0NnoiLz4KICAgIDxwYXRoIHN0eWxlPSJzdHJva2U6bm9uZTtmaWxsOiNkNGE4NDM7ZmlsbC1ydWxlOmV2ZW5vZGQiIGQ9Ik0tODcuNjg5MDQxLDE4MS44MTQ3MTNDLTg3Ljc4NjkwMywxODEuNzkwMzE0LC04Ny44NzAzNjksMTgxLjcxNTY2OCwtODcuOTIxMjcyLDE4MS42MDcwNEMtODcuOTYxMTEzLDE4MS41MjIwMzQsLTg3Ljk2MjM1NywxODEuNDI3ODExLC04Ny45MjQ3MTMsMTgxLjM0NzM2NkMtODcuODgwMzAyLDE4MS4yNTI0NTcsLTg3Ljc3MDQ2MiwxODEuMTYwODg5LC04Ny42NTM5OTIsMTgxLjEyMTY4OUMtODcuNjQwNTAzLDE4MS4xMTcxNTcsLTg3LjYxMTc0LDE4MS4xMTA3NDgsLTg3LjU5MDA4OCwxODEuMTA3NDUyQy04Ny41NDM4NjEsMTgxLjEwMDQzMywtODcuNTAwNzMyLDE4MS4xMDQ0MTYsLTg3LjQ1MTk3MywxODEuMTIwMjI0Qy04Ny4zNDk0OCwxODEuMTUzNDU4LC04Ny4yNTE4NjIsMTgxLjI2NjI5NiwtODcuMjIxNzQ4LDE4MS4zODYzNTNDLTg3LjIwNzcyNiwxODEuNDQyMjc2LC04Ny4yMTU3NjcsMTgxLjUyMjg0MiwtODcuMjQwODM3LDE4MS41Nzc1OTFDLTg3LjI3NzA5MiwxODEuNjU2Nzk5LC04Ny4zNTkzOSwxODEuNzM0MjY4LC04Ny40NTgyODIsMTgxLjc4MjI4OEMtODcuNTE2OTc1LDE4MS44MTA3OTEsLTg3LjU1MDU3NSwxODEuODE5MzA1LC04Ny42MTA3NDgsMTgxLjgyMDg3N0MtODcuNjQ4ODExLDE4MS44MjE4ODQsLTg3LjY2NTU0MywxODEuODIwNTcyLC04Ny42ODkwNDEsMTgxLjgxNDcxM3pNLTg3LjYwNzEyNCwxODEuNjQ1ODEzQy04Ny41MjEzMDEsMTgxLjYyNDU3MywtODcuNDE2ODkzLDE4MS41NDI4MDEsLTg3LjM4MjcyMSwxODEuNDcwMDYyQy04Ny4zNjg0NzcsMTgxLjQzOTc0MywtODcuMzY2Njg0LDE4MS4zOTU0NzcsLTg3LjM3ODQ0MSwxODEuMzY0MTUxQy04Ny4zOTEwOSwxODEuMzMwNDQ0LC04Ny40MTQzNjgsMTgxLjMwNDE2OSwtODcuNDQ1ODA4LDE4MS4yODgxMDFDLTg3LjQ3MDU1MSwxODEuMjc1NDUyLC04Ny40NzQ0MDMsMTgxLjI3NDY0MywtODcuNTA3NTg0LDE4MS4yNzUwNEMtODcuNTUwODg4LDE4MS4yNzU1NDMsLTg3LjU5MDU0NiwxODEuMjg3MzU0LC04Ny42MzU3NzMsMTgxLjMxMzE4N0MtODcuNzA1MjQ2LDE4MS4zNTI4OSwtODcuNzU1ODk4LDE4MS40MDA3NzIsLTg3Ljc3OTk3NiwxODEuNDQ5NTM5Qy04Ny43OTM5MzgsMTgxLjQ3Nzc5OCwtODcuNzk0NzE2LDE4MS40ODEzNTQsLTg3Ljc5NDcxNiwxODEuNTE2MzU3Qy04Ny43OTQ3MTYsMTgxLjU0OTI4NiwtODcuNzkzNTI2LDE4MS41NTU2NjQsLTg3Ljc4MzgwNiwxODEuNTc0NjMxQy04Ny43NTA0MTIsMTgxLjYzOTgzMiwtODcuNjg2Njg0LDE4MS42NjU0OTcsLTg3LjYwNzEyNCwxODEuNjQ1ODEzeiIvPgogICAgPHBhdGggc3R5bGU9InN0cm9rZTpub25lO2ZpbGw6I2Q0YTg0MztmaWxsLXJ1bGU6ZXZlbm9kZCIgZD0iTS05MS4xNzk4MTcsMTgyLjAzOTQ3NEMtOTEuMjQwODI5LDE4Mi4wMTUwNiwtOTEuMjgzNTYyLDE4MS45NTQ3NDIsLTkxLjI4NDEyNiwxODEuODkyMjI3Qy05MS4yODQ1MzgsMTgxLjg0Njg3OCwtOTEuMjcyNzY2LDE4MS44MjAxNDUsLTkxLjIzNjIwNiwxODEuNzgzNDAxQy05MS4xOTgyMTksMTgxLjc0NTIwOSwtOTEuMTgyNDQ5LDE4MS43MzkyMjcsLTkxLjExOTc4MSwxODEuNzM5MjczQy05MS4wNzc5MTEsMTgxLjczOTMwNCwtOTEuMDczNzM4LDE4MS43NDAwMzYsLTkxLjA1MDA3MiwxODEuNzUxMzg5Qy05MS4wMjI0NTMsMTgxLjc2NDYzMywtOTAuOTg5NDQ5LDE4MS43OTQ5OTgsLTkwLjk3MzgxNiwxODEuODIxNTQ4TC05MC45NjQxMjcsMTgxLjgzNzk5N0wtOTAuODAxODE5LDE4MS44Mzc5OTdMLTkwLjYzOTUxOSwxODEuODM3OTk3TC05MC42Mzk1MTksMTgxLjg3NjE5Qy05MC42Mzk1MTksMTgxLjg5NzIwMiwtOTAuNjQwNjI1LDE4MS45MjI0NywtOTAuNjQxOTgzLDE4MS45MzIzNThMLTkwLjY0NDQ0NywxODEuOTUwMzE3TC05MC44MDQzNjcsMTgxLjk1MDMxN0wtOTAuOTY0Mjg3LDE4MS45NTAzMTdMLTkwLjk4MTA3OSwxODEuOTc0Mzk2Qy05MS4wMDAxOTEsMTgyLjAwMTgwMSwtOTEuMDM3NDMsMTgyLjAzMzYsLTkxLjA1NzY4NiwxODIuMDM5ODQxQy05MS4wNjUyMTYsMTgyLjA0MjE2LC05MS4wOTE0MTUsMTgyLjA0NDc2OSwtOTEuMTE1OTEzLDE4Mi4wNDU2MzlDLTkxLjE1Mzg1NCwxODIuMDQ2OTgyLC05MS4xNjMzMjIsMTgyLjA0NjA2NiwtOTEuMTc5ODE3LDE4Mi4wMzk0NzR6Ii8+CiAgICA8cGF0aCBzdHlsZT0ic3Ryb2tlOm5vbmU7ZmlsbDojZDRhODQzO2ZpbGwtcnVsZTpldmVub2RkIiBkPSJNLTkwLjQzMDI2LDE4Mi4wOTcwNjFDLTkwLjQ0MzQ3NCwxODIuMDkxNzk3LC05MC40NDU3NCwxODIuMDg2OTc1LC05MC40NDU4MDgsMTgyLjA2NDA0MUwtOTAuNDQ1ODYyLDE4Mi4wNDQxNDRMLTkwLjQ3Mzk0NiwxODIuMDMwNzYyQy05MC41MDk3NDMsMTgyLjAxMzcxOCwtOTAuNTIyOTAzLDE4Mi4wMDI0NDEsLTkwLjUzNjgzNSwxODEuOTc2ODM3Qy05MC41NTI2ODksMTgxLjk0NzcwOCwtOTAuNTU1MjA2LDE4MS45MDI4MTcsLTkwLjU0MjY0MSwxODEuODczNTk2Qy05MC41MzE3NzYsMTgxLjg0ODM0MywtOTAuNDk0ODM1LDE4MS44MTI5MTIsLTkwLjQ3MzM0MywxODEuODA3MTE0Qy05MC40NTQ5NzksMTgxLjgwMjE3LC05MC40NTExMjYsMTgxLjc5Nzc2LC05MC40NDc5MjIsMTgxLjc3Nzk2OUMtOTAuNDQzMTk5LDE4MS43NDg3NjQsLTkwLjQ0MjE1NCwxODEuNzQ2MzY4LC05MC40MzIyMiwxODEuNzQxODM3Qy05MC40MjYzNzYsMTgxLjczOTE4MiwtOTAuNDAzMDc2LDE4MS43MzczMDUsLTkwLjM3NTg3LDE4MS43MzczMDVMLTkwLjMyOTQ3NSwxODEuNzM3MzA1TC05MC4zMjU1MTYsMTgxLjc0NzcyNkMtOTAuMzIyOTYsMTgxLjc1NDQ0LC05MC4zMjE5NiwxODEuODE4MDM5LC05MC4zMjI3MDgsMTgxLjkyNjA0MUMtOTAuMzIzNywxODIuMDcwMTksLTkwLjMyNDY4NCwxODIuMDk0NDM3LC05MC4zMjk2NzQsMTgyLjA5NzU4Qy05MC4zMzcyOTYsMTgyLjEwMjQwMiwtOTAuNDE3OTM4LDE4Mi4xMDE5OSwtOTAuNDMwMjYsMTgyLjA5NzA2MXoiLz4KICAgIDxwYXRoIHN0eWxlPSJzdHJva2U6bm9uZTtmaWxsOiNkNGE4NDM7ZmlsbC1ydWxlOmV2ZW5vZGQiIGQ9Ik0tODguNTkwNjQ1LDE4Mi4xMjc4MDhMLTg4LjU5MDY0NSwxODEuOTk5MzEzTC04OC43MDEwMjcsMTgxLjgxMjMzMkMtODguNzYxNzQyLDE4MS43MDk0NzMsLTg4LjgxMTQwOSwxODEuNjIzNDc0LC04OC44MTE0MDksMTgxLjYyMTIxNkMtODguODExNDA5LDE4MS42MTgzOTMsLTg4Ljc4MjUxNiwxODEuNjE3NDMyLC04OC43MTk2NzMsMTgxLjYxODEzNEwtODguNjI3OTMsMTgxLjYxOTE3MUwtODguNTY3ODk0LDE4MS43Mjg1OTJDLTg4LjUzNDg3NCwxODEuNzg4NzczLC04OC41MDY3MDYsMTgxLjgzODAxMywtODguNTA1Mjk1LDE4MS44MzgwMTNDLTg4LjUwMzg4MywxODEuODM4MDEzLC04OC40NzY3NjEsMTgxLjc4ODc3MywtODguNDQ1MDE1LDE4MS43Mjg1OTJMLTg4LjM4NzMwNiwxODEuNjE5MTcxTC04OC4yOTcyNTYsMTgxLjYxODEzNEMtODguMjQ3NzI2LDE4MS42MTc1NjksLTg4LjIwNzIwNywxODEuNjE3OTM1LC04OC4yMDcyMDcsMTgxLjYxODk1OEMtODguMjA3MjA3LDE4MS42MjEwMzMsLTg4LjQxNDI4NCwxODEuOTcxMDA4LC04OC40MjI2ODQsMTgxLjk4MzEzOUMtODguNDI2OTAzLDE4MS45ODkyNDMsLTg4LjQyNzk3MSwxODIuMDE3NjI0LC04OC40Mjc5NzEsMTgyLjEyMzUzNUwtODguNDI3OTcxLDE4Mi4yNTYzMDJMLTg4LjUwOTMwOCwxODIuMjU2MzAyTC04OC41OTA2NDUsMTgyLjI1NjMwMkwtODguNTkwNjQ1LDE4Mi4xMjc4MDh6Ii8+CiAgICA8cGF0aCBzdHlsZT0ic3Ryb2tlOm5vbmU7ZmlsbDojZDRhODQzO2ZpbGwtcnVsZTpldmVub2RkIiBkPSJNLTg5LjMwODE5NywxODIuMjUzNDAzQy04OS4zMDkwMDYsMTgyLjI1MTgwMSwtODkuMzA5NTQ3LDE4Mi4yMjY5NTksLTg5LjMwOTM4NywxODIuMTk4MjEyTC04OS4zMDkxMDUsMTgyLjE0NTkyTC04OS4yNjM1OTYsMTgyLjE0NDgyMUwtODkuMjE4MDg2LDE4Mi4xNDM3MzhMLTg5LjIxODA4NiwxODEuOTM2NzY4TC04OS4yMTgwODYsMTgxLjcyOTc5N0wtODkuMjYzNTk2LDE4MS43Mjg3MTRMLTg5LjMwOTEwNSwxODEuNzI3NjE1TC04OS4zMDkxMDUsMTgxLjY3MzQwMUwtODkuMzA5MTA1LDE4MS42MTkxNzFMLTg5LjEzNTc4LDE4MS42MTgxNjRMLTg4Ljk2MjQ2MywxODEuNjE3MTU3TC04OC45NjI0NjMsMTgxLjY3MzM1NUwtODguOTYyNDYzLDE4MS43Mjk1NTNMLTg5LjAwNzAwNCwxODEuNzI5NTUzTC04OS4wNTE1NDQsMTgxLjcyOTU1M0wtODkuMDUxNTQ0LDE4MS45MzY3NjhMLTg5LjA1MTU0NCwxODIuMTQzOTgyTC04OS4wMDcwMDQsMTgyLjE0Mzk4MkwtODguOTYyNDYzLDE4Mi4xNDM5ODJMLTg4Ljk2MjQ2MywxODIuMjAwMTM0TC04OC45NjI0NjMsMTgyLjI1NjMwMkwtODkuMTM0NTksMTgyLjI1NjMwMkMtODkuMjI5MjU2LDE4Mi4yNTYzMDIsLTg5LjMwNzM4MSwxODIuMjU0OTksLTg5LjMwODE5NywxODIuMjUzNDAzeiIvPgogICAgPHBhdGggc3R5bGU9InN0cm9rZTpub25lO2ZpbGw6I2Q0YTg0MztmaWxsLXJ1bGU6ZXZlbm9kZCIgZD0iTS04OS45MDU1NjMsMTgyLjI2MjIzOEMtODkuOTYxNTEsMTgyLjI0Nzg5NCwtODkuOTkwMjE5LDE4Mi4yMzQyMzgsLTkwLjA1MjM2OCwxODIuMTkyMzgzQy05MC4xMTU0MjUsMTgyLjE0OTkxOCwtOTAuMTQ5NjIsMTgyLjEzMDYxNSwtOTAuMTkyMTc3LDE4Mi4xMTM0NDlMLTkwLjIxOTI4NCwxODIuMTAyNTI0TC05MC4yMTg2NTEsMTgyLjA1MjU2N0MtOTAuMjE4MjkyLDE4Mi4wMjUwODUsLTkwLjIxNzg1NywxODEuOTQxOTEsLTkwLjIxNzY4MiwxODEuODY3NzA2TC05MC4yMTczNTQsMTgxLjczMjgwM0wtOTAuMjAwODksMTgxLjcyNjQyNUMtOTAuMTYxOTQyLDE4MS43MTEzMDQsLTkwLjExNDk2NywxODEuNjg1NzMsLTkwLjA2NDM2MiwxODEuNjUyMUMtOTAuMDA1MDM1LDE4MS42MTI2NzEsLTg5Ljk1MzIzMiwxODEuNTg2MjQzLC04OS45MTcxODMsMTgxLjU3NzAxMUMtODkuODIzNDc5LDE4MS41NTI5OTQsLTg5LjczMjYzNSwxODEuNTYyNDU0LC04OS42NDYwNjUsMTgxLjYwNTIwOUMtODkuNTYwMDQzLDE4MS42NDc2OSwtODkuNDk4MTg0LDE4MS43MjA3MzQsLTg5LjQ2MzUzMSwxODEuODIwNjk0Qy04OS40NTM0NjEsMTgxLjg0OTc0NywtODkuNDUyODIsMTgxLjg1NTUzLC04OS40NTI2OTgsMTgxLjkxOTM0MkwtODkuNDUyNTY4LDE4MS45ODcxMjJMLTg5LjQ2NjgxMiwxODIuMDI1Mjk5Qy04OS40ODcxMjIsMTgyLjA3OTcyNywtODkuNTA5ODUsMTgyLjExNzI3OSwtODkuNTQ1MDgyLDE4Mi4xNTQ2MDJDLTg5LjU5NzYxOCwxODIuMjEwMjgxLC04OS42NjA0NTQsMTgyLjI0NTcyOCwtODkuNzM5MDgyLDE4Mi4yNjQwNjlDLTg5Ljc4NjY2NywxODIuMjc1MTYyLC04OS44NTgyNDYsMTgyLjI3NDM2OCwtODkuOTA1NTYzLDE4Mi4yNjIyMzh6TS04OS43MjE1OTYsMTgxLjczNTM2N0wtODkuNzIxNTk2LDE4MS42OTg1NzhMLTg5Ljc5NTE4MSwxODEuNjk4NTc4TC04OS44Njg3NzQsMTgxLjY5ODU3OEwtODkuODY4Nzc0LDE4MS43MzUzNjdMLTg5Ljg2ODc3NCwxODEuNzcyMTU2TC04OS43OTUxODEsMTgxLjc3MjE1NkwtODkuNzIxNTk2LDE4MS43NzIxNTZMLTg5LjcyMTU5NiwxODEuNzM1MzY3ek0tOTAuMDI3NTY1LDE4MS44ODgzNTFMLTkwLjAyNzU2NSwxODEuNjk4NTc4TC05MC4wNjI0MjQsMTgxLjY5ODU3OEwtOTAuMDk3MjgyLDE4MS42OTg1NzhMLTkwLjA5NzI4MiwxODEuODg4MzUxTC05MC4wOTcyODIsMTgyLjA3ODE0TC05MC4wNjI0MjQsMTgyLjA3ODE0TC05MC4wMjc1NjUsMTgyLjA3ODE0TC05MC4wMjc1NjUsMTgxLjg4ODM1MXpNLTg5LjU2NjY2NiwxODEuODg4MzUxTC04OS41NjY2NjYsMTgxLjY5ODU3OEwtODkuNjAzNDYyLDE4MS42OTg1NzhMLTg5LjY0MDI1OSwxODEuNjk4NTc4TC04OS42NDAyNTksMTgxLjg4ODM1MUwtODkuNjQwMjU5LDE4Mi4wNzgxNEwtODkuNjAzNDYyLDE4Mi4wNzgxNEwtODkuNTY2NjY2LDE4Mi4wNzgxNEwtODkuNTY2NjY2LDE4MS44ODgzNTF6TS04OS44NzM1MjgsMTgyLjE1NDYzM0wtODkuODcyNDgyLDE4Mi4wNzgxNEwtODkuNzk3MDM1LDE4Mi4wNzgxNEwtODkuNzIxNTk2LDE4Mi4wNzgxNEwtODkuNzIxNTk2LDE4MS45NjM4ODJMLTg5LjcyMTU5NiwxODEuODQ5NjI1TC04OS43OTUxODEsMTgxLjg0OTYyNUwtODkuODY4Nzc0LDE4MS44NDk2MjVMLTg5Ljg2ODc3NCwxODEuODg2Mjc2TC04OS44Njg3NzQsMTgxLjkyMjkyOEwtODkuODMxMDA5LDE4MS45MjQwNDJMLTg5Ljc5MzI0MywxODEuOTI1MTU2TC04OS43OTIxNDUsMTgxLjk2NDg0NEwtODkuNzkxMDM5LDE4Mi4wMDQ1NDdMLTg5Ljg2ODYzNywxODIuMDA0NTQ3TC04OS45NDYyMzYsMTgyLjAwNDU0N0wtODkuOTQ2MjM2LDE4Mi4xMTYyMjZDLTg5Ljk0NjIzNiwxODIuMTc3NjQzLC04OS45NDUwMDcsMTgyLjIyOTEyNiwtODkuOTQzNTEyLDE4Mi4yMzA2MjFDLTg5Ljk0MjAxNywxODIuMjMyMTE3LC04OS45MjU4OTYsMTgyLjIzMjgzNCwtODkuOTA3Njg0LDE4Mi4yMzIyMzlMLTg5Ljg3NDU4LDE4Mi4yMzExMjVMLTg5Ljg3MzUyOCwxODIuMTU0NjMzeiIvPgogICAgPHBhdGggc3R5bGU9InN0cm9rZTpub25lO2ZpbGw6I2Q0YTg0MztmaWxsLXJ1bGU6ZXZlbm9kZCIgZD0iTS05Mi4xNTE5NywxODIuNTQ4NTY5Qy05Mi4xNzc1MzYsMTgyLjU0NTg1MywtOTIuMjI0NTk0LDE4Mi41NDA4MDIsLTkyLjI1NjU0NiwxODIuNTM3MzU0Qy05Mi4yODg0OTgsMTgyLjUzMzkyLC05Mi4zMzgxNzMsMTgyLjUyODU4LC05Mi4zNjY5MjgsMTgyLjUyNTUxM0MtOTIuMzk1NjgzLDE4Mi41MjI0NjEsLTkyLjQzNDg5OCwxODIuNTE4MDgyLC05Mi40NTQwNzEsMTgyLjUxNTc5M0MtOTIuNDczMjQ0LDE4Mi41MTM1MDQsLTkyLjUxMjg5NCwxODIuNTA5MDk0LC05Mi41NDIxODMsMTgyLjUwNTk2NkMtOTIuNTcxNDgsMTgyLjUwMjg1MywtOTIuNjIwMjc3LDE4Mi40OTc2MzUsLTkyLjY1MDYzNSwxODIuNDk0Mzg1Qy05Mi42ODA5OTIsMTgyLjQ5MTEzNSwtOTIuNzI4OTY2LDE4Mi40ODYxNDUsLTkyLjc1NzI0OCwxODIuNDgzMzA3Qy05Mi43ODU1MzgsMTgyLjQ4MDQ2OSwtOTIuODA5NzkyLDE4Mi40NzcwMiwtOTIuODExMTU3LDE4Mi40NzU2NjJDLTkyLjgxMjUyMywxODIuNDc0Mjg5LC05Mi43OTk4MDUsMTgyLjQzNjE0MiwtOTIuNzgyODk4LDE4Mi4zOTA4ODRDLTkyLjc1NDEzNSwxODIuMzEzODczLC05Mi43NTE1MDMsMTgyLjMwODUwMiwtOTIuNzQxODksMTgyLjMwNzM4OEMtOTIuNzM2MjQ0LDE4Mi4zMDY3MzIsLTkyLjcwNDkwMywxODIuMzEwNTQ3LC05Mi42NzIyNDksMTgyLjMxNTg4N0MtOTIuNjM5NTg3LDE4Mi4zMjEyMTMsLTkyLjU4ODQ3LDE4Mi4zMjkyMDgsLTkyLjU1ODY0NywxODIuMzMzNjMzQy05Mi41Mjg4MjQsMTgyLjMzODA3NCwtOTIuNDk0ODM1LDE4Mi4zNDMzNTMsLTkyLjQ4MzEyNCwxODIuMzQ1MzgzQy05Mi40NzE0MDUsMTgyLjM0NzM5NywtOTIuNDM3NDE2LDE4Mi4zNTI2NzYsLTkyLjQwNzU5MywxODIuMzU3MTAxQy05Mi4zNzc3NjksMTgyLjM2MTUxMSwtOTIuMzM4NTYyLDE4Mi4zNjc1MjMsLTkyLjMyMDQ2NSwxODIuMzcwNDM4Qy05Mi4zMDIzNjgsMTgyLjM3MzM1MiwtOTIuMjg3MTAyLDE4Mi4zNzUyOSwtOTIuMjg2NTUyLDE4Mi4zNzQ3NDFDLTkyLjI4NTk5NSwxODIuMzc0MTkxLC05Mi4zNzI3MTksMTgyLjMxMzk5NSwtOTIuNDc5MjYzLDE4Mi4yNDA5ODJDLTkyLjU4NTgxNSwxODIuMTY3OTY5LC05Mi42NzM2NzYsMTgyLjEwNzEzMiwtOTIuNjc0NTA3LDE4Mi4xMDU3NzRDLTkyLjY3NTMzOSwxODIuMTA0NDE2LC05Mi42NjI2MjEsMTgyLjA2NzU4MSwtOTIuNjQ2MjQsMTgyLjAyMzkxMUwtOTIuNjE2NDYzLDE4MS45NDQ1MDRMLTkyLjU5NzIzNywxODEuOTQ0Nzk0Qy05Mi41ODY2NjIsMTgxLjk0NDk0NiwtOTIuNTU1MzUxLDE4MS45NDc5NTIsLTkyLjUyNzY2NCwxODEuOTUxNDYyQy05Mi40OTk5NjksMTgxLjk1NDk3MSwtOTIuNDU0NjUxLDE4MS45NjA2MTcsLTkyLjQyNjk1NiwxODEuOTY0MDA1Qy05Mi4zOTkyNjksMTgxLjk2NzM5MiwtOTIuMzY1MjgsMTgxLjk3MTY5NSwtOTIuMzUxNDMzLDE4MS45NzM1NTdDLTkyLjMyODcyOCwxODEuOTc2NjI0LC05Mi4zMDE3NSwxODEuOTc5OTY1LC05Mi4xOTY1MSwxODEuOTkyNzM3Qy05Mi4xNzg0MDYsMTgxLjk5NDkzNCwtOTIuMTU5Mzg2LDE4MS45OTY3NSwtOTIuMTU0MjQzLDE4MS45OTY3NjVDLTkyLjE0ODI2MiwxODEuOTk2NzgsLTkyLjIxNTA2NSwxODEuOTUyMDg3LC05Mi4zNDAxNTcsMTgxLjg3MjM2Qy05Mi40NDc1NCwxODEuODAzOTA5LC05Mi41MzY3ODEsMTgxLjc0NjY4OSwtOTIuNTM4NDYsMTgxLjc0NTE3OEMtOTIuNTQyMDg0LDE4MS43NDE5MTMsLTkyLjQ4MTIxNiwxODEuNTc2Mzg1LC05Mi40NzY2MDgsMTgxLjU3Njk4MUMtOTIuNDcxMjMsMTgxLjU3NzY2NywtOTEuODgzMjMyLDE4MS45ODMwNDcsLTkxLjg4MzAwMywxODEuOTg2MjM3Qy05MS44ODI3MDYsMTgxLjk5MDMxMSwtOTEuOTQ1MjQ0LDE4Mi4xNjA3NjcsLTkxLjk0ODIwNCwxODIuMTYzOTRDLTkxLjk1MDgwNiwxODIuMTY2NzMzLC05MS45ODkxOTcsMTgyLjE2MzMsLTkyLjIzNzE3NSwxODIuMTM4MDc3Qy05Mi4yNjY5OTgsMTgyLjEzNTA0LC05Mi4zMDk3LDE4Mi4xMzA3MjIsLTkyLjMzMjA2OSwxODIuMTI4NDc5Qy05Mi4zNTQ0MzksMTgyLjEyNjIzNiwtOTIuMzc2MjIxLDE4Mi4xMjMzODMsLTkyLjM4MDQ4NiwxODIuMTIyMTQ3Qy05Mi4zODczOSwxODIuMTIwMTQ4LC05Mi4zODc1OTYsMTgyLjEyMDU0NCwtOTIuMzgyNDE2LDE4Mi4xMjU4MDlDLTkyLjM3OTIyNywxODIuMTI5MDU5LC05Mi4yOTk5MTksMTgyLjE4NDMyNiwtOTIuMjA2MTkyLDE4Mi4yNDg2MjdDLTkyLjExMjQ2NSwxODIuMzEyOTI3LC05Mi4wMzM1NzcsMTgyLjM2NzYxNSwtOTIuMDMwODg0LDE4Mi4zNzAxNjNDLTkyLjAyMzc3MywxODIuMzc2OTA3LC05Mi4wODk4MTMsMTgyLjU1NDc2NCwtOTIuMDk5MTQ0LDE4Mi41NTQwMTZDLTkyLjEwMjYzOCwxODIuNTUzNzI2LC05Mi4xMjY0MTEsMTgyLjU1MTI4NSwtOTIuMTUxOTcsMTgyLjU0ODU2OXoiLz4KICAgIDxwYXRoIHN0eWxlPSJzdHJva2U6bm9uZTtmaWxsOiNkNGE4NDM7ZmlsbC1ydWxlOmV2ZW5vZGQiIGQ9Ik0tODcuMTI4NDAzLDE4Mi41NjQxMDJDLTg3LjE0MzIzNCwxODIuNTU4OTc1LC04Ny4xNjcyNTksMTgyLjU0NjY0NiwtODcuMTgxNzg2LDE4Mi41MzY3MjhDLTg3LjI0MzE5NSwxODIuNDk0NzY2LC04Ny4yNzQ4NzksMTgyLjQ0MjQyOSwtODcuMzAxMzA4LDE4Mi4zMzkzMUMtODcuMzEwMDA1LDE4Mi4zMDUzNzQsLTg3LjMxNzQwNiwxODIuMjc3MzEzLC04Ny4zMTc3NDksMTgyLjI3NjkzMkMtODcuMzE4MDkyLDE4Mi4yNzY1NjYsLTg3LjMzNDkxNSwxODIuMjgwNDI2LC04Ny4zNTUxNDEsMTgyLjI4NTQ5MkMtODcuNDc1MzQyLDE4Mi4zMTU2MjgsLTg3LjUzNDc0NCwxODIuMzI5NDUzLC04Ny41MzcyNzcsMTgyLjMyNzg4MUMtODcuNTQwODI1LDE4Mi4zMjU2ODQsLTg3LjU4MjEyMywxODIuMTYwNDE2LC04Ny41Nzk2MjgsMTgyLjE1ODM4NkMtODcuNTc4NjM2LDE4Mi4xNTc1OTMsLTg3LjUyNzI4MywxODIuMTQ0NTE2LC04Ny40NjU1MDgsMTgyLjEyOTM2NEMtODcuNDAzNzMyLDE4Mi4xMTQxOTcsLTg3LjI5OTE1NiwxODIuMDg4NTMxLC04Ny4yMzMxMTYsMTgyLjA3MjMxMUMtODcuMTY3MDg0LDE4Mi4wNTYxMDcsLTg3LjA2NzI2OCwxODIuMDMxNDk0LC04Ny4wMTEyOTksMTgyLjAxNzYyNEMtODYuOTU1MzM4LDE4Mi4wMDM3NTQsLTg2LjkwNjY3LDE4MS45OTI5NSwtODYuOTAzMTM3LDE4MS45OTM2MzdDLTg2Ljg5ODE0LDE4MS45OTQ1OTgsLTg2Ljg5MDA2OCwxODIuMDIxNzksLTg2Ljg2NjU1NCwxODIuMTE2ODY3Qy04Ni44MjQxNjUsMTgyLjI4ODIzOSwtODYuODIwMDY4LDE4Mi4zMDk0MzMsLTg2LjgyMDA4NCwxODIuMzU3MDFDLTg2LjgyMDEyOSwxODIuNDY3MTQ4LC04Ni44NzMxNTQsMTgyLjUzNjQzOCwtODYuOTgwMDcyLDE4Mi41NjYwNzFDLTg3LjAyMjE4NiwxODIuNTc3NzQ0LC04Ny4wOTE2NzUsMTgyLjU3NjgyOCwtODcuMTI4NDAzLDE4Mi41NjQxMDJ6TS04Ny4wMjk1MzMsMTgyLjM4OTQ5NkMtODYuOTg5ODk5LDE4Mi4zNzc3MTYsLTg2Ljk2ODA0LDE4Mi4zNDY3NDEsLTg2Ljk2Nzg5NiwxODIuMzAyMTA5Qy04Ni45Njc4MTksMTgyLjI3OTA5OSwtODYuOTgwMzA5LDE4Mi4yMTA5OTksLTg2Ljk4NjY3OSwxODIuMTk5NzA3Qy04Ni45ODgzNTgsMTgyLjE5NjczMiwtODcuMDE4ODUyLDE4Mi4yMDI3NTksLTg3LjA4NDY3OSwxODIuMjE5MTAxQy04Ny4xMzcyNDUsMTgyLjIzMjE0NywtODcuMTgxMzk2LDE4Mi4yNDM5NTgsLTg3LjE4Mjc4NSwxODIuMjQ1MzQ2Qy04Ny4xODYxMDQsMTgyLjI0ODY3MiwtODcuMTY2OTU0LDE4Mi4zMTg3ODcsLTg3LjE1Njg3NiwxODIuMzQwMjRDLTg3LjE0NTI3OSwxODIuMzY0OTE0LC04Ny4xMjIyOTksMTgyLjM4NjY4OCwtODcuMTAwNjMyLDE4Mi4zOTM1MDlDLTg3LjA4MDQ5OCwxODIuMzk5ODU3LC04Ny4wNjA2NzcsMTgyLjM5ODc0MywtODcuMDI5NTMzLDE4Mi4zODk0OTZ6Ii8+CiAgICA8cGF0aCBzdHlsZT0ic3Ryb2tlOm5vbmU7ZmlsbDojZDRhODQzO2ZpbGwtcnVsZTpldmVub2RkIiBkPSJNLTkwLjkzNjcwNywxODIuNjA2ODEyQy05MC45NjkxMzksMTgyLjU5MDU3NiwtOTAuOTk2MDAyLDE4Mi41NjM0MzEsLTkxLjAxMDU3NCwxODIuNTMyMTM1Qy05MS4wMTk0NCwxODIuNTEzMDkyLC05MS4wMjA4ODksMTgyLjUwNDgyMiwtOTEuMDIwOTUsMTgyLjQ3MzEyOUMtOTEuMDIxMDE5LDE4Mi40MzkxNzgsLTkxLjAyMDAxMiwxODIuNDM0MjA0LC05MS4wMDgyNTUsMTgyLjQxMDMwOUMtOTAuOTkxODgyLDE4Mi4zNzcwMjksLTkwLjk2NTgwNSwxODIuMzUxMDQ0LC05MC45MzM4NzYsMTgyLjMzNjE4MkMtOTAuOTEwNTYxLDE4Mi4zMjUzMTcsLTkwLjkwNTQxMSwxODIuMzI0NDQ4LC05MC44NjQxNTksMTgyLjMyNDI2NUMtOTAuODIyNjQ3LDE4Mi4zMjQwOTcsLTkwLjgxODEzLDE4Mi4zMjQ4NDQsLTkwLjc5Nzc2OCwxODIuMzM1MTU5Qy05MC43NjkzNTYsMTgyLjM0OTU0OCwtOTAuNzQwNTAxLDE4Mi4zNzUwMzEsLTkwLjcyNDY3LDE4Mi4zOTk2ODlMLTkwLjcxMjAzNiwxODIuNDE5Mzg4TC05MC41OTY1NjUsMTgyLjQxODIxM0MtOTAuNTE4MjA0LDE4Mi40MTc0MDQsLTkwLjQ3OTcxMywxODIuNDE1NjQ5LC05MC40NzY3ODQsMTgyLjQxMjcwNEMtOTAuNDc0NDAzLDE4Mi40MTAzMjQsLTkwLjQ1MTE1NywxODIuMzYxNTI2LC05MC40MjUxMSwxODIuMzA0MjZMLTkwLjM3Nzc2MiwxODIuMjAwMTM0TC05MC4zMjkwODYsMTgyLjE5OTA2NkMtOTAuMzAyMzE1LDE4Mi4xOTg0NzEsLTkwLjI3NTg2NCwxODIuMTk5NzA3LC05MC4yNzAzMDksMTgyLjIwMTgyOEMtOTAuMjYwNDI5LDE4Mi4yMDU1ODIsLTkwLjI2MDMyMywxODIuMjA2MDA5LC05MC4yNjU1MjYsMTgyLjIyMDMzN0MtOTAuMjY4NDU2LDE4Mi4yMjgzOTQsLTkwLjI4NTA5NSwxODIuMjY2MzczLC05MC4zMDI0OTgsMTgyLjMwNDcxOEMtOTAuMzE5OTAxLDE4Mi4zNDMwNjMsLTkwLjM0NTc3MiwxODIuNDAwNTQzLC05MC4zNTk5ODUsMTgyLjQzMjQ0OUMtOTAuMzg4NTI3LDE4Mi40OTY1MjEsLTkwLjQwNjY0NywxODIuNTIwMjc5LC05MC40MzA3MSwxODIuNTI1MTYyQy05MC40Mzc5ODEsMTgyLjUyNjY0MiwtOTAuNTA1NDQsMTgyLjUyODgyNCwtOTAuNTgwNjEyLDE4Mi41Mjk5OTlMLTkwLjcxNzMsMTgyLjUzMjE2NkwtOTAuNzMwMTY0LDE4Mi41NTIyNjFDLTkwLjc0NTk0OSwxODIuNTc2OTM1LC05MC43NzA3MDYsMTgyLjU5ODkzOCwtOTAuNzk2Mzc5LDE4Mi42MTExMTVDLTkwLjgxMzQyMywxODIuNjE5MTg2LC05MC44MjEzODEsMTgyLjYyMDMsLTkwLjg2MjY3MSwxODIuNjIwMzMxQy05MC45MDg1OTIsMTgyLjYyMDM3NywtOTAuOTEwMTc5LDE4Mi42MjAwODcsLTkwLjkzNjcwNywxODIuNjA2ODEyeiIvPgogICAgPHBhdGggc3R5bGU9InN0cm9rZTpub25lO2ZpbGw6I2Q0YTg0MztmaWxsLXJ1bGU6ZXZlbm9kZCIgZD0iTS04OS44MjM1ODYsMTgyLjgzMDgxMUMtODkuODI1MDA1LDE4Mi44MjkzOTEsLTg5LjgyNjE2NCwxODIuODA5MzQxLC04OS44MjYxNjQsMTgyLjc4NjI3TC04OS44MjYxNjQsMTgyLjc0NDMwOEwtODguMzI3MjcxLDE4Mi43NDQzMDhMLTg2LjgyODM4NCwxODIuNzQ0MzI0TC04Ni44MjgzODQsMTgyLjc4ODg2NEwtODYuODI4Mzg0LDE4Mi44MzM0MDVMLTg4LjMyNDY5MiwxODIuODMzMzg5Qy04OS4xNDc2NTksMTgyLjgzMzM4OSwtODkuODIyMTY2LDE4Mi44MzIyMywtODkuODIzNTg2LDE4Mi44MzA4MTF6Ii8+CiAgICA8cGF0aCBzdHlsZT0ic3Ryb2tlOm5vbmU7ZmlsbDojZDRhODQzO2ZpbGwtcnVsZTpldmVub2RkIiBkPSJNLTkwLjgyNTQzMiwxODIuOTY4OTQ4TC05MC44MjU0MzIsMTgyLjkyNjM0NkwtODguODI2OTA0LDE4Mi45MjYzNDZMLTg2LjgyODM4NCwxODIuOTI2MzQ2TC04Ni44MjgzODQsMTgyLjk2ODk2NEwtODYuODI4Mzg0LDE4My4wMTE1NjZMLTg4LjgyNjkwNCwxODMuMDExNTUxTC05MC44MjU0MzIsMTgzLjAxMTU1MUwtOTAuODI1NDMyLDE4Mi45Njg5NDh6Ii8+CiAgICA8cGF0aCBzdHlsZT0ic3Ryb2tlOm5vbmU7ZmlsbDojZDRhODQzO2ZpbGwtcnVsZTpldmVub2RkIiBkPSJNLTkyLjgyMDA4NCwxODMuMTQ3MTFMLTkyLjgyMDA4NCwxODMuMTA0NTA3TC04OS44MjQyMzQsMTgzLjEwNDUwN0wtODYuODI4Mzg0LDE4My4xMDQ1MjNMLTg2LjgyODM4NCwxODMuMTQ3MTI1TC04Ni44MjgzODQsMTgzLjE4OTcyOEwtODkuODI0MjM0LDE4My4xODk3MTNMLTkyLjgyMDA4NCwxODMuMTg5NzEzTC05Mi44MjAwODQsMTgzLjE0NzExeiIvPgo8L3N2Zz4K" alt="Workshop DIY" style="width:40px;height:auto;opacity:.4"><span style="font-size:.68rem;color:var(--txt3)">Workshop DIY © 2026</span></div>
+</div></div>
+
+<!-- MAP -->
+<div class="screen" id="sMap" role="region" aria-label="Journey Map"><div class="cnt">
+  <div class="title af" id="mTitle">🗺️ خريطة الرحلة</div>
+  <div class="sub af d1" id="mSub">اختر محطتك الزمنية</div>
+  <div style="display:flex;align-items:center;justify-content:space-between;width:100%;gap:8px">
+    <button class="btn-museum" id="btnMuseum" onclick="goCol()">🏛️ <span id="tMuseum">المتحف</span></button>
+    <div class="score-bar af d1" id="scoreBar" style="flex:1"></div>
+    <div class="fp-row"><span id="fpLabel">🔓</span><div class="fp-tog" id="fpTog"></div></div>
+  </div>
+  <div class="mg" id="mGrid"></div>
+  <button class="btn bt bsm af" id="bHome">🏠 <span id="tHome">الرئيسية</span></button>
+</div></div>
+
+<!-- CITY -->
+<div class="screen" id="sCity" role="region" aria-label="City"><div class="cnt">
+  <div class="city-ambient" id="cityAmb"></div>
+  <div class="arch">
+    <div class="arch-corner tl"><svg viewBox="0 0 30 30"><path d="M0 0Q15 0 15 15Q15 0 30 0" fill="none" stroke="currentColor" stroke-width="0.8"/><path d="M0 0Q0 15 15 15Q0 15 0 30" fill="none" stroke="currentColor" stroke-width="0.8"/><circle cx="15" cy="15" r="3" fill="none" stroke="currentColor" stroke-width="0.5"/></svg></div>
+    <div class="arch-corner tr"><svg viewBox="0 0 30 30"><path d="M0 0Q15 0 15 15Q15 0 30 0" fill="none" stroke="currentColor" stroke-width="0.8"/><path d="M0 0Q0 15 15 15Q0 15 0 30" fill="none" stroke="currentColor" stroke-width="0.8"/><circle cx="15" cy="15" r="3" fill="none" stroke="currentColor" stroke-width="0.5"/></svg></div>
+    <div class="arch-corner bl"><svg viewBox="0 0 30 30"><path d="M0 0Q15 0 15 15Q15 0 30 0" fill="none" stroke="currentColor" stroke-width="0.8"/><path d="M0 0Q0 15 15 15Q0 15 0 30" fill="none" stroke="currentColor" stroke-width="0.8"/><circle cx="15" cy="15" r="3" fill="none" stroke="currentColor" stroke-width="0.5"/></svg></div>
+    <div class="arch-corner br"><svg viewBox="0 0 30 30"><path d="M0 0Q15 0 15 15Q15 0 30 0" fill="none" stroke="currentColor" stroke-width="0.8"/><path d="M0 0Q0 15 15 15Q0 15 0 30" fill="none" stroke="currentColor" stroke-width="0.8"/><circle cx="15" cy="15" r="3" fill="none" stroke="currentColor" stroke-width="0.5"/></svg></div>
+    <div class="py ap" id="cYear" style="font-size:2.6rem;text-align:center"></div>
+    <div class="title af d2" id="cName" style="font-size:1.7rem;margin-top:6px"></div>
+    <div class="divider af d3" style="margin:6px auto"></div>
+    <div class="sub af d3" id="cDesc" style="margin-top:6px"></div>
+  </div>
+  <button class="btn bgrn af d4" id="bMeet">🧑‍🔬 <span id="tMeet">التقِ بالعالِم</span></button>
+</div></div>
+
+<!-- SCIENTIST -->
+<div class="screen" id="sSci" role="region" aria-label="Scientist"><div class="cnt">
+  <div class="port ap" id="sciP"></div>
+  <div class="title af d2"><span id="sciN"></span><button class="pron-btn" id="pronBtn" aria-label="Pronounce">🔊</button></div>
+  <div class="sub af d3" id="sciD"></div>
+  <div class="card af d4"><div class="sub" id="sciB" style="text-align:right;color:var(--txt)"></div></div>
+  <button class="btn bg af d5" id="bDisc">🔬 <span id="tDisc">اكتشف</span></button>
+</div></div>
+
+<!-- STORY -->
+<div class="screen" id="sStory" role="region" aria-label="Story"><div class="cnt">
+  <div class="title" id="stTitle" style="font-size:1.15rem"></div>
+  <div class="card"><div id="stPages"></div></div>
+  <div class="dots" id="stDots"></div>
+  <div style="display:flex;gap:8px;width:100%">
+    <button class="btn bt bsm" id="bPrev" style="flex:1">→ <span id="tPrev">السابق</span></button>
+    <button class="btn bg bsm" id="bNext" style="flex:1"><span id="tNext">التالي</span> ←</button>
+  </div>
+  <button class="btn bgrn" id="bChal" style="display:none">🎮 <span id="tChal">ابدأ التحدي</span></button>
+</div></div>
+
+<!-- CHALLENGE -->
+<div class="screen" id="sChal" role="region" aria-label="Challenge"><div class="cnt">
+  <div class="title" id="chTitle"></div>
+  <div class="sub" id="chDesc"></div>
+  <div class="bkr"><div class="blq" id="blq"></div><div class="bub" id="bBub"></div></div>
+  <div class="rm" id="rMsg" role="alert" aria-live="polite"></div>
+  <div class="sub" style="font-size:.78rem" id="chHint"></div>
+  <div class="ings" id="iGrid"></div>
+  <button class="btn bg" id="bMix" style="display:none">⚗️ <span id="tMix">امزج!</span></button>
+</div></div>
+
+<!-- COLLECTION / MUSEUM -->
+<div class="screen" id="sCol" role="region" aria-label="Collection"><div class="cnt">
+  <div class="title af d1" id="colTitle">🏛️ المتحف</div>
+  <div class="sub af d1" id="colSub">بطاقات العلماء التي جمعتها</div>
+  <div class="divider" style="margin:10px auto"></div>
+  <div class="col-grid" id="colGrid"></div>
+  <div class="star-sep" style="margin:12px 0">✦ ✦ ✦</div>
+  <div id="colProg" class="col-prog"></div>
+  <div class="badge-section" id="badgeSection">
+    <div class="badge-title" id="badgeTitle">🏆 الإنجازات</div>
+    <div class="badge-row" id="badgeRow"></div>
+  </div>
+  <div id="colComplete" class="col-fin" style="display:none"></div>
+  <div style="display:flex;gap:8px;width:100%;margin-top:10px">
+    <button class="btn bt bsm" style="flex:1;font-size:.8rem" id="btnMystery" onclick="startMystery()">🧩 <span id="tMystery">عالم الغموض</span></button>
+    <button class="btn bt bsm" style="flex:1;font-size:.8rem" id="btnPassport" onclick="showPassport()">📜 <span id="tPassport">الجواز</span></button>
+  </div>
+  <button class="btn bt bsm af d5" onclick="buildMap();show('sMap')"><span id="tColBack">🗺️ الخريطة</span></button>
+  <div style="margin-top:16px"><button class="btn bt bsm" style="font-size:.65rem;opacity:.4;border-color:rgba(255,100,100,.12);color:rgba(255,100,100,.5)" onclick="resetProg()" id="btnReset">🔄 إعادة البدء</button></div>
+</div></div>
+
+<!-- MYSTERY SCIENTIST -->
+<div class="screen" id="sMyS" role="region" aria-label="Mystery Scientist"><div class="cnt">
+  <div class="title af">🧩 <span id="mysTitle">من هذا العالم؟</span></div>
+  <div class="sub af d1" id="mysSub">اكتشف العالم من الأدلة</div>
+  <div id="mysClues"></div>
+  <button class="btn bt bsm af" id="mysRevealBtn" style="margin:8px 0;display:none">💡 <span id="mysRevealTxt">دليل إضافي</span></button>
+  <div class="mys-guess" id="mysGuess"></div>
+  <div class="mys-result" id="mysResult" style="display:none"></div>
+  <div style="display:flex;gap:8px;margin-top:10px">
+    <button class="btn bt bsm" onclick="startMystery()">🔄 <span id="mysAgain">جديد</span></button>
+    <button class="btn bt bsm" onclick="goCol()">🏛️ <span id="mysBack">المتحف</span></button>
+  </div>
+</div></div>
+
+<!-- SCHOLAR'S PASSPORT -->
+<div class="screen" id="sPass" role="region" aria-label="Passport"><div class="cnt">
+  <div class="passport" id="passportCard">
+    <div class="passport-head">
+      <div class="passport-title" id="passTitle">📜 جواز العالِم</div>
+      <div class="passport-sub" id="passSub">طوابع رحلتك عبر الزمن</div>
+    </div>
+    <div class="stamp-grid" id="stampGrid"></div>
+  </div>
+  <div style="text-align:center;margin-top:10px;font-size:.7rem;color:var(--txt3)" id="passCount"></div>
+  <button class="btn bt bsm af" style="margin-top:12px" onclick="goCol()">🏛️ <span id="passBack">المتحف</span></button>
+</div></div>
+
+<!-- VICTORY -->
+<div class="screen" id="sVic" role="region" aria-label="Victory"><div class="cnt">
+  <div class="title af" id="vTitle">🎉 أحسنت!</div>
+  <div class="sr ap d1"><span class="si" id="s1">⭐</span><span class="si" id="s2">⭐</span><span class="si" id="s3">⭐</span></div>
+  <div class="sub af d2" id="vMsg"></div>
+  <div class="sc ap d3"><div class="shim"></div><div class="sb"></div><div class="crescent">☪</div>
+    <div class="se" id="cE"></div><div class="sn" id="cN"></div><div class="sf" id="cF"></div><div class="sy" id="cY"></div>
+  </div>
+  <div id="starUpBadge" style="display:none"></div>
+  <div class="fun-fact" id="funFact" style="display:none"><div class="ff-label" id="ffLabel">💡</div><div class="ff-text" id="ffText"></div></div>
+  <button class="btn bgrn af d4" id="bNxt">🚀 <span id="tNxt">المحطة التالية</span></button>
+  <button class="btn bt bsm af d5" id="bMap2">🗺️ <span id="tMap">الخريطة</span></button>
+</div></div>
+<script>
+// ===== SOUND ENGINE =====
+const AC=window.AudioContext||window.webkitAudioContext;
+let actx=null,muted=localStorage.getItem('tm_mute')==='1';
+document.getElementById('muteBtn').textContent=muted?'🔇':'🔊';
+function ac(){if(!actx)actx=new AC();if(actx.state==='suspended')actx.resume();return actx}
+function tone(f,d,t='sine',v=.25){if(muted)return;try{const c=ac(),o=c.createOscillator(),g=c.createGain();
+o.type=t;o.frequency.setValueAtTime(f,c.currentTime);g.gain.setValueAtTime(v,c.currentTime);
+g.gain.exponentialRampToValueAtTime(.001,c.currentTime+d);o.connect(g);g.connect(c.destination);
+o.start();o.stop(c.currentTime+d)}catch(e){}}
+function noise(d,v=.1){if(muted)return;try{const c=ac(),n=c.sampleRate*d,b=c.createBuffer(1,n,c.sampleRate),
+a=b.getChannelData(0);for(let i=0;i<n;i++)a[i]=(Math.random()*2-1)*Math.pow(1-i/n,2);
+const s=c.createBufferSource();s.buffer=b;const g=c.createGain();g.gain.setValueAtTime(v,c.currentTime);
+g.gain.exponentialRampToValueAtTime(.001,c.currentTime+d);const fl=c.createBiquadFilter();fl.type='bandpass';
+fl.frequency.value=1200;s.connect(fl);fl.connect(g);g.connect(c.destination);s.start()}catch(e){}}
+const S={
+  tap(){tone(700,.07,'sine',.12)},
+  whoosh(){if(muted)return;try{const c=ac(),o=c.createOscillator(),g=c.createGain();o.type='sine';
+    o.frequency.setValueAtTime(200,c.currentTime);o.frequency.exponentialRampToValueAtTime(1000,c.currentTime+.3);
+    o.frequency.exponentialRampToValueAtTime(80,c.currentTime+.7);g.gain.setValueAtTime(.18,c.currentTime);
+    g.gain.exponentialRampToValueAtTime(.001,c.currentTime+.7);o.connect(g);g.connect(c.destination);
+    o.start();o.stop(c.currentTime+.7);noise(.5,.07)}catch(e){}},
+  warp(){if(muted)return;[250,400,600,800,1000].forEach((f,i)=>setTimeout(()=>tone(f,.13,'sine',.09),i*65));noise(.35,.05)},
+  page(){noise(.09,.05);tone(500,.04,'sine',.06)},
+  sel(){tone(500,.05,'sine',.1);setTimeout(()=>tone(700,.05,'sine',.08),35)},
+  desel(){tone(400,.05,'sine',.05)},
+  bub(){if(muted)return;[0,55,130].forEach(d=>setTimeout(()=>tone(300+Math.random()*400,.07,'sine',.04),d))},
+  ok(){setTimeout(()=>tone(523,.12,'sine',.2),0);setTimeout(()=>tone(659,.12,'sine',.2),85);setTimeout(()=>tone(784,.2,'sine',.2),170)},
+  fail(){tone(150,.22,'sawtooth',.1);tone(140,.22,'square',.05)},
+  star(){tone(1200,.1,'sine',.11);setTimeout(()=>tone(1500,.1,'sine',.09),45);setTimeout(()=>tone(1800,.13,'sine',.07),90)},
+  vic(){const n=[523,659,784,1047,784,1047],t=[0,105,210,370,510,650],d=[.12,.12,.12,.22,.12,.32];
+    n.forEach((f,i)=>setTimeout(()=>tone(f,d[i],'sine',.16),t[i]));
+    setTimeout(()=>[2000,2400,2800].forEach((f,i)=>setTimeout(()=>tone(f,.22,'sine',.04),i*75)),720)},
+  reveal(){tone(400,.15,'sine',.08);setTimeout(()=>tone(600,.15,'sine',.08),80);setTimeout(()=>tone(500,.2,'sine',.06),160)}
+};
+document.getElementById('muteBtn').onclick=()=>{muted=!muted;localStorage.setItem('tm_mute',muted?'1':'0');
+  document.getElementById('muteBtn').textContent=muted?'🔇':'🔊'};
+// Haptic feedback helper
+function vib(ms){try{navigator.vibrate&&navigator.vibrate(ms)}catch(e){}}
+
+// ===== CONFETTI =====
+const cv=document.getElementById('confetti'),cx=cv.getContext('2d');let cP=[],cA=null;
+function rcv(){cv.width=innerWidth;cv.height=innerHeight}rcv();addEventListener('resize',rcv);
+function goConf(){cP=[];for(let i=0;i<70;i++)cP.push({x:innerWidth/2,y:innerHeight/2,
+  vx:(Math.random()-.5)*11,vy:Math.random()*-11-3,w:Math.random()*7+3,h:Math.random()*5+2,
+  r:Math.random()*360,rv:(Math.random()-.5)*9,
+  c:['#d4a843','#f0d060','#4caf50','#00c853','#009688'][~~(Math.random()*5)],l:1});
+  if(!cA)aConf()}
+function aConf(){cx.clearRect(0,0,cv.width,cv.height);let ok=false;cP.forEach(p=>{if(p.l<=0)return;ok=true;
+  p.x+=p.vx;p.y+=p.vy;p.vy+=.22;p.r+=p.rv;p.l-=.009;cx.save();cx.translate(p.x,p.y);
+  cx.rotate(p.r*Math.PI/180);cx.globalAlpha=p.l;cx.fillStyle=p.c;cx.fillRect(-p.w/2,-p.h/2,p.w,p.h);cx.restore()});
+  if(ok){cA=requestAnimationFrame(aConf)}else{cA=null;cx.clearRect(0,0,cv.width,cv.height)}}
+
+// ===== PORTAL PARTICLES =====
+function spawnP(){const c=document.getElementById('pp');c.innerHTML='';
+  for(let i=0;i<10;i++){const p=document.createElement('div');const a=Math.random()*Math.PI*2,r=25+Math.random()*35;
+    p.style.cssText=`position:absolute;left:50%;top:50%;width:${2+Math.random()*2}px;height:${2+Math.random()*2}px;
+    border-radius:50%;background:${Math.random()>.5?'var(--gold)':'var(--grn)'};opacity:0;
+    --dx:${Math.cos(a)*r}px;--dy:${Math.sin(a)*r}px;animation:pdrift ${2+Math.random()*2.5}s ease-in-out infinite;
+    animation-delay:${Math.random()*2.5}s`;c.appendChild(p)}}
+
+// ===== FLASH =====
+function flash(t){const f=document.getElementById('flash');
+  f.style.background=t==='gold'?'radial-gradient(circle,rgba(212,168,67,.15),transparent 70%)':'radial-gradient(circle,rgba(0,200,83,.1),transparent 70%)';
+  f.style.animation='none';f.offsetWidth;f.style.animation='gflash .5s ease-out';setTimeout(()=>f.style.animation='none',500)}
+
+// ===== BEAKER BUBBLES =====
+function addBub(){const c=document.getElementById('bBub'),b=document.createElement('div');b.className='bb';
+  const s=3+Math.random()*7;b.style.cssText=`width:${s}px;height:${s}px;left:${10+Math.random()*65}%;animation-duration:${.8+Math.random()*1.2}s`;
+  c.appendChild(b);setTimeout(()=>b.remove(),2200)}
+
+// ===== DATA =====
+const L=[
+  {
+    "id":1,"yr":"780","yA":"٧٨٠",
+    "city":{"ar":"بغداد","fr":"Bagdad","en":"Baghdad"},
+    "sci":{"ar":"جابر بن حيان","fr":"Jabir ibn Hayyan","en":"Jabir ibn Hayyan"},
+    "em":"⚗️","fld":{"ar":"الكيمياء","fr":"Chimie","en":"Chemistry"},
+    "dt":{"ar":"٧٢١-٨١٥ م","fr":"721-815","en":"721-815 AD"},
+    "cD":{"ar":"مرحباً! أنت الآن في بغداد، عاصمة الخلافة العباسية، حيث يزدهر العلم في بيت الحكمة","fr":"Bienvenue à Bagdad, capitale abbasside, où la science prospère à la Maison de la Sagesse","en":"Welcome to Baghdad, capital of the Abbasid Caliphate, where science thrives at the House of Wisdom"},
+    "bio":{"ar":"جابر بن حيان هو أبو الكيمياء. اخترع التقطير والترشيح واكتشف أحماضاً مهمة. كتب أكثر من ٣٠٠ كتاب!","fr":"Jabir ibn Hayyan est le père de la chimie. Il a inventé la distillation et découvert des acides importants. Plus de 300 livres!","en":"Jabir ibn Hayyan is the Father of Chemistry. He invented distillation and filtration, discovered important acids. Over 300 books!"},
+    "story":{"ar":["في القرن الثامن، كانت بغداد مركز العلم في العالم. جابر بن حيان كان يعمل في مختبره ليل نهار 🔬","اخترع جابر عملية التقطير: تسخين سائل لتحويله إلى بخار ثم تبريده ليعود سائلاً نقياً. تُستخدم حتى اليوم! 💨","اكتشف أحماضاً قوية مثل حمض الهيدروكلوريك، وطوّر الماء الملكي الذي يذيب الذهب! 🧪","كلمة Chemistry تأتي من العربية 'الكيمياء'. جابر غيّر العالم! 🌍"],"fr":["Au 8ème siècle, Bagdad était le centre scientifique du monde. Jabir travaillait jour et nuit 🔬","Jabir a inventé la distillation: chauffer un liquide en vapeur puis le refroidir. Toujours utilisée! 💨","Il a découvert des acides puissants et l'eau régale qui dissout l'or! 🧪","Le mot Chemistry vient de l'arabe Al-Kimiya. Jabir a changé le monde! 🌍"],"en":["In the 8th century, Baghdad was the world's scientific center. Jabir worked in his lab day and night 🔬","Jabir invented distillation: heating liquid into vapor then cooling it back. Still used today! 💨","He discovered powerful acids and aqua regia that dissolves gold! 🧪","The word Chemistry comes from Arabic Al-Kimiya. Jabir changed the world! 🌍"]},
+    "ch":{"t":{"ar":"⚗️ مختبر جابر","fr":"⚗️ Labo de Jabir","en":"⚗️ Jabir's Lab"},"d":{"ar":"اختر المكونات الصحيحة للتقطير!","fr":"Choisis les bons ingrédients!","en":"Pick the correct ingredients!"},"h":{"ar":"💡 تحتاج: ماء، نار، وعاء تبريد","fr":"💡 eau, feu, refroidisseur","en":"💡 water, fire, cooling vessel"},"items":[{"id":"w","l":{"ar":"💧 ماء","fr":"💧 Eau","en":"💧 Water"},"ok":true},{"id":"f","l":{"ar":"🔥 نار","fr":"🔥 Feu","en":"🔥 Fire"},"ok":true},{"id":"c","l":{"ar":"❄️ وعاء تبريد","fr":"❄️ Refroidisseur","en":"❄️ Cooling"},"ok":true},{"id":"g","l":{"ar":"🪙 ذهب","fr":"🪙 Or","en":"🪙 Gold"},"ok":false},{"id":"d","l":{"ar":"🪵 خشب","fr":"🪵 Bois","en":"🪵 Wood"},"ok":false},{"id":"s","l":{"ar":"⏳ رمل","fr":"⏳ Sable","en":"⏳ Sand"},"ok":false}]},
+    "vc":{"ar":"أتقنت فن التقطير! حصلت على بطاقة العالِم","fr":"Distillation maîtrisée! Carte gagnée","en":"Distillation mastered! Card earned"}
+  },
+  {
+    "id":2,"yr":"820","yA":"٨٢٠",
+    "city":{"ar":"بغداد","fr":"Bagdad","en":"Baghdad"},
+    "sci":{"ar":"الخوارزمي","fr":"Al-Khwarizmi","en":"Al-Khwarizmi"},
+    "em":"📐","fld":{"ar":"الجبر","fr":"Algèbre","en":"Algebra"},
+    "dt":{"ar":"٧٨٠-٨٥٠ م","fr":"780-850","en":"780-850 AD"},
+    "cD":{"ar":"أنت في بيت الحكمة ببغداد! هنا يعمل أعظم عالم رياضيات في التاريخ","fr":"Vous êtes à la Maison de la Sagesse! Le plus grand mathématicien de l'histoire travaille ici","en":"You're at the House of Wisdom! The greatest mathematician in history works here"},
+    "bio":{"ar":"الخوارزمي أبو الجبر ومخترع الخوارزميات. كتابه 'الجبر والمقابلة' أسس علم الجبر. كلمة Algorithm مأخوذة من اسمه!","fr":"Al-Khwarizmi est le père de l'algèbre. Son livre a fondé cette science. Le mot Algorithm vient de son nom!","en":"Al-Khwarizmi is the Father of Algebra. His book founded this science. The word Algorithm comes from his name!"},
+    "story":{"ar":["الخوارزمي عمل في بيت الحكمة تحت حكم المأمون. كان عبقرياً في الرياضيات والفلك 📐","كتب كتاب 'الجبر والمقابلة' — أول كتاب يشرح الجبر كعلم مستقل 📖","اخترع مفهوم الخوارزمية: خطوات منظمة لحل المسائل. كل الحواسيب تعمل بها اليوم! 💻","الأرقام العربية (0-9) انتشرت في العالم بفضله. الصفر غيّر كل شيء! 🔢"],"fr":["Al-Khwarizmi travaillait à la Maison de la Sagesse. Génie en mathématiques et astronomie 📐","Son livre Al-Jabr est le premier à expliquer l'algèbre comme science indépendante 📖","Il a inventé le concept d'algorithme: des étapes organisées pour résoudre des problèmes 💻","Les chiffres arabes (0-9) se sont répandus grâce à lui. Le zéro a tout changé! 🔢"],"en":["Al-Khwarizmi worked at the House of Wisdom. A genius in math and astronomy 📐","His book Al-Jabr was the first to explain algebra as an independent science 📖","He invented the concept of algorithm: organized steps to solve problems. All computers use them! 💻","Arabic numerals (0-9) spread worldwide thanks to him. Zero changed everything! 🔢"]},
+    "ch":{"t":{"ar":"📐 جبر الخوارزمي","fr":"📐 Algèbre","en":"📐 Algebra Challenge"},"d":{"ar":"حل المعادلة! أي عدد يجعلها صحيحة؟","fr":"Résous l'équation! Quel nombre est correct?","en":"Solve the equation! Which number is correct?"},"h":{"ar":"💡 x + ٥ = ١٢ — ما قيمة x؟","fr":"💡 x + 5 = 12 — quelle valeur?","en":"💡 x + 5 = 12 — what is x?"},"items":[{"id":"7","l":{"ar":"٧","fr":"7","en":"7"},"ok":true},{"id":"5","l":{"ar":"٥","fr":"5","en":"5"},"ok":false},{"id":"12","l":{"ar":"١٢","fr":"12","en":"12"},"ok":false},{"id":"3","l":{"ar":"٣","fr":"3","en":"3"},"ok":false}],"single":true},
+    "vc":{"ar":"حللت المعادلة مثل الخوارزمي!","fr":"Équation résolue comme Al-Khwarizmi!","en":"Equation solved like Al-Khwarizmi!"}
+  },
+  {
+    "id":3,"yr":"852","yA":"٨٥٢",
+    "city":{"ar":"قرطبة","fr":"Cordoue","en":"Córdoba"},
+    "sci":{"ar":"عباس بن فرناس","fr":"Abbas ibn Firnas","en":"Abbas ibn Firnas"},
+    "em":"🪂","fld":{"ar":"الطيران","fr":"Aviation","en":"Flight"},
+    "dt":{"ar":"٨١٠-٨٨٧ م","fr":"810-887","en":"810-887 AD"},
+    "cD":{"ar":"مرحباً بك في قرطبة! مدينة العلم والفن في الأندلس. هنا حلم رجل بالطيران!","fr":"Bienvenue à Cordoue! Cité de la science en Andalousie. Un homme rêvait de voler!","en":"Welcome to Córdoba! City of science in Andalusia. A man dreamed of flying!"},
+    "bio":{"ar":"عباس بن فرناس — أول إنسان يحاول الطيران! صنع أجنحة من الحرير والريش وقفز من مكان مرتفع. طار لمسافة قبل أن يسقط. سبق الأخوين رايت بـ ١٠٠٠ سنة!","fr":"Abbas ibn Firnas — le premier homme à tenter de voler! Il a fabriqué des ailes de soie et plumes. Il a précédé les frères Wright de 1000 ans!","en":"Abbas ibn Firnas — the first human to attempt flight! He made wings of silk and feathers and jumped. He preceded the Wright Brothers by 1000 years!"},
+    "story":{"ar":["عباس بن فرناس كان عالماً موسوعياً: كيمياء، فلك، شعر، وموسيقى 🎵","راقب الطيور لسنوات ودرس كيف تطير. ثم صمم أجنحة من الحرير والريش 🦅","في عام ٨٧٥م، قفز من مكان مرتفع في قرطبة وطار لعدة دقائق! 🪂","نجح في الطيران لكنه أُصيب عند الهبوط. اكتشف أهمية الذيل للتوازن — أساس الطيران الحديث! ✈️"],"fr":["Abbas ibn Firnas était un savant universel: chimie, astronomie, poésie 🎵","Il a observé les oiseaux pendant des années, puis conçu des ailes de soie 🦅","En 875, il a sauté et volé pendant plusieurs minutes! 🪂","Il a réussi à voler mais s'est blessé. Il a découvert l'importance de la queue — base de l'aviation! ✈️"],"en":["Abbas ibn Firnas was a polymath: chemistry, astronomy, poetry, music 🎵","He observed birds for years and designed wings of silk and feathers 🦅","In 875 AD, he jumped from a height in Córdoba and flew for several minutes! 🪂","He succeeded but was injured landing. He discovered the tail's importance — basis of modern aviation! ✈️"]},
+    "ch":{"t":{"ar":"🪂 طيران ابن فرناس","fr":"🪂 Vol d'Ibn Firnas","en":"🪂 Ibn Firnas' Flight"},"d":{"ar":"ما الذي يحتاجه ابن فرناس للطيران؟","fr":"De quoi Ibn Firnas a-t-il besoin?","en":"What does Ibn Firnas need to fly?"},"h":{"ar":"💡 اختر: أجنحة، رياح، ارتفاع","fr":"💡 ailes, vent, hauteur","en":"💡 wings, wind, height"},"items":[{"id":"w","l":{"ar":"🦅 أجنحة","fr":"🦅 Ailes","en":"🦅 Wings"},"ok":true},{"id":"v","l":{"ar":"💨 رياح","fr":"💨 Vent","en":"💨 Wind"},"ok":true},{"id":"h","l":{"ar":"🏔️ ارتفاع","fr":"🏔️ Hauteur","en":"🏔️ Height"},"ok":true},{"id":"r","l":{"ar":"🪨 صخور","fr":"🪨 Pierres","en":"🪨 Rocks"},"ok":false},{"id":"m","l":{"ar":"🧲 مغناطيس","fr":"🧲 Aimant","en":"🧲 Magnet"},"ok":false},{"id":"a","l":{"ar":"⚓ مرساة","fr":"⚓ Ancre","en":"⚓ Anchor"},"ok":false}]},
+    "vc":{"ar":"طرت مثل ابن فرناس! رائد الطيران الأول","fr":"Tu as volé comme Ibn Firnas!","en":"You flew like Ibn Firnas! The first aviator"}
+  },
+  {
+    "id":4,"yr":"859","yA":"٨٥٩",
+    "city":{"ar":"فاس","fr":"Fès","en":"Fez"},
+    "sci":{"ar":"فاطمة الفهري","fr":"Fatima al-Fihri","en":"Fatima al-Fihri"},
+    "em":"🏛️","fld":{"ar":"التعليم","fr":"Éducation","en":"Education"},
+    "dt":{"ar":"٨٠٠-٨٨٠ م","fr":"800-880","en":"800-880 AD"},
+    "cD":{"ar":"أنت في فاس بالمغرب! هنا أسست امرأة عظيمة أول جامعة في العالم","fr":"Vous êtes à Fès au Maroc! Une femme a fondé la première université du monde","en":"You're in Fez, Morocco! A great woman founded the world's first university"},
+    "bio":{"ar":"فاطمة الفهري أسست جامعة القرويين عام ٨٥٩م — أقدم جامعة في العالم ما زالت تعمل حتى اليوم! أنفقت كل ميراثها على العلم","fr":"Fatima al-Fihri a fondé l'Université Al-Quaraouiyine en 859 — la plus ancienne université encore active! Elle a dépensé tout son héritage","en":"Fatima al-Fihri founded Al-Qarawiyyin University in 859 — the oldest still-operating university! She spent her entire inheritance on education"},
+    "story":{"ar":["فاطمة الفهري هاجرت مع عائلتها من القيروان إلى فاس. ورثت ثروة كبيرة من والدها 💰","قررت إنفاق كل ميراثها في بناء مسجد وجامعة. صامت كل أيام البناء! 🏗️","جامعة القرويين أصبحت أعظم مركز علمي: درّست الطب والرياضيات والفلك والفقه 📚","غينيس تعترف بها كأقدم جامعة في العالم. ما زالت تعمل بعد ١١٦٥ سنة! 🎓"],"fr":["Fatima a émigré de Kairouan à Fès. Elle a hérité une grande fortune de son père 💰","Elle a décidé de tout dépenser pour construire une mosquée et université 🏗️","Al-Quaraouiyine est devenue le plus grand centre scientifique: médecine, maths, astronomie 📚","Guinness la reconnaît comme la plus ancienne université. Encore active après 1165 ans! 🎓"],"en":["Fatima migrated from Kairouan to Fez. She inherited a large fortune from her father 💰","She decided to spend it all building a mosque and university. She fasted every day of construction! 🏗️","Al-Qarawiyyin became the greatest scientific center: medicine, math, astronomy, law 📚","Guinness recognizes it as the world's oldest university. Still operating after 1165 years! 🎓"]},
+    "ch":{"t":{"ar":"🏛️ بناء الجامعة","fr":"🏛️ Construire l'université","en":"🏛️ Build the University"},"d":{"ar":"ما المواد التي تُدرّس في جامعة القرويين؟","fr":"Quelles matières à Al-Quaraouiyine?","en":"What subjects were taught at Al-Qarawiyyin?"},"h":{"ar":"💡 اختر المواد العلمية الصحيحة","fr":"💡 Choisis les bonnes matières","en":"💡 Pick the correct subjects"},"items":[{"id":"med","l":{"ar":"🏥 الطب","fr":"🏥 Médecine","en":"🏥 Medicine"},"ok":true},{"id":"math","l":{"ar":"📐 الرياضيات","fr":"📐 Maths","en":"📐 Mathematics"},"ok":true},{"id":"ast","l":{"ar":"🔭 الفلك","fr":"🔭 Astronomie","en":"🔭 Astronomy"},"ok":true},{"id":"tv","l":{"ar":"📺 التلفزيون","fr":"📺 Télévision","en":"📺 Television"},"ok":false},{"id":"game","l":{"ar":"🎮 ألعاب فيديو","fr":"🎮 Jeux vidéo","en":"🎮 Video Games"},"ok":false},{"id":"car","l":{"ar":"🚗 السيارات","fr":"🚗 Voitures","en":"🚗 Cars"},"ok":false}]},
+    "vc":{"ar":"بنيت جامعة مثل فاطمة الفهري!","fr":"Université construite comme Fatima!","en":"University built like Fatima al-Fihri!"}
+  },
+  {
+    "id":5,"yr":"1000","yA":"١٠٠٠",
+    "city":{"ar":"بخارى","fr":"Boukhara","en":"Bukhara"},
+    "sci":{"ar":"ابن سينا","fr":"Ibn Sina","en":"Ibn Sina"},
+    "em":"💊","fld":{"ar":"الطب","fr":"Médecine","en":"Medicine"},
+    "dt":{"ar":"٩٨٠-١٠٣٧ م","fr":"980-1037","en":"980-1037 AD"},
+    "cD":{"ar":"أنت في بخارى! مدينة العلم في آسيا الوسطى، حيث عاش أعظم طبيب في التاريخ","fr":"Vous êtes à Boukhara! La cité du savoir où vivait le plus grand médecin de l'histoire","en":"You're in Bukhara! The city of knowledge where the greatest doctor in history lived"},
+    "bio":{"ar":"ابن سينا — أمير الأطباء. كتابه 'القانون في الطب' كان المرجع الطبي الأول في العالم لـ ٦٠٠ سنة! حفظ القرآن وهو ابن ١٠ سنوات","fr":"Ibn Sina — le Prince des Médecins. Son Canon de la Médecine fut la référence mondiale pendant 600 ans!","en":"Ibn Sina — the Prince of Physicians. His Canon of Medicine was the world's medical reference for 600 years! He memorized the Quran at age 10"},
+    "story":{"ar":["ابن سينا كان عبقرياً: حفظ القرآن في سن العاشرة وأتقن الطب في السادسة عشرة 🧒","كتب 'القانون في الطب' — أعظم كتاب طبي. استخدمته جامعات أوروبا ٦٠٠ سنة! 📖","اكتشف أن الأمراض تنتقل بكائنات صغيرة لا تُرى — قبل اختراع المجهر بـ ٦٠٠ سنة! 🦠","كتب عن علم النفس والتخدير والتغذية. يُعتبر أبو الطب الحديث! 💊"],"fr":["Ibn Sina était un génie: il a mémorisé le Coran à 10 ans et maîtrisé la médecine à 16 ans 🧒","Il a écrit le Canon de la Médecine — utilisé en Europe pendant 600 ans! 📖","Il a découvert que les maladies se transmettent par des micro-organismes — 600 ans avant le microscope! 🦠","Il a écrit sur la psychologie, l'anesthésie et la nutrition. Père de la médecine moderne! 💊"],"en":["Ibn Sina was a genius: memorized the Quran at 10, mastered medicine at 16 🧒","He wrote the Canon of Medicine — used by European universities for 600 years! 📖","He discovered diseases spread by invisible organisms — 600 years before the microscope! 🦠","He wrote about psychology, anesthesia, and nutrition. Father of modern medicine! 💊"]},
+    "ch":{"t":{"ar":"💊 صيدلية ابن سينا","fr":"💊 Pharmacie d'Ibn Sina","en":"💊 Ibn Sina's Pharmacy"},"d":{"ar":"اختر العلاج الصحيح للمريض!","fr":"Choisis le bon remède!","en":"Pick the correct remedy!"},"h":{"ar":"💡 المريض يعاني من حمى: عسل، أعشاب، راحة","fr":"💡 Fièvre: miel, herbes, repos","en":"💡 Patient has fever: honey, herbs, rest"},"items":[{"id":"hon","l":{"ar":"🍯 عسل","fr":"🍯 Miel","en":"🍯 Honey"},"ok":true},{"id":"herb","l":{"ar":"🌿 أعشاب طبية","fr":"🌿 Herbes","en":"🌿 Medicinal Herbs"},"ok":true},{"id":"rest","l":{"ar":"😴 راحة","fr":"😴 Repos","en":"😴 Rest"},"ok":true},{"id":"ice","l":{"ar":"🧊 ثلج","fr":"🧊 Glace","en":"🧊 Ice"},"ok":false},{"id":"run","l":{"ar":"🏃 جري","fr":"🏃 Course","en":"🏃 Running"},"ok":false},{"id":"pep","l":{"ar":"🌶️ فلفل حار","fr":"🌶️ Piment","en":"🌶️ Hot Pepper"},"ok":false}]},
+    "vc":{"ar":"شفيت المريض مثل ابن سينا!","fr":"Patient guéri comme Ibn Sina!","en":"Patient healed like Ibn Sina!"}
+  },
+  {
+    "id":6,"yr":"1000","yA":"١٠٠٠",
+    "city":{"ar":"القاهرة","fr":"Le Caire","en":"Cairo"},
+    "sci":{"ar":"ابن الهيثم","fr":"Ibn al-Haytham","en":"Ibn al-Haytham"},
+    "em":"🔭","fld":{"ar":"البصريات","fr":"Optique","en":"Optics"},
+    "dt":{"ar":"٩٦٥-١٠٤٠ م","fr":"965-1040","en":"965-1040 AD"},
+    "cD":{"ar":"أهلاً بك في القاهرة! هنا اكتشف عالم عظيم أسرار الضوء والرؤية","fr":"Bienvenue au Caire! Un savant a découvert les secrets de la lumière","en":"Welcome to Cairo! A great scientist discovered the secrets of light and vision"},
+    "bio":{"ar":"ابن الهيثم — أبو البصريات. أثبت أن العين ترى بانعكاس الضوء وليس بإشعاع. اخترع الكاميرا المظلمة وأسس المنهج العلمي التجريبي!","fr":"Ibn al-Haytham — père de l'optique. Il a prouvé que l'œil voit par réflexion de la lumière. Il a inventé la camera obscura!","en":"Ibn al-Haytham — Father of Optics. He proved eyes see by light reflection, not emission. He invented the camera obscura and founded the scientific method!"},
+    "story":{"ar":["ابن الهيثم ولد في البصرة ثم انتقل إلى القاهرة. كان يجري تجارب في غرفة مظلمة 🌑","اكتشف أن الضوء يسير في خطوط مستقيمة، وأن العين ترى بالضوء المنعكس 💡","اخترع الكاميرا المظلمة (Camera Obscura) — أساس كل الكاميرات اليوم! 📸","كتب 'كتاب المناظر' أعظم كتاب في البصريات. أسس المنهج العلمي التجريبي! 🔬"],"fr":["Ibn al-Haytham est né à Bassora puis a déménagé au Caire. Il expérimentait dans une chambre noire 🌑","Il a découvert que la lumière voyage en lignes droites et que l'œil voit par réflexion 💡","Il a inventé la Camera Obscura — base de toutes les caméras! 📸","Son Livre d'Optique a fondé la méthode scientifique expérimentale! 🔬"],"en":["Ibn al-Haytham was born in Basra then moved to Cairo. He experimented in a dark room 🌑","He discovered light travels in straight lines and eyes see by reflected light 💡","He invented the Camera Obscura — the basis of all cameras today! 📸","His Book of Optics founded the experimental scientific method! 🔬"]},
+    "ch":{"t":{"ar":"🔭 مختبر البصريات","fr":"🔭 Labo d'optique","en":"🔭 Optics Lab"},"d":{"ar":"كيف تعمل الكاميرا المظلمة؟","fr":"Comment fonctionne la camera obscura?","en":"How does the camera obscura work?"},"h":{"ar":"💡 ضوء + ثقب صغير + غرفة مظلمة","fr":"💡 lumière + petit trou + chambre noire","en":"💡 light + small hole + dark room"},"items":[{"id":"lt","l":{"ar":"💡 ضوء","fr":"💡 Lumière","en":"💡 Light"},"ok":true},{"id":"hole","l":{"ar":"🕳️ ثقب صغير","fr":"🕳️ Petit trou","en":"🕳️ Small Hole"},"ok":true},{"id":"dark","l":{"ar":"🌑 غرفة مظلمة","fr":"🌑 Chambre noire","en":"🌑 Dark Room"},"ok":true},{"id":"mir","l":{"ar":"🪞 مرآة","fr":"🪞 Miroir","en":"🪞 Mirror"},"ok":false},{"id":"bat","l":{"ar":"🔋 بطارية","fr":"🔋 Batterie","en":"🔋 Battery"},"ok":false},{"id":"scr","l":{"ar":"📱 شاشة","fr":"📱 Écran","en":"📱 Screen"},"ok":false}]},
+    "vc":{"ar":"بنيت كاميرا مثل ابن الهيثم!","fr":"Camera obscura construite!","en":"Camera obscura built like Ibn al-Haytham!"}
+  },
+  {
+    "id":7,"yr":"1040","yA":"١٠٤٠",
+    "city":{"ar":"غزنة","fr":"Ghazni","en":"Ghazni"},
+    "sci":{"ar":"البيروني","fr":"Al-Biruni","en":"Al-Biruni"},
+    "em":"🌍","fld":{"ar":"الجغرافيا","fr":"Géographie","en":"Geography"},
+    "dt":{"ar":"٩٧٣-١٠٤٨ م","fr":"973-1048","en":"973-1048 AD"},
+    "cD":{"ar":"أنت في غزنة بأفغانستان! هنا عاش عالم قاس محيط الأرض بدقة مذهلة","fr":"Vous êtes à Ghazni! Un savant a mesuré la Terre avec une précision incroyable","en":"You're in Ghazni! A scientist measured Earth's circumference with amazing accuracy"},
+    "bio":{"ar":"البيروني حسب محيط الأرض بدقة ٩٩.٧٪ باستخدام جبل ورياضيات فقط! تحدث ٦ لغات وكتب ١٤٦ كتاباً. يُعتبر أعظم عقل في القرون الوسطى","fr":"Al-Biruni a calculé la Terre avec 99.7% de précision — avec un montagne et des maths! 146 livres en 6 langues","en":"Al-Biruni calculated Earth's circumference with 99.7% accuracy — using just a mountain and math! 146 books in 6 languages"},
+    "story":{"ar":["البيروني كان عبقرياً يتحدث ٦ لغات: العربية والفارسية والسنسكريتية واليونانية والسريانية والعبرية 🗣️","صعد جبلاً في الهند وقاس زاوية الأفق. باستخدام حسابات رياضية حسب محيط الأرض! 🏔️","نتيجته: ٤٠,٠٧٦ كم — القيمة الحقيقية ٤٠,٠٧٥ كم! دقة مذهلة بدون أي تكنولوجيا حديثة 🎯","كتب عن الهند ودراسة الحضارات. يُعتبر أول عالم أنثروبولوجيا في التاريخ! 📚"],"fr":["Al-Biruni parlait 6 langues: arabe, persan, sanskrit, grec, syriaque et hébreu 🗣️","Il a gravi une montagne en Inde et mesuré l'angle de l'horizon pour calculer la Terre! 🏔️","Son résultat: 40 076 km — la vraie valeur est 40 075 km! 🎯","Il est considéré comme le premier anthropologue de l'histoire! 📚"],"en":["Al-Biruni spoke 6 languages: Arabic, Persian, Sanskrit, Greek, Syriac, and Hebrew 🗣️","He climbed a mountain in India and measured the horizon angle to calculate Earth's size! 🏔️","His result: 40,076 km — the actual value is 40,075 km! Incredible accuracy without modern tech 🎯","He's considered the first anthropologist in history! 📚"]},
+    "ch":{"t":{"ar":"🌍 قياس الأرض","fr":"🌍 Mesurer la Terre","en":"🌍 Measure Earth"},"d":{"ar":"ماذا استخدم البيروني لقياس الأرض؟","fr":"Qu'a utilisé Al-Biruni?","en":"What did Al-Biruni use?"},"h":{"ar":"💡 جبل + زاوية + رياضيات","fr":"💡 montagne + angle + maths","en":"💡 mountain + angle + math"},"items":[{"id":"mt","l":{"ar":"🏔️ جبل","fr":"🏔️ Montagne","en":"🏔️ Mountain"},"ok":true},{"id":"ang","l":{"ar":"📐 زاوية","fr":"📐 Angle","en":"📐 Angle"},"ok":true},{"id":"math","l":{"ar":"🔢 رياضيات","fr":"🔢 Maths","en":"🔢 Math"},"ok":true},{"id":"sat","l":{"ar":"🛰️ قمر صناعي","fr":"🛰️ Satellite","en":"🛰️ Satellite"},"ok":false},{"id":"gps","l":{"ar":"📍 GPS","fr":"📍 GPS","en":"📍 GPS"},"ok":false},{"id":"tel","l":{"ar":"🔭 تلسكوب","fr":"🔭 Télescope","en":"🔭 Telescope"},"ok":false}]},
+    "vc":{"ar":"قست الأرض مثل البيروني!","fr":"Terre mesurée comme Al-Biruni!","en":"Earth measured like Al-Biruni!"}
+  },
+  {
+    "id":8,"yr":"1154","yA":"١١٥٤",
+    "city":{"ar":"صقلية","fr":"Sicile","en":"Sicily"},
+    "sci":{"ar":"الإدريسي","fr":"Al-Idrisi","en":"Al-Idrisi"},
+    "em":"🗺️","fld":{"ar":"الخرائط","fr":"Cartographie","en":"Cartography"},
+    "dt":{"ar":"١١٠٠-١١٦٥ م","fr":"1100-1165","en":"1100-1165 AD"},
+    "cD":{"ar":"أنت في صقلية! هنا رسم عالم مسلم أدق خريطة للعالم في عصره","fr":"Vous êtes en Sicile! Un savant musulman a dessiné la carte la plus précise du monde","en":"You're in Sicily! A Muslim scholar drew the most accurate world map of his era"},
+    "bio":{"ar":"الإدريسي رسم 'نزهة المشتاق' — أدق خريطة للعالم في القرون الوسطى. صنعها على كرة فضية ضخمة للملك روجر الثاني!","fr":"Al-Idrisi a dessiné Tabula Rogeriana — la carte du monde la plus précise du Moyen Âge, sur un globe d'argent!","en":"Al-Idrisi drew Tabula Rogeriana — the most accurate medieval world map, made on a huge silver globe for King Roger II!"},
+    "story":{"ar":["الإدريسي ولد في المغرب وسافر حول العالم. استقر في بلاط الملك روجر الثاني في صقلية 🏰","جمع معلومات من التجار والمسافرين لـ ١٥ سنة لرسم خريطته العظيمة 🗺️","رسم خريطة على كرة فضية تزن ٤٠٠ رطل! تظهر أوروبا وآسيا وأفريقيا بدقة 🌐","كتابه 'نزهة المشتاق في اختراق الآفاق' ظل المرجع الجغرافي الأول لـ ٣٠٠ سنة! 📖"],"fr":["Al-Idrisi est né au Maroc et a voyagé partout. Il s'est installé à la cour du roi Roger II 🏰","Il a collecté des informations pendant 15 ans pour créer sa grande carte 🗺️","Il a gravé sa carte sur un globe d'argent de 180 kg! 🌐","Son livre est resté la référence géographique pendant 300 ans! 📖"],"en":["Al-Idrisi was born in Morocco and traveled the world. He settled at King Roger II's court in Sicily 🏰","He collected information from traders and travelers for 15 years to draw his great map 🗺️","He engraved his map on a silver globe weighing 400 pounds! 🌐","His book remained the geographic reference for 300 years! 📖"]},
+    "ch":{"t":{"ar":"🗺️ خريطة العالم","fr":"🗺️ Carte du monde","en":"🗺️ World Map"},"d":{"ar":"أي القارات رسمها الإدريسي؟","fr":"Quels continents Al-Idrisi a-t-il cartographié?","en":"Which continents did Al-Idrisi map?"},"h":{"ar":"💡 أوروبا، آسيا، أفريقيا","fr":"💡 Europe, Asie, Afrique","en":"💡 Europe, Asia, Africa"},"items":[{"id":"eu","l":{"ar":"🏰 أوروبا","fr":"🏰 Europe","en":"🏰 Europe"},"ok":true},{"id":"as","l":{"ar":"🏯 آسيا","fr":"🏯 Asie","en":"🏯 Asia"},"ok":true},{"id":"af","l":{"ar":"🌍 أفريقيا","fr":"🌍 Afrique","en":"🌍 Africa"},"ok":true},{"id":"am","l":{"ar":"🗽 أمريكا","fr":"🗽 Amérique","en":"🗽 Americas"},"ok":false},{"id":"an","l":{"ar":"🧊 أنتاركتيكا","fr":"🧊 Antarctique","en":"🧊 Antarctica"},"ok":false},{"id":"au","l":{"ar":"🦘 أستراليا","fr":"🦘 Australie","en":"🦘 Australia"},"ok":false}]},
+    "vc":{"ar":"رسمت الخريطة مثل الإدريسي!","fr":"Carte dessinée comme Al-Idrisi!","en":"Map drawn like Al-Idrisi!"}
+  },
+  {
+    "id":9,"yr":"1206","yA":"١٢٠٦",
+    "city":{"ar":"ديار بكر","fr":"Diyarbakir","en":"Diyarbakir"},
+    "sci":{"ar":"الجزري","fr":"Al-Jazari","en":"Al-Jazari"},
+    "em":"⚙️","fld":{"ar":"الهندسة","fr":"Ingénierie","en":"Engineering"},
+    "dt":{"ar":"١١٣٦-١٢٠٦ م","fr":"1136-1206","en":"1136-1206 AD"},
+    "cD":{"ar":"أنت في ديار بكر! هنا عاش المهندس العبقري الذي اخترع أول روبوت في التاريخ","fr":"Vous êtes à Diyarbakir! Le génie qui a inventé le premier robot de l'histoire","en":"You're in Diyarbakir! The genius engineer who invented the first robot in history"},
+    "bio":{"ar":"الجزري — أبو الروبوتات! اخترع آلات ميكانيكية ذاتية الحركة، ومضخات مياه، وساعات آلية. كتابه يحوي ١٠٠ اختراع مع رسومات تفصيلية!","fr":"Al-Jazari — père de la robotique! Il a inventé des machines automatiques, des pompes et des horloges. 100 inventions!","en":"Al-Jazari — Father of Robotics! He invented automatic machines, water pumps, and mechanical clocks. His book contains 100 inventions with detailed drawings!"},
+    "story":{"ar":["الجزري كان مهندساً في خدمة ملوك آل أرتق. كان يصمم آلات عجيبة ⚙️","اخترع روبوتات تصب الماء وتعزف الموسيقى — أول آلات ذاتية الحركة في التاريخ! 🤖","صمم مضخة مياه بعمود المرفق (Crankshaft) — أهم اختراع في تاريخ الميكانيكا 🔧","كتابه 'الحيل الجامعة' يحوي ١٠٠ اختراع مع رسومات هندسية دقيقة. ألهم كل المهندسين بعده! 📐"],"fr":["Al-Jazari était ingénieur au service des rois Artuqides. Il concevait des machines incroyables ⚙️","Il a inventé des robots qui versent l'eau et jouent de la musique! 🤖","Il a conçu le vilebrequin (Crankshaft) — invention fondamentale en mécanique 🔧","Son livre contient 100 inventions avec des dessins techniques détaillés! 📐"],"en":["Al-Jazari was an engineer serving the Artuqid kings. He designed amazing machines ⚙️","He invented robots that pour water and play music — the first automatic machines in history! 🤖","He designed the crankshaft water pump — the most important invention in mechanical engineering 🔧","His Book of Ingenious Devices contains 100 inventions with detailed engineering drawings! 📐"]},
+    "ch":{"t":{"ar":"⚙️ ورشة الجزري","fr":"⚙️ Atelier d'Al-Jazari","en":"⚙️ Al-Jazari's Workshop"},"d":{"ar":"ما أجزاء الآلة الميكانيكية؟","fr":"Quelles pièces pour la machine?","en":"What parts make the mechanical machine?"},"h":{"ar":"💡 تروس + ماء + عمود دوران","fr":"💡 engrenages + eau + axe","en":"💡 gears + water + rotating shaft"},"items":[{"id":"gear","l":{"ar":"⚙️ تروس","fr":"⚙️ Engrenages","en":"⚙️ Gears"},"ok":true},{"id":"wat","l":{"ar":"💧 ماء","fr":"💧 Eau","en":"💧 Water"},"ok":true},{"id":"shaft","l":{"ar":"🔧 عمود دوران","fr":"🔧 Axe","en":"🔧 Shaft"},"ok":true},{"id":"elec","l":{"ar":"⚡ كهرباء","fr":"⚡ Électricité","en":"⚡ Electricity"},"ok":false},{"id":"plas","l":{"ar":"🧪 بلاستيك","fr":"🧪 Plastique","en":"🧪 Plastic"},"ok":false},{"id":"chip","l":{"ar":"💻 شريحة","fr":"💻 Puce","en":"💻 Computer Chip"},"ok":false}]},
+    "vc":{"ar":"بنيت آلة مثل الجزري!","fr":"Machine construite comme Al-Jazari!","en":"Machine built like Al-Jazari!"}
+  },
+  {
+    "id":10,"yr":"1000","yA":"١٠٠٠",
+    "city":{"ar":"قرطبة","fr":"Cordoue","en":"Córdoba"},
+    "sci":{"ar":"الزهراوي","fr":"Al-Zahrawi","en":"Al-Zahrawi"},
+    "em":"🏥","fld":{"ar":"الجراحة","fr":"Chirurgie","en":"Surgery"},
+    "dt":{"ar":"٩٣٦-١٠١٣ م","fr":"936-1013","en":"936-1013 AD"},
+    "cD":{"ar":"عدت إلى قرطبة! هنا عاش أعظم جراح في العالم القديم","fr":"Retour à Cordoue! Le plus grand chirurgien du monde ancien vivait ici","en":"Back to Córdoba! The greatest surgeon of the ancient world lived here"},
+    "bio":{"ar":"الزهراوي — أبو الجراحة. اخترع أكثر من ٢٠٠ أداة جراحية، وكتب موسوعة 'التصريف' في ٣٠ مجلداً. استُخدمت في أوروبا ٥٠٠ سنة!","fr":"Al-Zahrawi — père de la chirurgie. Il a inventé plus de 200 instruments chirurgicaux et écrit une encyclopédie de 30 volumes!","en":"Al-Zahrawi — Father of Surgery. He invented over 200 surgical instruments and wrote a 30-volume encyclopedia used in Europe for 500 years!"},
+    "story":{"ar":["الزهراوي عاش في قرطبة وكان طبيب الخليفة الحكم الثاني. أعظم جراح في عصره 🏥","اخترع أكثر من ٢٠٠ أداة جراحية: مقص، ملقط، مشرط — ما زالت تُستخدم بأشكال مشابهة! ✂️","أول من استخدم الخيوط القابلة للذوبان في الجراحة — من أمعاء القطط! 🧵","كتاب التصريف (٣٠ مجلداً) كان المرجع الجراحي الأول في العالم لـ ٥٠٠ سنة! 📚"],"fr":["Al-Zahrawi vivait à Cordoue et était médecin du calife Al-Hakam II 🏥","Il a inventé plus de 200 instruments: ciseaux, pinces, scalpels — encore utilisés! ✂️","Premier à utiliser des fils résorbables en chirurgie! 🧵","Son encyclopédie de 30 volumes fut la référence chirurgicale pendant 500 ans! 📚"],"en":["Al-Zahrawi lived in Córdoba and was physician to Caliph Al-Hakam II 🏥","He invented over 200 surgical tools: scissors, forceps, scalpels — still used in similar forms! ✂️","First to use dissolvable stitches in surgery — made from catgut! 🧵","His 30-volume encyclopedia was the surgical reference for 500 years! 📚"]},
+    "ch":{"t":{"ar":"🏥 غرفة العمليات","fr":"🏥 Bloc opératoire","en":"🏥 Operating Room"},"d":{"ar":"اختر أدوات الزهراوي الجراحية!","fr":"Choisis les instruments d'Al-Zahrawi!","en":"Pick Al-Zahrawi's surgical instruments!"},"h":{"ar":"💡 مشرط، ملقط، خيوط جراحية","fr":"💡 scalpel, pinces, fil","en":"💡 scalpel, forceps, surgical thread"},"items":[{"id":"sc","l":{"ar":"🔪 مشرط","fr":"🔪 Scalpel","en":"🔪 Scalpel"},"ok":true},{"id":"fc","l":{"ar":"🔧 ملقط","fr":"🔧 Pinces","en":"🔧 Forceps"},"ok":true},{"id":"th","l":{"ar":"🧵 خيوط جراحية","fr":"🧵 Fil chirurgical","en":"🧵 Surgical Thread"},"ok":true},{"id":"hm","l":{"ar":"🔨 مطرقة","fr":"🔨 Marteau","en":"🔨 Hammer"},"ok":false},{"id":"gl","l":{"ar":"🧤 قفازات مطاطية","fr":"🧤 Gants","en":"🧤 Rubber Gloves"},"ok":false},{"id":"ls","l":{"ar":"🔦 ليزر","fr":"🔦 Laser","en":"🔦 Laser"},"ok":false}]},
+    "vc":{"ar":"أتقنت الجراحة مثل الزهراوي! أكملت كل المحطات 🎊","fr":"Chirurgie maîtrisée! Toutes les stations complétées 🎊","en":"Surgery mastered like Al-Zahrawi! All stations completed 🎊"}
+  }
+];
+
+const T={
+  ar:{dir:'rtl',start:'🚀 ابدأ الرحلة',mT:'🗺️ خريطة الرحلة',mS:'اختر محطتك الزمنية',hijri:'هـ',
+    home:'الرئيسية',meet:'التقِ بالعالِم',disc:'اكتشف',prev:'السابق',next:'التالي',
+    chal:'ابدأ التحدي',mix:'امزج!',vic:'🎉 أحسنت!',nxt:'المحطة التالية',map:'الخريطة',
+    pSub:'هجري',tit:'آلة الزمن',sub:'سافر عبر الزمن واكتشف علماء المسلمين الذين غيّروا العالم',
+    museum:'المتحف',colT:'🏛️ المتحف',colS:'بطاقات العلماء التي جمعتها',colBack:'🗺️ الخريطة',
+    colProg:'جمعت',colOf:'من',colDone:'🎊 أحسنت! جمعت كل البطاقات!',colDoneS:'أنت عالِم حقيقي! اكتشفت كل العلماء المسلمين العظماء'},
+  fr:{dir:'ltr',start:'🚀 Commencer',mT:'🗺️ Carte du voyage',mS:'Choisis ta station',hijri:'H',
+    home:'Accueil',meet:'Rencontrer le savant',disc:'Découvrir',prev:'Précédent',next:'Suivant',
+    chal:'Commencer le défi',mix:'Mélanger !',vic:'🎉 Bravo !',nxt:'Station suivante',map:'Carte',
+    pSub:'Hijri',tit:'Machine à Voyager dans le Temps',sub:'Voyage dans le temps et découvre les savants musulmans',
+    museum:'Musée',colT:'🏛️ Musée',colS:'Cartes de savants collectées',colBack:'🗺️ Carte',
+    colProg:'Collectées',colOf:'sur',colDone:'🎊 Bravo ! Toutes les cartes collectées !',colDoneS:'Tu es un vrai savant ! Tu as découvert tous les grands savants musulmans'},
+  en:{dir:'ltr',start:'🚀 Start Journey',mT:'🗺️ Journey Map',mS:'Choose your station',hijri:'AH',
+    home:'Home',meet:'Meet the Scientist',disc:'Discover',prev:'Previous',next:'Next',
+    chal:'Start Challenge',mix:'Mix!',vic:'🎉 Well Done!',nxt:'Next Station',map:'Map',
+    pSub:'Hijri',tit:'Time Machine',sub:'Travel through time and discover Muslim scientists who changed the world',
+    museum:'Museum',colT:'🏛️ Museum',colS:'Scientist cards you\'ve collected',colBack:'🗺️ Map',
+    colProg:'Collected',colOf:'of',colDone:'🎊 Amazing! All cards collected!',colDoneS:'You\'re a true scholar! You discovered all the great Muslim scientists'}
+};
+
+// ===== STATE =====
+let lang=localStorage.getItem('tm_lang')||'ar',cur=0,sp=0,selIng=new Set(),att=0;
+// Stars object: {levelId: starCount} — tracks best star rating per level
+let stars=JSON.parse(localStorage.getItem('tm_stars')||'{}');
+// Migration from old format
+(function(){const old=localStorage.getItem('tm_done');if(old&&!localStorage.getItem('tm_stars')){
+  try{JSON.parse(old).forEach(id=>{stars[id]=3});localStorage.setItem('tm_stars',JSON.stringify(stars));localStorage.removeItem('tm_done')}catch(e){}}})();
+function isDone(id){return stars[id]!==undefined}
+function getStars(id){return stars[id]||0}
+function doneCount(){return Object.keys(stars).length}
+function totalStars(){return Object.values(stars).reduce((a,b)=>a+b,0)}
+const $=id=>document.getElementById(id);
+// Number format: independent user choice, saved to localStorage
+let numStyle=localStorage.getItem('tm_num')||'western';
+function nf(n){const w=String(n);if(numStyle==='hindu')return w.replace(/[0-9]/g,d=>'٠١٢٣٤٥٦٧٨٩'[d]);return w}
+function syncNumToggle(){document.querySelectorAll('.num-btn').forEach(b=>b.classList.toggle('on',b.dataset.num===numStyle))}
+// Free play mode
+let freePlay=localStorage.getItem('tm_freeplay')==='1';
+
+// ===== THEMES =====
+const THEME_LIST=['astrolabe','khawarizmi','haytham','andalus'];
+let curTheme=localStorage.getItem('tm_theme')||'khawarizmi';
+function applyTheme(t){
+  curTheme=t;document.documentElement.setAttribute('data-theme',t);
+  localStorage.setItem('tm_theme',t);
+  document.querySelectorAll('.theme-btn').forEach(b=>b.classList.toggle('on',b.dataset.theme===t));
+  if($('pYear'))$('pYear').textContent=nf(yearNums?yearNums[yearIdx]||780:780);
+}
+
+// ===== SCREENS =====
+function show(id){S.tap();vib(15);document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));$(id).classList.add('active');
+  // Show map nav button on all screens except Home and Map
+  const mn=$('mapNav');if(mn){mn.classList.toggle('vis',id!=='sHome'&&id!=='sMap')}
+}
+
+// ===== LANGUAGE =====
+function setLang(){
+  const t=T[lang];document.documentElement.dir=t.dir;document.documentElement.lang=lang==='ar'?'ar':lang;
+  // Refresh portal year
+  $('pYear').textContent=nf(yearNums?yearNums[yearIdx]||780:780);$('pSub').textContent=t.pSub;
+  $('hTitle').textContent=t.tit;$('hSub').textContent=t.sub;
+  $('btnStart').innerHTML=t.start;$('mTitle').textContent=t.mT;$('mSub').textContent=t.mS;
+  $('tHome').textContent=t.home;$('tMeet').textContent=t.meet;$('tDisc').textContent=t.disc;
+  $('tPrev').textContent=t.prev;$('tNext').textContent=t.next;$('tChal').textContent=t.chal;
+  $('tMix').textContent=t.mix;$('vTitle').textContent=t.vic;$('tNxt').textContent=t.nxt;
+  $('tMap').textContent=t.map;$('pSub').textContent=t.pSub;
+  $('tMuseum').textContent=t.museum;$('colTitle').textContent=t.colT;$('colSub').textContent=t.colS;
+  $('tColBack').textContent=t.colBack;
+  document.querySelectorAll('.lb').forEach(b=>b.classList.toggle('on',b.dataset.lang===lang));
+  buildMap();
+  // Re-render active screen content in new language
+  const act=document.querySelector('.screen.active');
+  if(act&&cur!==undefined&&L[cur]){
+    const lv=L[cur];
+    if(act.id==='sCity'){$('cYear').textContent=nf(lv.yr)+' '+T[lang].hijri;$('cName').textContent=lv.city[lang];if(lv.cD)$('cDesc').textContent=lv.cD[lang]}
+    if(act.id==='sSci'){$('sciN').textContent=lv.sci[lang];$('sciD').textContent=lv.dt[lang];if(lv.bio)$('sciB').textContent=lv.bio[lang]}
+    if(act.id==='sStory'&&lv.story){$('stTitle').textContent=lv.sci[lang]+' — '+lv.fld[lang];renderSP(lv.story[lang])}
+    if(act.id==='sChal'&&lv.ch){$('chTitle').textContent=lv.ch.t[lang];$('chDesc').textContent=lv.ch.d[lang];$('chHint').textContent=lv.ch.h[lang];
+      const isSingle=lv.ch.single;$('tMix').textContent=isSingle?(lang==='ar'?'تحقق!':lang==='fr'?'Vérifier !':'Check!'):t.mix;
+      document.querySelectorAll('.ing').forEach((b,idx)=>{b.textContent=lv.ch.items[idx].l[lang]})}
+    if(act.id==='sVic'){
+      $('vMsg').textContent=lv.vc?lv.vc[lang]:'';$('cN').textContent=lv.sci[lang];
+      $('cF').textContent=lv.fld[lang];$('cY').textContent=lv.city[lang]+' — '+nf(lv.yr);
+      const isLast=cur>=L.length-1;
+      $('bNxt').innerHTML=isLast?('🏛️ <span id="tNxt">'+(lang==='ar'?'المتحف':lang==='fr'?'Musée':'Museum')+'</span>'):('🚀 <span id="tNxt">'+T[lang].nxt+'</span>');
+      const sub=$('starUpBadge');if(sub.style.display!=='none'){sub.textContent=sub.className==='star-up'&&sub.style.color?
+        (lang==='ar'?'🔄 أعيد اللعب':lang==='fr'?'🔄 Rejoué':'🔄 Replayed'):
+        (lang==='ar'?'⬆️ رقم قياسي جديد!':lang==='fr'?'⬆️ Nouveau record !':'⬆️ New best!')}
+      const ff=funFacts[lv.id];if(ff){$('ffLabel').textContent=lang==='ar'?'💡 هل تعلم؟':lang==='fr'?'💡 Le savais-tu ?':'💡 Did you know?';$('ffText').textContent=ff[lang]}
+    }
+    if(act.id==='sCol'){goCol()}
+  }
+  // Refresh daily challenge for new language
+  if($('dcCard'))initDC();
+}
+
+// ===== MAP =====
+function buildMap(){
+  const g=$('mGrid');g.innerHTML='';
+  // Update museum button badge
+  const mBtn=$('btnMuseum');
+  const dc=doneCount(),ts=totalStars(),ms=L.length*3;
+  mBtn.innerHTML=`🏛️ <span id="tMuseum">${T[lang].museum}</span> <span style="background:var(--grn);color:var(--bg);border-radius:50%;padding:1px 5px;font-size:.6rem;margin-inline-start:4px">${nf(dc)}/${nf(L.length)}</span>`;
+  // Score bar with actual stars
+  const sb=$('scoreBar');
+  sb.innerHTML=`<span class="sb-stars">⭐</span><span class="sb-txt">${nf(ts)} / ${nf(ms)}</span><span class="sb-txt" style="margin-inline-start:12px;color:var(--grn)">${nf(Math.round(dc/L.length*100))}%</span>`;
+  L.forEach((lv,i)=>{
+    const cp=isDone(lv.id),ul=freePlay||i===0||isDone(L[i-1].id);
+    if(i>0 && i%2===0){
+      const tc=document.createElement('div');tc.style.gridColumn='1 / -1';tc.className='tl-conn'+(isDone(L[i-1].id)?' done':'');
+      tc.innerHTML='<div class="tl-dot"></div>';g.appendChild(tc);
+    }
+    const d=document.createElement('div');
+    d.className='mc '+(cp?'cp':ul?'ul':'lk');
+    d.style.animation=`fu .4s ease-out ${i*0.06}s both`;
+    const lvS=getStars(lv.id);
+    const starStr=cp?'<div class="mst">'+'⭐'.repeat(lvS)+'<span style="opacity:.15">'+'⭐'.repeat(3-lvS)+'</span></div>':'';
+    const replayTxt=cp?(lang==='ar'?'↩ إعادة':lang==='fr'?'↩ Rejouer':'↩ Replay'):'';
+    d.innerHTML=`${starStr}<div class="my">${nf(lv.yr)}</div><div class="me">${lv.em}</div><div class="mn">${lv.city[lang]}</div><div class="ms">${lv.sci[lang]}</div>${cp?'<div class="replay-badge">'+replayTxt+'</div>':''}${!ul?'<div class="ml lock-shake">🔒</div>':''}`;
+    d.setAttribute('role','button');d.setAttribute('aria-label',lv.sci[lang]+' — '+lv.city[lang]);
+    if(ul) d.onclick=()=>{S.warp();flash('gold');setTimeout(()=>goLevel(i),300)};
+    g.appendChild(d);
+  });
+  // Sync free play toggle UI
+  const fpT=$('fpTog');if(fpT)fpT.classList.toggle('on',freePlay);
+  const fpL=$('fpLabel');if(fpL)fpL.textContent=freePlay?'🔓':'🔒';
+}
+
+// ===== LEVEL FLOW =====
+function goLevel(i){
+  cur=i;const lv=L[i];
+  $('cYear').textContent=nf(lv.yr)+' '+T[lang].hijri;$('cName').textContent=lv.city[lang];
+  $('cDesc').textContent=lv.cD?lv.cD[lang]:'';
+  spawnCityAmb(lv.city[lang]);
+  show('sCity');
+}
+
+function goSci(){
+  S.reveal();const lv=L[cur];
+  $('sciP').textContent=lv.em;$('sciN').textContent=lv.sci[lang];
+  $('sciD').textContent=lv.dt[lang];$('sciB').textContent=lv.bio?lv.bio[lang]:'...';
+  show('sSci');
+}
+
+function goStory(){
+  const lv=L[cur];if(!lv.story)return;sp=0;
+  $('stTitle').textContent=lv.sci[lang]+' — '+lv.fld[lang];
+  renderSP(lv.story[lang]);show('sStory');S.page();
+}
+function renderSP(pgs){
+  const c=$('stPages');c.innerHTML='';
+  pgs.forEach((p,i)=>{const d=document.createElement('div');d.className='sp'+(i===sp?' on':'');
+    // Extract emoji from text for scene header
+    const emMatch=p.match(/[\p{Emoji_Presentation}\p{Extended_Pictographic}]/gu);
+    const sceneEm=emMatch?emMatch[emMatch.length-1]:'📖';
+    d.innerHTML=`${i===sp?'<div class="st-scene">'+sceneEm+'</div>':''}<div class="st${i===sp?' st-slide':''}">` + p + `</div>`;
+    c.appendChild(d)});
+  const dots=$('stDots');dots.innerHTML='';
+  pgs.forEach((_,i)=>{const d=document.createElement('div');d.className='dot'+(i===sp?' on':'');dots.appendChild(d)});
+  $('bChal').style.display=sp===pgs.length-1?'block':'none';
+  $('bNext').style.display=sp<pgs.length-1?'':'none';
+  $('bPrev').style.display=sp>0?'':'none';
+}
+
+function goChal(){
+  const lv=L[cur];if(!lv.ch)return;att=0;selIng.clear();
+  const isSingle=lv.ch.single;
+  $('chTitle').textContent=lv.ch.t[lang];$('chDesc').textContent=lv.ch.d[lang];
+  $('chHint').textContent=lv.ch.h[lang];$('rMsg').textContent='';$('rMsg').className='rm';
+  const mixLbl=isSingle?(lang==='ar'?'تحقق!':lang==='fr'?'Vérifier !':'Check!'):T[lang].mix;
+  $('tMix').textContent=mixLbl;
+  $('bMix').style.display='none';$('blq').style.height='0';$('blq').style.background='transparent';
+  $('bBub').innerHTML='';
+  const g=$('iGrid');g.innerHTML='';
+  lv.ch.items.forEach((item,idx)=>{const b=document.createElement('button');b.className='ing';
+    b.textContent=item.l[lang];b.style.animation=`fu .3s ease-out ${idx*0.07}s both`;
+    b.onclick=()=>togIng(item,b);g.appendChild(b)});
+  show('sChal');S.whoosh();
+}
+
+function togIng(item,btn){
+  const lv=L[cur],isSingle=lv.ch&&lv.ch.single;
+  if(isSingle){
+    // Single-select: deselect all others first
+    selIng.clear();document.querySelectorAll('.ing').forEach(b=>b.classList.remove('sel'));
+    selIng.add(item.id);btn.classList.add('sel');S.sel();addBub();S.bub();vib(10);
+  } else {
+    if(selIng.has(item.id)){selIng.delete(item.id);btn.classList.remove('sel');S.desel()}
+    else{selIng.add(item.id);btn.classList.add('sel');S.sel();addBub();S.bub();vib(10)}
+  }
+  const fill=isSingle?selIng.size*70:selIng.size*22;$('blq').style.height=Math.min(fill,100)+'%';
+  const cls=['#1a8fff','#8b5cf6','#f59e0b','#10b981','#d4a843'];
+  $('blq').style.background=`linear-gradient(180deg,${cls[selIng.size%cls.length]},${cls[(selIng.size+2)%cls.length]})`;
+  const minSel=isSingle?1:3;
+  $('bMix').style.display=selIng.size>=minSel?'block':'none';
+  if(selIng.size>=minSel){$('bMix').style.animation='fu .3s ease-out'}
+}
+
+function doMix(){
+  const lv=L[cur],ch=lv.ch;
+  const okIds=ch.items.filter(i=>i.ok).map(i=>i.id),sel=[...selIng];
+  const allOk=okIds.every(id=>sel.includes(id))&&sel.every(id=>okIds.includes(id));
+  // Add lots of bubbles + beaker shake
+  for(let i=0;i<8;i++) setTimeout(()=>addBub(),i*100);
+  S.bub();vib(30);
+  const bkrEl=document.querySelector('.bkr');if(bkrEl){bkrEl.style.animation='shake .3s ease-in-out';setTimeout(()=>bkrEl.style.animation='',400)}
+  document.querySelectorAll('.ing').forEach(btn=>{
+    const item=ch.items.find(i=>i.l[lang]===btn.textContent);if(!item)return;
+    if(sel.includes(item.id)) btn.classList.add(item.ok?'ok':'no');
+  });
+  att++;
+  if(allOk){
+    $('rMsg').textContent=lang==='ar'?'✅ ممتاز!':lang==='fr'?'✅ Excellent !':'✅ Excellent!';
+    $('rMsg').className='rm ok';$('blq').style.background='linear-gradient(180deg,var(--em),#059669)';
+    S.ok();flash('green');vib([30,20,30]);burst();setTimeout(()=>goVic(),1100);
+  } else {
+    $('rMsg').textContent=lang==='ar'?'❌ حاول مرة أخرى!':lang==='fr'?'❌ Réessaye !':'❌ Try again!';
+    $('rMsg').className='rm no';S.fail();vib([100,30,100]);
+    setTimeout(()=>{selIng.clear();$('bMix').style.display='none';$('blq').style.height='0';$('rMsg').textContent='';
+      document.querySelectorAll('.ing').forEach(b=>{b.className='ing'})},900);
+  }
+}
+
+function goVic(){
+  const lv=L[cur],starN=att<=1?3:att<=2?2:1;
+  const prevStars=getStars(lv.id);
+  $('vMsg').textContent=lv.vc?lv.vc[lang]:'';
+  $('cE').textContent=lv.em;$('cN').textContent=lv.sci[lang];
+  $('cF').textContent=lv.fld[lang];$('cY').textContent=lv.city[lang]+' — '+nf(lv.yr);
+  ['s1','s2','s3'].forEach(id=>{$(id).classList.remove('on')});
+  const isLast=cur>=L.length-1;
+  $('bNxt').innerHTML=isLast?('🏛️ <span id="tNxt">'+(lang==='ar'?'المتحف':lang==='fr'?'Musée':'Museum')+'</span>'):('🚀 <span id="tNxt">'+T[lang].nxt+'</span>');
+  // Star improvement badge
+  const sub=$('starUpBadge');
+  if(isDone(lv.id)&&starN>prevStars){
+    sub.style.display='inline-block';sub.className='star-up';
+    sub.textContent=lang==='ar'?'⬆️ رقم قياسي جديد!':lang==='fr'?'⬆️ Nouveau record !':'⬆️ New best!';
+  }else if(isDone(lv.id)){
+    sub.style.display='inline-block';sub.className='star-up';sub.style.background='rgba(0,150,136,.08)';sub.style.borderColor='rgba(0,150,136,.15)';sub.style.color='var(--teal)';
+    sub.textContent=lang==='ar'?'🔄 أعيد اللعب':lang==='fr'?'🔄 Rejoué':'🔄 Replayed';
+  }else{sub.style.display='none'}
+  // Fun fact
+  const ff=funFacts[lv.id],ffEl=$('funFact'),ffLbl=$('ffLabel'),ffTxt=$('ffText');
+  if(ff){ffEl.style.display='block';ffLbl.textContent=lang==='ar'?'💡 هل تعلم؟':lang==='fr'?'💡 Le savais-tu ?':'💡 Did you know?';ffTxt.textContent=ff[lang]}
+  else{ffEl.style.display='none'}
+  show('sVic');S.vic();vib([50,30,50]);goConf();
+  const scEl=document.querySelector('.sc');if(scEl){scEl.style.animation='cardFlip .6s .2s ease-out both'}
+  setTimeout(()=>{$('s1').classList.add('on');S.star();vib(20)},350);
+  if(starN>=2) setTimeout(()=>{$('s2').classList.add('on');S.star();vib(20)},650);
+  if(starN>=3) setTimeout(()=>{$('s3').classList.add('on');S.star();vib(20)},950);
+  if(!isDone(lv.id)||starN>getStars(lv.id)){stars[lv.id]=starN;localStorage.setItem('tm_stars',JSON.stringify(stars))}
+}
+
+// ===== CYCLING PORTAL YEAR =====
+let yearIdx=0;
+const yearNums=[780,820,852,859,1000,1000,1040,1154,1206,1000];
+setInterval(()=>{yearIdx=(yearIdx+1)%yearNums.length;$('pYear').textContent=nf(yearNums[yearIdx]);
+  $('pYear').style.animation='none';$('pYear').offsetWidth;$('pYear').style.animation='fu .4s ease-out'},2500);
+
+// ===== COLLECTION / MUSEUM =====
+function goCol(){
+  S.whoosh();vib(20);
+  const t=T[lang],g=$('colGrid');g.innerHTML='';
+  L.forEach((lv,i)=>{
+    const earned=isDone(lv.id);
+    const d=document.createElement('div');
+    d.className='col-card '+(earned?'earned':'locked');
+    if(earned) d.style.animationDelay=(i*0.06)+'s';
+    const lvS=getStars(lv.id);
+    const miniStars=earned?'<div class="cc-star">'+'⭐'.repeat(lvS)+'</div>':'';
+    d.innerHTML=`${miniStars}<div class="cc-em">${earned?lv.em:'❓'}</div><div class="cc-name">${earned?lv.sci[lang]:'???'}</div><div class="cc-fld">${earned?lv.fld[lang]:''}</div>`;
+    g.appendChild(d);
+  });
+  const cnt=doneCount(),total=L.length,pct=Math.round(cnt/total*100),ts=totalStars();
+  $('colProg').innerHTML=`<div>${t.colProg} <strong>${nf(cnt)}</strong> ${t.colOf} <strong>${nf(total)}</strong> · ⭐ ${nf(ts)}/${nf(total*3)}</div><div class="pg-bar"><div class="pg-fill" style="width:${pct}%"></div></div>`;
+  const comp=$('colComplete');
+  if(cnt>=total){
+    comp.style.display='block';
+    comp.innerHTML=`<div class="cf-title">${t.colDone}</div><div class="cf-sub">${t.colDoneS}</div>`;
+    if(!sessionStorage.getItem('tm_final_cele')){sessionStorage.setItem('tm_final_cele','1');goConf();S.vic()}
+  } else {comp.style.display='none'}
+  $('btnReset').textContent=lang==='ar'?'🔄 إعادة البدء':lang==='fr'?'🔄 Recommencer':'🔄 Reset Progress';
+  $('tMystery').textContent=lang==='ar'?'عالم الغموض':lang==='fr'?'Scientifique mystère':'Mystery Scientist';
+  $('tPassport').textContent=lang==='ar'?'الجواز':lang==='fr'?'Passeport':'Passport';
+  // Lock mystery if <5 done
+  $('btnMystery').style.opacity=doneCount()>=5?'1':'.4';
+  renderBadges();
+  show('sCol');
+}
+function resetProg(){
+  const msg=lang==='ar'?'هل تريد إعادة البدء؟':lang==='fr'?'Recommencer le jeu ?':'Reset all progress?';
+  if(confirm(msg)){stars={};localStorage.setItem('tm_stars','{}');sessionStorage.removeItem('tm_final_cele');goCol()}
+}
+
+// ===== NEXT STATION LOGIC =====
+function goNext(){
+  S.whoosh();vib(20);
+  if(cur>=L.length-1){
+    // All done! Go to collection
+    flash('green');setTimeout(()=>{goCol()},300);
+  } else {
+    const nextIdx=cur+1;
+    flash('gold');setTimeout(()=>{goLevel(nextIdx)},300);
+  }
+}
+
+// ===== TOUCH SWIPE FOR STORY =====
+let txS=0,txE=0;
+document.getElementById('sStory').addEventListener('touchstart',e=>{txS=e.changedTouches[0].screenX},{passive:true});
+document.getElementById('sStory').addEventListener('touchend',e=>{txE=e.changedTouches[0].screenX;
+  const diff=txS-txE,pgs=L[cur]&&L[cur].story?L[cur].story[lang]:null;if(!pgs)return;
+  if(Math.abs(diff)>50){
+    const isRTL=lang==='ar';
+    if((isRTL?diff<-50:diff>50)&&sp<pgs.length-1){sp++;renderSP(pgs);S.page()}
+    else if((isRTL?diff>50:diff<-50)&&sp>0){sp--;renderSP(pgs);S.page()}
+  }},{passive:true});
+
+// ===== EVENTS =====
+$('langRow').addEventListener('click',e=>{const b=e.target.closest('.lb');if(!b)return;lang=b.dataset.lang;localStorage.setItem('tm_lang',lang);setLang()});
+$('btnStart').onclick=()=>{S.whoosh();vib(40);flash('gold');setTimeout(()=>{buildMap();show('sMap')},250)};
+$('bHome').onclick=()=>show('sHome');
+$('bMeet').onclick=()=>goSci();
+$('bDisc').onclick=()=>goStory();
+$('pronBtn').onclick=()=>{const lv=L[cur];if(lv)pronounce(lv.sci.ar)};
+$('bNext').onclick=()=>{const pgs=L[cur].story[lang];if(sp<pgs.length-1){sp++;renderSP(pgs);S.page()}};
+$('bPrev').onclick=()=>{const pgs=L[cur].story[lang];if(sp>0){sp--;renderSP(pgs);S.page()}};
+$('bChal').onclick=()=>goChal();
+$('bMix').onclick=()=>doMix();
+$('bNxt').onclick=()=>goNext();
+$('bMap2').onclick=()=>{buildMap();show('sMap')};
+// Map nav button - return to journey map from any screen
+$('mapNav').onclick=()=>{buildMap();show('sMap')};
+// Free play toggle
+$('fpTog').onclick=()=>{freePlay=!freePlay;localStorage.setItem('tm_freeplay',freePlay?'1':'0');S.tap();vib(15);buildMap()};
+// Theme selector
+$('themeRow').addEventListener('click',e=>{const b=e.target.closest('.theme-btn');if(!b)return;S.tap();vib(15);applyTheme(b.dataset.theme)});
+// Numeral toggle
+$('numToggle').addEventListener('click',e=>{const b=e.target.closest('.num-btn');if(!b)return;
+  numStyle=b.dataset.num;localStorage.setItem('tm_num',numStyle);S.tap();vib(15);syncNumToggle();setLang()});
+
+// ===== DAILY CHALLENGE =====
+const DC_QUESTIONS=[
+  {q:{ar:'من اخترع الجبر؟',fr:'Qui a inventé l\'algèbre?',en:'Who invented algebra?'},
+   opts:[{l:{ar:'الخوارزمي',fr:'Al-Khwarizmi',en:'Al-Khwarizmi'},ok:true},{l:{ar:'ابن سينا',fr:'Ibn Sina',en:'Ibn Sina'},ok:false},{l:{ar:'الرازي',fr:'Al-Razi',en:'Al-Razi'},ok:false}]},
+  {q:{ar:'ما تخصص جابر بن حيان؟',fr:'Quelle spécialité de Jabir?',en:'What was Jabir\'s specialty?'},
+   opts:[{l:{ar:'الكيمياء',fr:'Chimie',en:'Chemistry'},ok:true},{l:{ar:'الفلك',fr:'Astronomie',en:'Astronomy'},ok:false},{l:{ar:'الطب',fr:'Médecine',en:'Medicine'},ok:false}]},
+  {q:{ar:'من كتب "القانون في الطب"؟',fr:'Qui a écrit le Canon?',en:'Who wrote the Canon of Medicine?'},
+   opts:[{l:{ar:'ابن سينا',fr:'Ibn Sina',en:'Ibn Sina'},ok:true},{l:{ar:'الزهراوي',fr:'Al-Zahrawi',en:'Al-Zahrawi'},ok:false},{l:{ar:'البيروني',fr:'Al-Biruni',en:'Al-Biruni'},ok:false}]},
+  {q:{ar:'من هو أبو البصريات؟',fr:'Qui est le père de l\'optique?',en:'Who is the father of optics?'},
+   opts:[{l:{ar:'ابن الهيثم',fr:'Ibn Al-Haytham',en:'Ibn Al-Haytham'},ok:true},{l:{ar:'الكندي',fr:'Al-Kindi',en:'Al-Kindi'},ok:false},{l:{ar:'الفارابي',fr:'Al-Farabi',en:'Al-Farabi'},ok:false}]},
+  {q:{ar:'أين عاش الإدريسي؟',fr:'Où vivait Al-Idrisi?',en:'Where did Al-Idrisi live?'},
+   opts:[{l:{ar:'صقلية',fr:'Sicile',en:'Sicily'},ok:true},{l:{ar:'بغداد',fr:'Bagdad',en:'Baghdad'},ok:false},{l:{ar:'قرطبة',fr:'Cordoue',en:'Cordoba'},ok:false}]},
+  {q:{ar:'ماذا اخترع الجزري؟',fr:'Qu\'a inventé Al-Jazari?',en:'What did Al-Jazari invent?'},
+   opts:[{l:{ar:'روبوتات آلية',fr:'Automates',en:'Automatons'},ok:true},{l:{ar:'تلسكوب',fr:'Télescope',en:'Telescope'},ok:false},{l:{ar:'بوصلة',fr:'Boussole',en:'Compass'},ok:false}]},
+  {q:{ar:'من هو أبو الجراحة؟',fr:'Qui est le père de la chirurgie?',en:'Who is the father of surgery?'},
+   opts:[{l:{ar:'الزهراوي',fr:'Al-Zahrawi',en:'Al-Zahrawi'},ok:true},{l:{ar:'ابن سينا',fr:'Ibn Sina',en:'Ibn Sina'},ok:false},{l:{ar:'الرازي',fr:'Al-Razi',en:'Al-Razi'},ok:false}]},
+  {q:{ar:'كم قارة رسمها الإدريسي؟',fr:'Combien de continents Al-Idrisi?',en:'How many continents did Al-Idrisi map?'},
+   opts:[{l:{ar:'٣',fr:'3',en:'3'},ok:true},{l:{ar:'٥',fr:'5',en:'5'},ok:false},{l:{ar:'٧',fr:'7',en:'7'},ok:false}]},
+  {q:{ar:'ما اسم ساعة الفيل؟',fr:'Nom de l\'horloge éléphant?',en:'Name of the elephant clock?'},
+   opts:[{l:{ar:'ساعة الفيل',fr:'Horloge éléphant',en:'Elephant Clock'},ok:true},{l:{ar:'ساعة الماء',fr:'Horloge à eau',en:'Water Clock'},ok:false},{l:{ar:'ساعة الشمس',fr:'Cadran solaire',en:'Sundial'},ok:false}]},
+  {q:{ar:'من قاس محيط الأرض؟',fr:'Qui a mesuré la Terre?',en:'Who measured Earth\'s circumference?'},
+   opts:[{l:{ar:'البيروني',fr:'Al-Biruni',en:'Al-Biruni'},ok:true},{l:{ar:'الإدريسي',fr:'Al-Idrisi',en:'Al-Idrisi'},ok:false},{l:{ar:'الخوارزمي',fr:'Al-Khwarizmi',en:'Al-Khwarizmi'},ok:false}]}
+];
+function getDailyIdx(){const d=new Date();return(d.getFullYear()*1000+d.getMonth()*31+d.getDate())%DC_QUESTIONS.length}
+function getToday(){return new Date().toISOString().slice(0,10)}
+function initDC(){
+  const card=$('dcCard'),today=getToday();
+  const answered=localStorage.getItem('tm_dc_date')===today;
+  const streak=parseInt(localStorage.getItem('tm_dc_streak')||'0');
+  const dcT={ar:'🎯 تحدي اليوم',fr:'🎯 Défi du jour',en:'🎯 Daily Challenge'};
+  $('dcLabel').textContent=dcT[lang]||dcT.en;
+  $('dcStreak').textContent=streak>0?'🔥 '+nf(streak):'';
+  card.style.display='block';
+  const q=DC_QUESTIONS[getDailyIdx()];
+  $('dcQ').textContent=q.q[lang]||q.q.en;
+  const opts=$('dcOpts'),done=$('dcDone');
+  if(answered){
+    opts.style.display='none';done.style.display='block';
+    const doneT={ar:'✅ أجبت اليوم! عُد غداً',fr:'✅ Répondu! Reviens demain',en:'✅ Answered! Come back tomorrow'};
+    done.textContent=doneT[lang]||doneT.en;
+  } else {
+    opts.style.display='flex';done.style.display='none';opts.innerHTML='';
+    const shuffled=[...q.opts].sort(()=>Math.random()-.5);
+    shuffled.forEach(o=>{
+      const b=document.createElement('button');b.className='dc-opt';b.textContent=o.l[lang]||o.l.en;
+      b.onclick=()=>{
+        if(opts.querySelector('.ok'))return;
+        if(o.ok){
+          b.classList.add('ok');S.vic();vib(30);
+          // Update streak
+          const yesterday=new Date();yesterday.setDate(yesterday.getDate()-1);
+          const yStr=yesterday.toISOString().slice(0,10);
+          const lastDate=localStorage.getItem('tm_dc_date');
+          const newStreak=(lastDate===yStr?streak:0)+1;
+          localStorage.setItem('tm_dc_streak',String(newStreak));
+          localStorage.setItem('tm_dc_date',today);
+          $('dcStreak').textContent='🔥 '+nf(newStreak);
+          setTimeout(()=>{opts.style.display='none';done.style.display='block';
+            const doneT={ar:'✅ صحيح! عُد غداً',fr:'✅ Correct! Reviens demain',en:'✅ Correct! Come back tomorrow'};
+            done.textContent=doneT[lang]||doneT.en},800);
+        } else {
+          b.classList.add('wrong');S.err();vib(80);
+        }
+      };
+      opts.appendChild(b);
+    });
+  }
+}
+
+// ===== ACHIEVEMENT BADGES =====
+const BADGES=[
+  {id:'first',icon:'🌟',n:{ar:'أول اكتشاف',fr:'Première découverte',en:'First Discovery'},check:()=>doneCount()>=1},
+  {id:'explorer',icon:'🧭',n:{ar:'مستكشف',fr:'Explorateur',en:'Explorer'},check:()=>doneCount()>=3},
+  {id:'scholar',icon:'📚',n:{ar:'عالِم',fr:'Savant',en:'Scholar'},check:()=>doneCount()>=5},
+  {id:'master',icon:'🎓',n:{ar:'أستاذ',fr:'Maître',en:'Master'},check:()=>doneCount()>=7},
+  {id:'polymath',icon:'🧠',n:{ar:'موسوعي',fr:'Polymathe',en:'Polymath'},check:()=>doneCount()>=10},
+  {id:'golden',icon:'👑',n:{ar:'العصر الذهبي',fr:'Âge d\'or',en:'Golden Age'},check:()=>totalStars()>=30},
+  {id:'streak3',icon:'🔥',n:{ar:'مثابر',fr:'Persévérant',en:'Dedicated'},check:()=>parseInt(localStorage.getItem('tm_dc_streak')||'0')>=3},
+  {id:'streak7',icon:'⚡',n:{ar:'بطل التحدي',fr:'Champion',en:'Streak Master'},check:()=>parseInt(localStorage.getItem('tm_dc_streak')||'0')>=7}
+];
+function renderBadges(){
+  const row=$('badgeRow');if(!row)return;row.innerHTML='';
+  const bTitle={ar:'🏆 الإنجازات',fr:'🏆 Réalisations',en:'🏆 Achievements'};
+  $('badgeTitle').textContent=bTitle[lang]||bTitle.en;
+  BADGES.forEach(b=>{
+    const earned=b.check();
+    const d=document.createElement('div');
+    d.className='badge '+(earned?'earned':'locked');
+    d.innerHTML=`<span class="b-icon">${b.icon}</span><span class="b-name">${b.n[lang]||b.n.en}</span>`;
+    if(earned)d.title=b.n[lang]||b.n.en;
+    row.appendChild(d);
+  });
+}
+
+// ===== PRONUNCIATION =====
+function pronounce(text){
+  if(!('speechSynthesis' in window))return;
+  window.speechSynthesis.cancel();
+  const btn=$('pronBtn');if(btn)btn.classList.add('speaking');
+  const u=new SpeechSynthesisUtterance(text);
+  u.lang='ar-SA';u.rate=0.8;u.pitch=1;
+  // Try to find an Arabic voice
+  const voices=window.speechSynthesis.getVoices();
+  const arVoice=voices.find(v=>v.lang.startsWith('ar'));
+  if(arVoice)u.voice=arVoice;
+  u.onend=()=>{if(btn)btn.classList.remove('speaking')};
+  u.onerror=()=>{if(btn)btn.classList.remove('speaking')};
+  window.speechSynthesis.speak(u);
+}
+
+// ===== MYSTERY SCIENTIST =====
+let mysTarget=null,mysRevealed=0;
+function startMystery(){
+  if(doneCount()<5){
+    const msgs={ar:'أكمل ٥ مراحل لفتح هذه اللعبة!',fr:'Complète 5 niveaux pour débloquer!',en:'Complete 5 levels to unlock!'};
+    alert(msgs[lang]||msgs.en);return;
+  }
+  mysRevealed=0;
+  // Pick a random scientist from completed ones
+  const done=L.filter(lv=>isDone(lv.id));
+  mysTarget=done[Math.floor(Math.random()*done.length)];
+  const tTitle={ar:'من هذا العالم؟',fr:'Qui est ce savant?',en:'Who is this scientist?'};
+  const tSub={ar:'اكتشف العالم من الأدلة',fr:'Trouve le savant grâce aux indices',en:'Find the scientist from the clues'};
+  const tReveal={ar:'دليل إضافي',fr:'Indice suivant',en:'Next clue'};
+  const tAgain={ar:'جديد',fr:'Nouveau',en:'New'};
+  const tBack={ar:'المتحف',fr:'Musée',en:'Museum'};
+  $('mysTitle').textContent=tTitle[lang]||tTitle.en;
+  $('mysSub').textContent=tSub[lang]||tSub.en;
+  $('mysRevealTxt').textContent=tReveal[lang]||tReveal.en;
+  $('mysAgain').textContent=tAgain[lang]||tAgain.en;
+  $('mysBack').textContent=tBack[lang]||tBack.en;
+  // Build clues: era, field, city
+  const clues=[
+    {icon:'📅',text:mysTarget.dt[lang]||mysTarget.dt.en},
+    {icon:'🔬',text:mysTarget.fld[lang]||mysTarget.fld.en},
+    {icon:'🏙️',text:mysTarget.city[lang]||mysTarget.city.en}
+  ];
+  const cDiv=$('mysClues');cDiv.innerHTML='';
+  clues.forEach((c,i)=>{
+    const d=document.createElement('div');d.className='mys-clue';d.id='mysC'+i;
+    d.innerHTML=`<div class="clue-icon">${c.icon}</div><div class="clue-text">${c.text}</div>`;
+    cDiv.appendChild(d);
+  });
+  // Show first clue
+  setTimeout(()=>{$('mysC0').classList.add('show')},200);
+  $('mysRevealBtn').style.display='';mysRevealed=1;
+  // Build guess options (4 choices: target + 3 random)
+  const others=done.filter(l=>l.id!==mysTarget.id);
+  const picks=[mysTarget];
+  while(picks.length<Math.min(4,done.length)){
+    const r=others[Math.floor(Math.random()*others.length)];
+    if(!picks.find(p=>p.id===r.id))picks.push(r);
+  }
+  picks.sort(()=>Math.random()-.5);
+  const gDiv=$('mysGuess');gDiv.innerHTML='';
+  picks.forEach(p=>{
+    const b=document.createElement('button');b.className='mys-opt';
+    b.textContent=p.sci[lang]||p.sci.en;
+    b.onclick=()=>checkMystery(p.id,b);
+    gDiv.appendChild(b);
+  });
+  $('mysResult').style.display='none';
+  show('sMyS');
+}
+$('mysRevealBtn').onclick=()=>{
+  if(mysRevealed<3){
+    $('mysC'+mysRevealed).classList.add('show');mysRevealed++;S.tap();vib(15);
+    if(mysRevealed>=3)$('mysRevealBtn').style.display='none';
+  }
+};
+function checkMystery(id,btn){
+  if($('mysGuess').querySelector('.ok'))return;
+  if(id===mysTarget.id){
+    btn.classList.add('ok');S.vic();vib(30);burst();
+    const res=$('mysResult');res.style.display='block';
+    const msgs={ar:'🎉 صحيح! إنه '+mysTarget.sci.ar+'!',fr:'🎉 Correct! C\'est '+mysTarget.sci.fr+'!',en:'🎉 Correct! It\'s '+mysTarget.sci.en+'!'};
+    res.innerHTML=`<div style="font-size:2rem">${mysTarget.em}</div><div style="color:var(--em)">${msgs[lang]||msgs.en}</div>`;
+  } else {
+    btn.classList.add('wrong');S.err();vib(80);
+  }
+}
+
+// ===== SCHOLAR'S PASSPORT =====
+function showPassport(){
+  const tTitle={ar:'📜 جواز العالِم',fr:'📜 Passeport du savant',en:'📜 Scholar\'s Passport'};
+  const tSub={ar:'طوابع رحلتك عبر الزمن',fr:'Tampons de ton voyage dans le temps',en:'Stamps from your journey through time'};
+  const tBack={ar:'المتحف',fr:'Musée',en:'Museum'};
+  const tCount={ar:'طوابع',fr:'tampons',en:'stamps'};
+  $('passTitle').textContent=tTitle[lang]||tTitle.en;
+  $('passSub').textContent=tSub[lang]||tSub.en;
+  $('passBack').textContent=tBack[lang]||tBack.en;
+  const grid=$('stampGrid');grid.innerHTML='';
+  let cnt=0;
+  L.forEach((lv,i)=>{
+    const earned=isDone(lv.id);if(earned)cnt++;
+    const d=document.createElement('div');
+    d.className='stamp '+(earned?'earned':'locked');
+    if(earned){
+      d.innerHTML=`<span class="st-em">${lv.em}</span><span class="st-city">${lv.city[lang]||lv.city.en}</span><span class="st-yr">${nf(lv.yr)}</span>`;
+      d.style.animationDelay=(i*0.05)+'s';d.style.animation='fu .4s ease-out '+(i*0.05)+'s both';
+    } else {
+      d.innerHTML=`<span class="st-em">❓</span>`;
+    }
+    grid.appendChild(d);
+  });
+  $('passCount').textContent=`${nf(cnt)} / ${nf(L.length)} ${tCount[lang]||tCount.en}`;
+  show('sPass');
+}
+
+// ===== INIT =====
+// Logo is embedded as SVG in HTML
+// $('logoImg').src='data:image/png;base64,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';
+// ===== STARFIELD =====
+(function(){const sf=$('starfield'),n=35;for(let i=0;i<n;i++){const s=document.createElement('div');
+  s.className='star s'+((i%3)+1);s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';
+  s.style.animationDelay=(Math.random()*5)+'s';sf.appendChild(s)}})();
+
+// ===== SPLASH SCREEN =====
+setTimeout(()=>{$('splash').classList.add('gone')},1600);
+
+// ===== CITY AMBIENT EMOJIS =====
+const cityEmojis={
+  'بغداد':['📜','🕌','📖','✨','🏺'],'Bagdad':['📜','🕌','📖','✨','🏺'],'Baghdad':['📜','🕌','📖','✨','🏺'],
+  'قرطبة':['🏰','🌺','🎵','🌙','✨'],'Cordoue':['🏰','🌺','🎵','🌙','✨'],'Córdoba':['🏰','🌺','🎵','🌙','✨'],
+  'فاس':['🎓','📚','🕌','🌙','✨'],'Fès':['🎓','📚','🕌','🌙','✨'],'Fez':['🎓','📚','🕌','🌙','✨'],
+  'بخارى':['💊','📖','🌿','✨','🕌'],'Boukhara':['💊','📖','🌿','✨','🕌'],'Bukhara':['💊','📖','🌿','✨','🕌'],
+  'القاهرة':['🔭','💡','📸','✨','🌙'],'Le Caire':['🔭','💡','📸','✨','🌙'],'Cairo':['🔭','💡','📸','✨','🌙'],
+  'غزنة':['🏔️','📐','🌍','✨','📚'],'Ghazni':['🏔️','📐','🌍','✨','📚'],
+  'صقلية':['🗺️','🌐','⛵','✨','🏰'],'Sicile':['🗺️','🌐','⛵','✨','🏰'],'Sicily':['🗺️','🌐','⛵','✨','🏰'],
+  'ديار بكر':['⚙️','🤖','🔧','✨','💧'],'Diyarbakir':['⚙️','🤖','🔧','✨','💧']
+};
+function spawnCityAmb(cityName){
+  const c=$('cityAmb');c.innerHTML='';
+  const ems=cityEmojis[cityName]||['✨','🌙','⭐','📖','🕌'];
+  for(let i=0;i<8;i++){const e=document.createElement('div');e.className='ca-em';
+    e.textContent=ems[i%ems.length];e.style.left=Math.random()*90+'%';e.style.top=60+Math.random()*30+'%';
+    e.style.animationDelay=(Math.random()*4)+'s';e.style.animationDuration=(5+Math.random()*3)+'s';c.appendChild(e)}
+}
+
+// ===== SUCCESS BURST =====
+function burst(){const b=document.createElement('div');b.className='burst';document.body.appendChild(b);
+  const colors=['#d4a843','#f0d060','#00c853','#4caf50','#009688','#fff'];
+  for(let i=0;i<20;i++){const p=document.createElement('div');p.className='burst-p';
+    const ang=Math.random()*Math.PI*2,dist=40+Math.random()*80;
+    p.style.setProperty('--bx',Math.cos(ang)*dist+'px');p.style.setProperty('--by',Math.sin(ang)*dist+'px');
+    p.style.background=colors[i%colors.length];p.style.width=(4+Math.random()*4)+'px';p.style.height=p.style.width;
+    p.style.animationDelay=(Math.random()*0.1)+'s';b.appendChild(p)}
+  setTimeout(()=>b.remove(),1000)}
+
+// ===== STORY SCENE EMOJIS =====
+const sceneEmojis=['🔬','💨','🧪','🌍','📐','📖','💻','🔢','🦅','🪂','✈️','🎵',
+  '💰','🏗️','📚','🎓','🧒','📖','🦠','💊','🌑','💡','📸','🔬',
+  '🗣️','🏔️','🎯','📚','🏰','🗺️','🌐','📖','⚙️','🤖','🔧','📐','🏥','✂️','🧵','📚'];
+
+spawnP();applyTheme(curTheme);syncNumToggle();setLang();initDC();
+// Pre-load speech synthesis voices
+if('speechSynthesis' in window)window.speechSynthesis.getVoices();
+
+// ===== FUN FACTS =====
+const funFacts={
+  jabir:{ar:'🧪 كلمة "كيمياء" في اللغات الأوروبية (Chemistry) مشتقة من كلمة "الكيمياء" العربية التي استخدمها جابر!',
+    fr:'🧪 Le mot "chimie" vient de l\'arabe "al-kimiya" utilisé par Jabir !',
+    en:'🧪 The word "chemistry" comes from the Arabic "al-kimiya" used by Jabir!'},
+  khwarizmi:{ar:'💻 كلمة "خوارزمية" (Algorithm) المستخدمة في كل الحواسيب اليوم مشتقة من اسم الخوارزمي!',
+    fr:'💻 Le mot "algorithme" vient du nom d\'Al-Khwarizmi !',
+    en:'💻 The word "algorithm" used in every computer today comes from Al-Khwarizmi\'s name!'},
+  firnas:{ar:'✈️ قام عباس بن فرناس بمحاولة الطيران قبل الأخوين رايت بأكثر من 1000 سنة!',
+    fr:'✈️ Abbas ibn Firnas a tenté de voler plus de 1000 ans avant les frères Wright !',
+    en:'✈️ Abbas ibn Firnas attempted flight over 1000 years before the Wright Brothers!'},
+  fihri:{ar:'🎓 جامعة القرويين التي أسستها فاطمة الفهري لا تزال تعمل حتى اليوم منذ 859 م!',
+    fr:'🎓 L\'université Al-Qarawiyyin fondée par Fatima al-Fihri fonctionne encore depuis 859 !',
+    en:'🎓 Al-Qarawiyyin University founded by Fatima al-Fihri still operates today since 859 AD!'},
+  sina:{ar:'📚 كتاب "القانون في الطب" لابن سينا كان المرجع الطبي الرئيسي في أوروبا لأكثر من 600 سنة!',
+    fr:'📚 Le "Canon de la Médecine" d\'Ibn Sina fut la référence médicale en Europe pendant 600 ans !',
+    en:'📚 Ibn Sina\'s "Canon of Medicine" was the main medical reference in Europe for over 600 years!'},
+  haytham:{ar:'📷 ابن الهيثم اخترع مبدأ الكاميرا (الغرفة المظلمة) قبل اختراع التصوير بـ 800 سنة!',
+    fr:'📷 Ibn al-Haytham a inventé le principe de la caméra 800 ans avant la photographie !',
+    en:'📷 Ibn al-Haytham invented the camera principle (camera obscura) 800 years before photography!'},
+  biruni:{ar:'🌍 حسب البيروني محيط الأرض بدقة 99.7% باستخدام جبل وزاوية فقط!',
+    fr:'🌍 Al-Biruni a calculé la circonférence de la Terre avec 99,7% de précision !',
+    en:'🌍 Al-Biruni calculated Earth\'s circumference with 99.7% accuracy using just a mountain and an angle!'},
+  idrisi:{ar:'🗺️ استخدم البحارة خريطة الإدريسي كمرجع رئيسي للملاحة لمدة 300 سنة!',
+    fr:'🗺️ Les marins ont utilisé la carte d\'Al-Idrisi comme référence pendant 300 ans !',
+    en:'🗺️ Sailors used Al-Idrisi\'s map as the main navigation reference for 300 years!'},
+  jazari:{ar:'🤖 اخترع الجزري ساعة الفيل الميكانيكية التي تعمل بالماء والحيوانات المتحركة!',
+    fr:'🤖 Al-Jazari a inventé l\'horloge de l\'éléphant, une merveille mécanique à eau !',
+    en:'🤖 Al-Jazari invented the Elephant Clock — a mechanical marvel powered by water and moving animals!'},
+  zahrawi:{ar:'🏥 اخترع الزهراوي أكثر من 200 أداة جراحية لا يزال بعضها يُستخدم حتى اليوم!',
+    fr:'🏥 Al-Zahrawi a inventé plus de 200 instruments chirurgicaux, certains encore utilisés !',
+    en:'🏥 Al-Zahrawi invented over 200 surgical instruments — some are still used in modern medicine today!'}
+};
+
+// ===== ONBOARDING =====
+const obSteps={
+  ar:[
+    {em:'🚀',title:'مرحبًا بك في آلة الزمن!',desc:'سافر عبر الزمن لاكتشاف العلماء المسلمين الذين غيّروا العالم'},
+    {em:'🗺️',title:'اختر محطتك',desc:'افتح خريطة الرحلة واختر المحطة الزمنية. أكمل كل محطة لفتح التالية!'},
+    {em:'⭐',title:'اجمع النجوم',desc:'أجب من أول محاولة للحصول على 3 نجوم! اجمع كل البطاقات في المتحف'}
+  ],
+  fr:[
+    {em:'🚀',title:'Bienvenue dans la Machine à Voyager !',desc:'Voyage dans le temps pour découvrir les savants musulmans qui ont changé le monde'},
+    {em:'🗺️',title:'Choisis ta station',desc:'Ouvre la carte et choisis ta station temporelle. Complète chaque station pour débloquer la suivante !'},
+    {em:'⭐',title:'Collecte des étoiles',desc:'Réponds du premier coup pour obtenir 3 étoiles ! Collecte toutes les cartes au Musée'}
+  ],
+  en:[
+    {em:'🚀',title:'Welcome to the Time Machine!',desc:'Travel through time to discover Muslim scientists who changed the world'},
+    {em:'🗺️',title:'Choose your station',desc:'Open the journey map and pick a time station. Complete each one to unlock the next!'},
+    {em:'⭐',title:'Collect stars',desc:'Answer on your first try for 3 stars! Collect all cards in the Museum'}
+  ]
+};
+let obIdx=0;
+function showOnboard(){
+  if(localStorage.getItem('tm_onboard'))return;
+  const ob=$('onboard');ob.classList.remove('gone');
+  obIdx=0;renderOb();
+}
+function renderOb(){
+  const steps=obSteps[lang]||obSteps.en,step=steps[obIdx];
+  $('obStep').innerHTML=`<div class="onboard-em">${step.em}</div><div class="onboard-title">${step.title}</div><div class="onboard-desc">${step.desc}</div>`;
+  $('obStep').style.animation='none';$('obStep').offsetWidth;$('obStep').style.animation='fu .5s ease-out';
+  const dots=$('obDots');dots.innerHTML='';
+  steps.forEach((_,i)=>{const d=document.createElement('div');d.className='onboard-dot'+(i===obIdx?' on':'');dots.appendChild(d)});
+  const isLast=obIdx>=steps.length-1;
+  $('obBtn').textContent=isLast?(lang==='ar'?'🚀 يلا!':lang==='fr'?'🚀 C\'est parti !':'🚀 Let\'s go!'):(lang==='ar'?'التالي ←':'Next →');
+  $('obSkip').textContent=lang==='ar'?'تخطي':lang==='fr'?'Passer':'Skip';
+}
+function closeOnboard(){localStorage.setItem('tm_onboard','1');$('onboard').classList.add('gone')}
+$('obBtn').onclick=()=>{S.tap();vib(10);const steps=obSteps[lang]||obSteps.en;
+  if(obIdx>=steps.length-1){closeOnboard()}else{obIdx++;renderOb()}};
+$('obSkip').onclick=()=>{S.tap();closeOnboard()};
+
+// Show onboarding after splash
+setTimeout(()=>{showOnboard()},1800);
+
+// ===== SPLASH SOUND =====
+setTimeout(()=>{S.tap()},800);
+</script>
+</body>
+</html>
